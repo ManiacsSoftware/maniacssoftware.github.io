@@ -1,0 +1,244 @@
+/* Over the rainbow font */
+/**@import url(https://fonts.googleapis.com/css?family=Over+the+Rainbow);
+
+
+@import url(https://fonts.googleapis.com/css?family=Ballet);
+
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+**/
+
+@import url(https://fonts.googleapis.com/css?family=Anton);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+  color: #ffffff;
+  background-color: black;
+}
+
+.dimable:not(.enabled) {
+	opacity: 0 !important;
+}
+
+.dimable.enabled {
+	opacity: 1 !important;
+}
+
+#black {
+	background-color: rgb(0, 0, 0);
+	opacity: 1;
+	
+	transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-webkit-transition: opacity 1s ease-in-out;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	#font-size: 36px;
+	#font-weight: bold;
+	
+	z-index: 990;
+}
+
+#verses, #splash {
+	transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-webkit-transition: opacity 1s ease-in-out;
+}
+
+.bg {
+  #filter: blur(40px);
+  #-webkit-filter: blur(80px);
+  animation:slide 12s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:14s;
+}
+
+.bg3 {
+  animation-duration:18s;
+}
+
+.centered {
+  #background-color:rgba(255,255,255,.8);
+  #border-radius:.25em;
+  #box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+  width: 97%;
+  
+  #font-style: additive;
+}
+
+h1 {
+  #font-family: 'Ballet', sans-serif;
+  font-family: 'Anton', sans-serif;
+  #font-family: 'Pacifico', serif;
+  #font-family:monospace;
+  font-size: 10em;
+  margin: 0px;
+  font-weight: normal;
+}
+
+p {
+  #font-family: 'Over the Rainbow', serif;
+  font-family: 'Great Vibes', serif;
+  #font-family: 'Dancing script', serif;
+  font-size: 3em;
+  margin: 0px;
+  margin-top: -1em;
+}
+
+#verse:first-letter {
+   margin-left: 1em;
+}
+
+#verses {
+	font-size: 3em
+}
+
+#verse {
+	text-align: justify;
+	text-justify: inter-character;
+	line-height: 1.4em;
+}
+
+#verse div {
+	display: inline;
+}
+
+#verse .heading {
+	  font-weight: bold;
+}
+	 
+#verse .label {
+		color: #A0A0A0;
+		//color: silver;
+		padding-right: 0.5em;
+		font-size: 0.75em;
+		position: relative;
+		top: -0.4em;
+		
+		
+		//font: 800 40px Arial;
+		//-webkit-text-fill-color: transparent;
+		//-webkit-text-stroke: 1px;
+
+}
+	
+#verse .note {
+		display: none;
+}
+	
+#verse h1 {
+	  color: maroon;
+	  margin-left: 40px;
+}
+
+#verse .chapter > .label {
+	display: none;
+}
+
+#verse .q1 .label, #verse .q1 .label, #verse .q1 .label {
+	margin-left: 15px;
+}
+
+#verse .q1 not(.label), #verse .q1 not(.label), #verse .q1 not(.label) {
+	margin-left: 40px;
+}
+
+#verse .q1, #verse .q2, #verse .s1 {	
+	display: inline;
+	#margin-right: 0.5em;
+}
+
+#verse .verse, #verse .heading {
+	display: none;
+}
+
+#verseasd .verse .content {
+	display: none;
+}
+
+.large {
+	font-size: 100%;
+}
+
+.medium {
+	font-size: 85%;
+}
+
+.small {
+	font-size: 70%;
+}
+
+#footer {
+	font-size: 0.7em;	
+	padding: 1em;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+#source {
+	text-align: right;
+}
+
+#demo {	
+	text-align: left;
+	color: #A0A0A0;
+	font-size: 0.7em
+}
+
+#debug {
+	text-align: left;
+	width: 100%;
+	height: 100%;
+	padding: 1em;
+	z-index: 999;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+.hidden {
+	display: none;
+}
