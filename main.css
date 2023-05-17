@@ -62,7 +62,8 @@ body {
 .bg {
   #filter: blur(40px);
   #-webkit-filter: blur(80px);
-  animation:slide 12s ease-in-out infinite alternate;
+  animation:slide 100s ease-in-out infinite alternate;
+  animation-delay: -23s;
   background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
   bottom:0;
   left:-50%;
@@ -75,11 +76,11 @@ body {
 
 .bg2 {
   animation-direction:alternate-reverse;
-  animation-duration:14s;
+  animation-duration:120s;
 }
 
 .bg3 {
-  animation-duration:18s;
+  animation-duration:150s;
 }
 
 .centered {
