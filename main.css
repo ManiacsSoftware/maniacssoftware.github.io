@@ -24,7 +24,7 @@ body {
 }
 
 .dimable:not(.enabled) {
-	opacity: .5 !important;
+	opacity: 0 !important;
 }
 
 .dimable.enabled {
@@ -74,12 +74,12 @@ body {
   z-index:-1;
 }
 
-.bg2 {
+.enabled .bg2 {
   animation-direction:alternate-reverse;
   animation-duration:120s;
 }
 
-.bg3 {
+.enabled .bg3 {
   animation-duration:150s;
 }
 
