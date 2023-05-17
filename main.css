@@ -59,9 +59,9 @@ body {
 	-webkit-transition: opacity 1s ease-in-out;
 }
 
-.enabled .bg {
+.bg {
   #filter: blur(40px);
-  #-webkit-filter: blur(80px);
+  #-webkit-filter: blur(80px);  
   animation:slide 100s ease-in-out infinite alternate;
   animation-delay: -23s;
   background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
@@ -74,12 +74,12 @@ body {
   z-index:-1;
 }
 
-.enabled .bg2 {
+.bg2 {
   animation-direction:alternate-reverse;
   animation-duration:120s;
 }
 
-.enabled .bg3 {
+.bg3 {
   animation-duration:150s;
 }
 
