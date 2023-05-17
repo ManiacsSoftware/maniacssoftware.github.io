@@ -24,7 +24,7 @@ body {
 }
 
 .dimable:not(.enabled) {
-	opacity: 0 !important;
+	opacity: .5 !important;
 }
 
 .dimable.enabled {
@@ -59,7 +59,7 @@ body {
 	-webkit-transition: opacity 1s ease-in-out;
 }
 
-.bg {
+.enabled .bg {
   #filter: blur(40px);
   #-webkit-filter: blur(80px);
   animation:slide 100s ease-in-out infinite alternate;
