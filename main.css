@@ -168,6 +168,10 @@ p {
 	display: none;
 }
 
+#verse .chapter > .d {
+	display: none;
+}
+
 #verse .q1 .label, #verse .q1 .label, #verse .q1 .label {
 	margin-left: 15px;
 }
