@@ -169,7 +169,7 @@ p {
 }
 
 // BUG Psalm 23 - always displaying "Psalm of David"
-#verse .chapter > .d {
+#verse .chapter .d {
 	display: none;
 }
 
