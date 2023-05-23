@@ -190,7 +190,7 @@ p {
 	display: none;
 }
 
-#verse .wj {
+#verse .wj, #verse .nd {
 	font-weight: bold;
 }
 
