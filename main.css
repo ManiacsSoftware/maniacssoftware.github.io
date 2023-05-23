@@ -168,6 +168,7 @@ p {
 	display: none;
 }
 
+/* BUG Psalm 23 - always displaying "Psalm of David" */
 #verse .chapter .d {
 	display: none;
 }
