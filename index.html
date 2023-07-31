@@ -163,7 +163,9 @@
 				setVerseStyle(customData.style);
 			}
 			
-			if(customData.demo && customData.demo === "false") {
+			if(customData.demo && customData.demo === "true") {
+				document.getElementById('demo').classList.add('hidden');
+			} else {
 				document.getElementById('demo').classList.remove('hidden');
 			}
 
