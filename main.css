@@ -169,10 +169,9 @@ body {
 }
 
 /*#verse .verse, ?? what is this ??*/ 
-#verse .heading {
+#verse .verse, #verse .heading {
 	display: none;
 }
-
 
 #verse .wj, #verse .nd {
 	font-weight: bold;
