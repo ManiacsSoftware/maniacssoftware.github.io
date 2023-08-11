@@ -1,5 +1,5 @@
 .background {
-	background-color: #09f;
+  background-color: #09f;
   bottom:0;
   left:-50%;
   
@@ -14,7 +14,7 @@
   #-webkit-filter: blur(80px);  
   animation:slide 100s ease-in-out infinite alternate;
   animation-delay: -23s;
-  background-image: linear-gradient(-60deg, #6c3 50%, transparent 50%);
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
   bottom:0;
   left:-50%;
   
