@@ -292,41 +292,46 @@
 						fadeToBlack();
 						return;
 					} else if(customData.target == 'verse') {
+						fadeToVerse();
 						// TODO: try animated verse swap: https://alvarotrigo.com/blog/css-text-animations/
+						debug("a1");
 						if(customData.style) {
 							document.getElementById('verse').innerHTML = customData.message;
 						} else {
 							document.getElementById('verse').textContent = customData.message;
 						}
-																
+						debug("a2");							
 						if(customData.source) {
 							document.getElementById('source').textContent = customData.source;
 						} else {
 							document.getElementById('source').textContent = "";
 						}				
-						
+						debug("a3");
 						if(customData.style) { 
 							setVerseStyle(customData.style);
 						}
+						debug("a4");
 						
-						fadeToVerse();
 					} else if(customData.target == "announcements") {
+						fadeToAnnouncement();
+						debug("b1");
 					    if(customData.style) { 
 							setAnnouncementStyle(customData.style);
 						}
-						
+						debug("b2");
 						if(customData.style) {
 							document.getElementById('announcement').innerHTML = customData.message;
 						} else {
 							document.getElementById('announcement').textContent = customData.message;
 						}
-												
-						fadeToAnnouncement();
+						debug("b3");						
 					}
 					
 					if(customData.demo && customData.demo === "true") {
+					    debug("c1");
 						removeClassByQuerySelector('.demoText', 'hiddenMy');
 					} else {
+					    debug("c2");
 						addClassByQuerySelector('.demoText', 'hiddenMy');
 					}
 
