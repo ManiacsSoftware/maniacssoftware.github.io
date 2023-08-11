@@ -38,11 +38,17 @@ function enable(elementName) {
     document.getElementById(elementName)?.classList.add('enabled');
 }
 
+var debugEnabled = false;
 function showDebug() {
+	debugEnabled = true;
     document.getElementById('debug')?.classList.remove('hiddenMy');
 }
 
 function debug(str) {
+	if(!debugEnabled) {
+		return;
+	}
+	
     document.getElementById('debug').innerHTML = document.getElementById('debug').innerHTML + "<br><br>" + str;
 }
 
