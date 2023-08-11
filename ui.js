@@ -43,8 +43,7 @@ function showDebug() {
 }
 
 function debug(str) {
-    document.getElementById('debug').innerHTML = document.getElementById('debug').innerHTML + "<br><br>"
-    + str;
+    document.getElementById('debug').innerHTML = document.getElementById('debug').innerHTML + "<br><br>" + str;
 }
 
 function setVerseStyle(str) {
