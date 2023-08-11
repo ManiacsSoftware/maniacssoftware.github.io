@@ -34,6 +34,8 @@
 		}
 		*/
 		</style>
+		<style id="announcementStyle">
+		</style>
 	</head>
 	<body>
 		<!-- The video player -->
@@ -235,6 +237,7 @@
 		<script type="text/javascript">
 			window.addEventListener('load', function () {
 				debug("load finished");
+				fadeToSplash();
 			});
 			showDebug();
 			debug("Starting...");
@@ -369,7 +372,7 @@
 			context.start({disableIdleTimeout: true});
 
 			//debug("5");
-			fadeToSplash();	
+			//fadeToSplash();	
 
 			debug("Init done...")
 			/*
