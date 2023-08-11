@@ -49,12 +49,12 @@
 		<object id="background" data="backgrounds/black.html" class="dimable" style="width:100%;height:100vh;"></object>
 		<div id="announcements" class="dimable">
 			<div id="announcement" class="fit sizable">
-				<!--h1>Title</h1>
+				<h1>Title</h1>
 				<ul>
 					<li>First item</li>
 					<li>Second item</li>
 					<li>Third item</li>
-				</ul-->
+				</ul>
 			</div>
 			<div id="footer">
 				<span class="demoText hidden">VerseCast for Chromecast</span>
@@ -63,7 +63,7 @@
 		</div>
 		<div id="verses" class="dimable">
 			<div id="verse" class="centered fit sizable">
-				<!--div class="version vid464 iso6393slk" data-vid="464" data-iso6393="slk">
+				<div class="version vid464 iso6393slk" data-vid="464" data-iso6393="slk">
 					<div class="book bkPSA">
 						<div class="chapter ch28" data-usfm="PSA.28">
 							<div class="label">28</div>
@@ -215,7 +215,7 @@
 							</div>
 						</div>
 					</div>
-				</div-->
+				</div>
 			</div>
 			<div id="footer">
 				<span class="demoText hidden">VerseCast for Chromecast</span>
@@ -228,9 +228,12 @@
 		<!-- Include the Cast Receiver SDK -->
 		<script type="text/javascript" src="ui.js"></script>
 		<script type="text/javascript" src="theme.js"></script>
-		<script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+		<script type="text/javascript" src="http://www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
 		<!-- Initialize the CastReceiverContext -->
 		<script type="text/javascript">
+			window.addEventListener('load', function () {
+				debug("load finished");
+			});
 			showDebug();
 			debug("Starting...");
 
