@@ -159,6 +159,15 @@
 					    debug("c2");
 						addClassByQuerySelector('.demoText', 'hiddenMy');
 					}
+					
+					if(customData.backgroud) {
+					    debug("d1");
+						loadBackground();
+					} else {
+					    debug("d2");
+						clearBackground();
+					}
+					
 
 					debug("Target: " + customData.target);
 					
