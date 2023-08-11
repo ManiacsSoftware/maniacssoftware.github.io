@@ -31,75 +31,44 @@ body {
 	opacity: 1 !important;
 }
 
-#black {
-	background-color: rgb(0, 0, 0);
-	opacity: 1;
-	
-	transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-webkit-transition: opacity 1s ease-in-out;
-	
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	#font-size: 36px;
-	#font-weight: bold;
-	
-	z-index: 990;
-}
-
-#verses, #splash {
-	transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-webkit-transition: opacity 1s ease-in-out;
-}
-
-.bg {
-  #filter: blur(40px);
-  #-webkit-filter: blur(80px);  
-  animation:slide 100s ease-in-out infinite alternate;
-  animation-delay: -23s;
-  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
-  bottom:0;
-  left:-50%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
-}
-
-.bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:120s;
-}
-
-.bg3 {
-  animation-duration:150s;
-}
-
 .centered {
   #background-color:rgba(255,255,255,.8);
   #border-radius:.25em;
   #box-shadow:0 0 .25em rgba(0,0,0,.25);
-  box-sizing:border-box;
-  left:50%;
-  padding:10vmin;
-  position:fixed;
   text-align:center;
-  top:50%;
-  transform:translate(-50%, -50%);
-  width: 97%;
+  
   
   #font-style: additive;
 }
 
-h1 {
+.fit {
+	#box-sizing:border-box;
+	left:50%;
+	padding:10vmin;
+	position:fixed;
+	top:50%;
+	transform:translate(-50%, -50%);
+	width: 97%;
+}
+
+.hiddenMy {
+	opacity: 0 !important;
+}
+
+#verses, #splash, #announcements, #black{
+	transition: opacity 5s ease-in-out;
+	-moz-transition: opacity 5s ease-in-out;
+	-webkit-transition: opacity 5s ease-in-out;
+	
+	opacity: 1;
+}
+
+#verses, #splash, #announcements {
+	background-color: transparent;
+}
+
+
+#splash h1 {
   #font-family: 'Ballet', sans-serif;
   font-family: 'Anton', sans-serif;
   #font-family: 'Pacifico', serif;
@@ -109,13 +78,26 @@ h1 {
   font-weight: normal;
 }
 
-p {
+#splash p {
   #font-family: 'Over the Rainbow', serif;
   font-family: 'Great Vibes', serif;
   #font-family: 'Dancing script', serif;
   font-size: 3em;
   margin: 0px;
   margin-top: -1em;
+}
+
+#verses, #announcements {
+	text-shadow: 0px 2px 8px black;
+}
+
+#announcements {
+  font-size: 3em;
+}
+
+#announcement h1 {
+  font-size: 1.3em;
+ 
 }
 
 #verse:first-letter {
@@ -139,7 +121,7 @@ p {
 #verse .heading {
 	  font-weight: bold;
 }
-	 
+ 
 #verse .label {
 		color: #A0A0A0;
 		//color: silver;
@@ -168,7 +150,7 @@ p {
 	display: none;
 }
 
-/* BUG Psalm 23 - always displaying "Psalm of David" */
+# BUG Psalm 23 - always displaying "Psalm of David" 
 #verse .chapter .d {
 	display: none;
 }
@@ -186,9 +168,11 @@ p {
 	#margin-right: 0.5em;
 }
 
-#verse .verse, #verse .heading {
+/*#verse .verse, ?? what is this ??*/ 
+#verse .heading {
 	display: none;
 }
+
 
 #verse .wj, #verse .nd {
 	font-weight: bold;
@@ -196,6 +180,11 @@ p {
 
 #verseasd .verse .content {
 	display: none;
+}
+
+
+.huge {
+	font-size: 150%;
 }
 
 .large {
@@ -226,6 +215,7 @@ p {
 	text-align: right;
 }
 
+
 #demo {	
 	text-align: left;
 	color: #A0A0A0;
@@ -240,6 +230,50 @@ p {
 	z-index: 999;
 }
 
+#black {
+	background-color: rgb(0, 0, 0);
+	z-index: 990;
+	width: 100%;
+	height: 100%;
+}
+
+/*
+#black {
+	background-color: rgb(255, 0, 0);
+	#opacity: 1;
+	
+	#transition: opacity 5s ease-in-out;
+	#-moz-transition: opacity 5s ease-in-out;
+	#-webkit-transition: opacity 5s ease-in-out;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	#font-size: 36px;
+	#font-weight: bold;
+	
+	
+}
+/*
+
+
+
+#announcement {
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  top:50%;
+  transform:translate(-50%, -50%);
+  width: 97%;
+}
+
+
+
 @keyframes slide {
   0% {
     transform:translateX(-25%);
@@ -249,6 +283,5 @@ p {
   }
 }
 
-.hidden {
-	display: none;
-}
+
+*/
