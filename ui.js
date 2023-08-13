@@ -1,6 +1,6 @@
 function fadeToBlack() {
     enable("black");
-	disable("background");
+	disable("backgroundInsert");
 	disable("verses");
 	disable("splash");	
 	disable("announcements");
@@ -8,7 +8,7 @@ function fadeToBlack() {
 
 function fadeToSplash() {
 	enable("splash");	
-	disable("background");
+	disable("backgroundInsert");
     disable("black");    
     disable("verses");
 	disable("announcements");	
@@ -16,7 +16,7 @@ function fadeToSplash() {
 
 function fadeToVerse() {
 	enable("verses");
-	enable("background");
+	enable("backgroundInsert");
     disable("black");
     disable("splash");
 	disable("announcements");    
@@ -24,7 +24,7 @@ function fadeToVerse() {
 
 function fadeToAnnouncement() {
 	enable("announcements");    
-	enable("background");
+	enable("backgroundInsert");
     disable("black");
     disable("splash");
 	disable("verses");	
