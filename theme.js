@@ -5,10 +5,12 @@ function loadBackground(backgroundName) {
 		return;
 	}
 	
-    document.getElementById('background').data = 'backgrounds/' + backgroundName + '.html';
+    document.getElementById('background').src = 'backgrounds/' + backgroundName + '.html';
+	document.getElementById('templateStyle').href = 'backgrounds/' + backgroundName + '.css';
 	loadedBackground = backgroundName;
 }
 
 function clearBackground() {
 	loadBackground('black');
+	document.getElementById('templateStyle').href = 'backgrounds/blank.css';
 }

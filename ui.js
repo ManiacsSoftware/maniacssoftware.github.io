@@ -78,6 +78,14 @@ function removeClassByQuerySelector(querrySelector, classToRemove) {
 	});
 }
 
+function setDemo(isDemo) {
+	if(isDemo) {
+		removeClassByQuerySelector('.demoText', 'hiddenMy');
+	} else {
+		addClassByQuerySelector('.demoText', 'hiddenMy');
+	}
+}
+
 /*
 function displayVerseElement() {
     document.getElementById('welcome').classList.add('hidden');

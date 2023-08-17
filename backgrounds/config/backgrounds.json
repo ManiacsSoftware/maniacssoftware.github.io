@@ -1,0 +1,73 @@
+[
+	{
+        'pack': 'free',
+		'name': 'Free pack',
+        'licences': '',
+        'themes': [
+		    {
+                'alias': 'black',
+                'image': 'black.png',
+                'name': 'Blank',
+                'animated': 'false',
+                'changesFont': 'false'
+            },
+			{
+                'alias': 'stripes',
+                'image': 'stripes.png',
+                'name': 'Stripes',
+                'animated': 'true',
+                'changesFont': 'false'
+            }
+        ]
+    },
+	{
+        'pack': 'modern',
+		'name': 'Modern'
+        'licences': ['theme_basics']
+        'themes': [
+			{
+                'alias': 'blueshapes',
+                'image': 'blueshapes.png',
+                'name': 'Blue shapes',
+                'animated': 'true',
+                'changesFont': 'false'
+            },
+			{
+                'alias': 'gray-pattern',
+                'image': 'gray-pattern.png',
+                'name': 'Gray pattern',
+                'animated': 'true',
+                'changesFont': 'false'
+            }
+        ]
+    },
+	{
+        'pack': 'christmas',
+		'name': 'Christmas'
+        'licences': ['theme_basics']
+        'themes': [
+			{
+                'alias': 'red-and-snow',
+                'image': 'red-and-snow.png',
+                'name': 'Red with snow',
+                'animated': 'true',
+                'changesFont': 'true'
+            }
+        ]
+    },
+	{
+        'pack': 'autum',
+		'name': 'Autum'
+        'licences': ['theme_autum']
+        'themes': [
+			{
+                'alias': 'pumpkin-leafs',
+                'image': 'pumpkin-leafs.png',
+                'name': 'Pumpking and Leafs',
+                'animated': 'true',
+                'changesFont': 'true'
+            }
+        ]
+    }
+
+]

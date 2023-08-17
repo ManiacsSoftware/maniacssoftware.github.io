@@ -11,10 +11,10 @@
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"-->
 		<style id="verseStyle">
-		/* CSS styles for the text message */	    
 		</style>
 		<style id="announcementStyle">
 		</style>
+		<link id="templateStyle" rel="stylesheet" href="blank.css"/>
 	</head>
 	<body>
 		<!-- The video player -->
@@ -22,33 +22,37 @@
 		<!--cast-media-player style="display: none"></cast-media-player-->
 		<cast-media-player style="opacity: 0"></cast-media-player>
 		<!--cast-media-player></cast-media-player-->
+		<embed id="background" class="screen" type="text/html" src="backgrounds/black.html" style="width:100%;height:100vh;"></embed>
 		<div id="splash" class="dimable">
-			<object data="backgrounds/intro.html" class="fit" style="width:100%;height:100vh;"></object>
-			<div id="welcome" class="centered fit">
+			<object data="backgrounds/intro.html" class="screen fit" style="width:100%;height:100vh;"></object>
+			<div id="welcome" class="centered centertext">
 				<h1 id="title">VerseCast</h1>
 				<p id="message">Loading...</p>
 			</div>
 		</div>
-		<object id="background" data="backgrounds/black.html" style="width:100%;height:100vh;"></object>
-		<div id="announcements" class="dimable">
-			<div id="announcement" class="fit sizable">
+		<div id="announcements" class="screen dimable">
+			<div class="frame centered">
+				<div id="announcement" class="inframe fit sizable">
+				</div>
 			</div>
 			<div id="footer">
-				<span class="demoText hidden">VerseCast for Chromecast</span>
+				<span class="demoText hiddenMy">VerseCast for Chromecast</span>
 				<span/>
 			</div>
 		</div>
-		<div id="verses" class="dimable">
-			<div id="verse" class="centered fit sizable">
+		<div id="verses" class="screen dimable">
+			<div class="frame centered">
+				<div id="verse" class="inframe centertext fit sizable">
+				</div>
 			</div>
 			<div id="footer">
-				<span class="demoText hidden">VerseCast for Chromecast</span>
+				<span class="demoText hiddenMy">VerseCast for Chromecast</span>
 				<span/>
 				<span id="source"></span>
 			</div>
 		</div>
-		<div id="black" class="dimable fit"></div>
-		<div id="debug" class="hiddenMy fit">Debug</div>
+		<div id="black" class="screen dimable fit"></div>
+		<div id="debug" class="screen hiddenMy fit">Debug</div>
 		<!-- Include the Cast Receiver SDK -->
 		<script type="text/javascript" src="ui.js"></script>
 		<script type="text/javascript" src="theme.js"></script>
@@ -152,13 +156,7 @@
 						debug("b3");						
 					}
 					
-					if(customData.demo && customData.demo === "true") {
-					    debug("c1");
-						removeClassByQuerySelector('.demoText', 'hiddenMy');
-					} else {
-					    debug("c2");
-						addClassByQuerySelector('.demoText', 'hiddenMy');
-					}
+					setDemo(customData.demo && customData.demo === "true");
 					
 					if(customData.background) {
 					    debug("d1");

@@ -1,0 +1,38 @@
+body {
+	margin:0;
+	padding:0;
+	#font-family:"arial",heletica,sans-serif;
+	#font-size:12px;
+    background: #2980b9 url('gray-pattern-bg.avif') repeat 0 0;
+	-webkit-animation: 50s linear 0s normal none infinite animate;
+	-moz-animation: 50s linear 0s normal none infinite animate;
+	-ms-animation: 50s linear 0s normal none infinite animate;
+	-o-animation: 50s linear 0s normal none infinite animate;
+	animation: 50s linear 0s normal none infinite animate;
+ 
+}
+ 
+@-webkit-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 626px -626px;}
+}
+ 
+@-moz-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 626px -626px;}
+}
+ 
+@-ms-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 626px -626px;}
+}
+ 
+@-o-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 626px -626px;}
+}
+ 
+@keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 626px -626px;}
+}
