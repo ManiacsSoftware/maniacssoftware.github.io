@@ -90,7 +90,8 @@ body {
 */
 
 .hiddenMy {
-	opacity: 0 !important;
+	#opacity: 0 !important;
+	visibility: hidden;
 }
 
 #verses, #splash, #announcements, #black{
