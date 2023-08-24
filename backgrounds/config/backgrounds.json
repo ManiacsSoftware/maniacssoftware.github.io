@@ -44,7 +44,8 @@
                 "image": "glory.png",
                 "name": "Gloria",
                 "animated": true,
-                "changesFont": true
+                "changesFont": true,
+				"unreleased": true
             }
         ]
     },
