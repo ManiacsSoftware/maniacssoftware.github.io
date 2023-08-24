@@ -8,15 +8,15 @@
                 "alias": "black",
                 "image": "black.png",
                 "name": "Blank",
-                "animated": "false",
-                "changesFont": "false"
+                "animated": false,
+                "changesFont": false
             },
 			{
                 "alias": "stripes",
                 "image": "stripes.png",
                 "name": "Stripes",
-                "animated": "true",
-                "changesFont": "false"
+                "animated": true,
+                "changesFont": false
             }
         ]
     },
@@ -29,15 +29,15 @@
                 "alias": "blueshapes",
                 "image": "blueshapes.png",
                 "name": "Blue shapes",
-                "animated": "true",
-                "changesFont": "false"
+                "animated": true,
+                "changesFont": false
             },
 			{
                 "alias": "gray-pattern",
                 "image": "gray-pattern.png",
                 "name": "Gray pattern",
-                "animated": "true",
-                "changesFont": "false"
+                "animated": true,
+                "changesFont": false
             }
         ]
     },
@@ -50,8 +50,8 @@
                 "alias": "red-and-snow",
                 "image": "red-and-snow.png",
                 "name": "Red with snow",
-                "animated": "true",
-                "changesFont": "true"
+                "animated": true,
+                "changesFont": true
             }
         ]
     },
@@ -64,8 +64,8 @@
                 "alias": "pumpkin-leafs",
                 "image": "pumpkin-leafs.png",
                 "name": "Pumpking and Leafs",
-                "animated": "true",
-                "changesFont": "true"
+                "animated": true,
+                "changesFont": true
             }
         ]
     }
