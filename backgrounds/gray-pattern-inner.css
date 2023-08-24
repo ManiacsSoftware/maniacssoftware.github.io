@@ -5,10 +5,10 @@ body {
 	#font-size:12px;
     background: #2980b9 url('gray-pattern-bg.avif') repeat 0 0;
 	-webkit-animation: 50s linear 0s normal none infinite animate;
-	-moz-animation: 50s linear 0s normal none infinite animate;
-	-ms-animation: 50s linear 0s normal none infinite animate;
-	-o-animation: 50s linear 0s normal none infinite animate;
-	animation: 50s linear 0s normal none infinite animate;
+	-moz-animation: 100s linear 0s normal none infinite animate;
+	-ms-animation: 100s linear 0s normal none infinite animate;
+	-o-animation: 100s linear 0s normal none infinite animate;
+	animation: 100s linear 0s normal none infinite animate;
  
 }
  

@@ -22,7 +22,7 @@
   right:-50%;
   top:0;
   z-index: -1;
-  //filter: blur(5rem);
+  #filter: blur(5rem);
 }
 
 .bg1 {
@@ -33,14 +33,14 @@
 .bg2 {
 	animation-direction:alternate-reverse;
 	animation-duration:120s;
-  animation-delay: -75s;
+    animation-delay: -75s;
 	opacity:.5;
 	#z-index: -2;
 }
 
 .bg3 {
 	animation-duration:150s;
-  animation-delay: -70s;
+    animation-delay: -70s;
 	opacity:.5;
 	#z-index: -1;
 }
