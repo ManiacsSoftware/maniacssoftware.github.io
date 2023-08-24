@@ -8,11 +8,11 @@
     outline-style: solid;
 }
 */
-/*
-@import url(https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,900;1,400);
-*/
+
+@import url(https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display:ital,wght@0,900;1,400);
+
 .frame {
-  #font-family: 'Roboto' !important;
+  font-family: 'Sedgwick Ave Display' !important;
   #max-width: 90%; 
   background: rgb(58,72,97);
   background: linear-gradient(90deg, rgba(58,72,97,0.93) 0%, rgba(47,66,97,0.92) 100%);
