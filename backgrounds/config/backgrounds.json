@@ -37,7 +37,7 @@
                 "image": "gray-pattern.png",
                 "name": "Gray pattern",
                 "animated": true,
-                "changesFont": false
+                "changesFont": true
             }
         ]
     },
