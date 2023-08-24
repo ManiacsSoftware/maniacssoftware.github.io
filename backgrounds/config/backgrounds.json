@@ -38,6 +38,13 @@
                 "name": "Gray pattern",
                 "animated": true,
                 "changesFont": true
+            },			
+			{
+                "alias": "glory",
+                "image": "glory.png",
+                "name": "Gloria",
+                "animated": true,
+                "changesFont": true
             }
         ]
     },
