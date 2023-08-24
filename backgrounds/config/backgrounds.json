@@ -48,33 +48,5 @@
 				"unreleased": true
             }
         ]
-    },
-	{
-        "pack": "christmas",
-		"name": "Christmas",
-        "licences": ["theme_basics"],
-        "themes": [
-			{
-                "alias": "red-and-snow",
-                "image": "red-and-snow.png",
-                "name": "Red with snow",
-                "animated": true,
-                "changesFont": true
-            }
-        ]
-    },
-	{
-        "pack": "autum",
-		"name": "Autum",
-        "licences": ["theme_autum"],
-        "themes": [
-			{
-                "alias": "pumpkin-leafs",
-                "image": "pumpkin-leafs.png",
-                "name": "Pumpking and Leafs",
-                "animated": true,
-                "changesFont": true
-            }
-        ]
     }
 ]
