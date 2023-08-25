@@ -11,20 +11,24 @@
 
 @import url(https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display:ital,wght@0,900;1,400);
 
+#source, #verse, #announcement {
+	font-family: 'Sedgwick Ave Display' !important;
+}
+
 .frame {
-  font-family: 'Sedgwick Ave Display' !important;
+  
   #max-width: 90%; 
-  background: rgb(58,72,97);
-  background: linear-gradient(90deg, rgba(58,72,97,0.93) 0%, rgba(47,66,97,0.92) 100%);
+  background: rgb(69,89,122);
+  background: linear-gradient(230deg, rgba(69,89,122,0.94) 0%, rgba(62,81,112,0.921988863904937) 21%, rgba(11,24,42,0.92) 100%);
   word-wrap: break-word;
   #position: relative;
-  padding: 1em;
+  padding: 0.8em;
 }
 
 .frame .inframe {
 	font-size: 75%;
-	padding: 1.5em;
-	border: 0.05em solid white;
+	padding: 1.8em;
+	border: 0.08em solid white;
 }
 
 #source {
