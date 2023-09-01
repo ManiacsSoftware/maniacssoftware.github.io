@@ -9,13 +9,14 @@ body{
 	-ms-animation: 50s linear 0s normal none infinite animate;
 	-o-animation: 50s linear 0s normal none infinite animate;
 	animation: 50s linear 0s normal none infinite animate;
-	
+	/*
 	background-size: cover;
 	background-position: center center;
 	padding: 150px 200px;
 	height: 100%;
 	box-sizing: border-box;
 	box-shadow: inset 0 0 70px 50px black;
+	*/
 }
  
 @-webkit-keyframes animate {
