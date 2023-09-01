@@ -44,7 +44,7 @@
                 "image": "gray-pattern.png",
                 "name": "Gray pattern",
                 "animated": true,
-                "changesFont": true
+                "changesFont": true,
 				"unreleased": true
             },			
 			{
