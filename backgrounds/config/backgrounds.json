@@ -38,6 +38,22 @@
                 "name": "Blue shapes",
                 "animated": true,
                 "changesFont": false
+            },
+			{
+                "alias": "gray-pattern",
+                "image": "gray-pattern.png",
+                "name": "Gray pattern",
+                "animated": true,
+                "changesFont": true
+				"unreleased": true
+            },			
+			{
+                "alias": "glory",
+                "image": "glory.png",
+                "name": "Gloria",
+                "animated": true,
+                "changesFont": true,
+				"unreleased": true
             }
         ]
     }
