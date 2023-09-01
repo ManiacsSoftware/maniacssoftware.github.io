@@ -1,0 +1,77 @@
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(230deg, rgba(207,0,0,1) 7%, rgba(246,141,13,1) 95%);
+    animation: gradient 45s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 10%);
+    border-radius: 3000% 3000% 0 0;
+    position: fixed;
+    width: 400%;
+    height: 9em;
+    animation: wave 40s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.3;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 17s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 35s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+#verse .q1 .label, #verse .q1 .label, #verse .q1 .label {
+	color: red !important;
+}
+
+#verses #verse .label {
+    color: red !important;
+}

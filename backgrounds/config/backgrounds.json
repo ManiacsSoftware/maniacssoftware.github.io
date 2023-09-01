@@ -24,6 +24,20 @@
                 "name": "Waves",
                 "animated": true,
                 "changesFont": false
+            },
+			{
+                "alias": "waves-redish",
+                "image": "waves-redish.png",
+                "name": "Waves Redish",
+                "animated": true,
+                "changesFont": false
+            },
+			{
+                "alias": "waves-pumpkin",
+                "image": "waves-pumpkin.png",
+                "name": "Waves Pumpkin",
+                "animated": true,
+                "changesFont": false
             }
         ]
     },
