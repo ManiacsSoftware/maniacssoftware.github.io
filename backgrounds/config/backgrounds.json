@@ -17,6 +17,13 @@
                 "name": "Stripes",
                 "animated": true,
                 "changesFont": false
+            },
+			{
+                "alias": "waves",
+                "image": "waves.png",
+                "name": "Waves",
+                "animated": true,
+                "changesFont": false
             }
         ]
     },
@@ -31,21 +38,6 @@
                 "name": "Blue shapes",
                 "animated": true,
                 "changesFont": false
-            },
-			{
-                "alias": "gray-pattern",
-                "image": "gray-pattern.png",
-                "name": "Gray pattern",
-                "animated": true,
-                "changesFont": true
-            },			
-			{
-                "alias": "glory",
-                "image": "glory.png",
-                "name": "Gloria",
-                "animated": true,
-                "changesFont": true,
-				"unreleased": true
             }
         ]
     }
