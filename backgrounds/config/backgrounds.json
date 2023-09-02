@@ -5,7 +5,7 @@
         "licences": [],
         "themes": [
 		    {
-                "alias": "black",
+                "alias": "",
                 "image": "black.png",
                 "name": "Blank",
                 "animated": false,
