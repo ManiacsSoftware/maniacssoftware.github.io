@@ -19,13 +19,6 @@
                 "changesFont": false
             },
 			{
-                "alias": "waves-donut",
-                "image": "waves-donut.png",
-                "name": "Waves Donut",
-                "animated": true,
-                "changesFont": false
-            },
-			{
                 "alias": "waves-purple",
                 "image": "waves-purple.png",
                 "name": "Waves Purple",
@@ -36,6 +29,13 @@
                 "alias": "waves-pumpkin",
                 "image": "waves-pumpkin.png",
                 "name": "Waves Pumpkin",
+                "animated": true,
+                "changesFont": false
+            },
+			{
+                "alias": "waves-donut",
+                "image": "waves-donut.png",
+                "name": "Waves Donut",
                 "animated": true,
                 "changesFont": false
             }
