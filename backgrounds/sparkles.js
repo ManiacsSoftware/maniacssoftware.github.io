@@ -31,7 +31,7 @@
     var Y = canvas.height = window.innerHeight;
     var mouseX = null;
     var mouseY = null;
-    var shapeNum = 300;
+    var shapeNum = 500;
     var shapes = [];
     var minSize = 15;
     var maxSize = 45;
@@ -98,7 +98,7 @@
       ctx.globalCompositeOperation = 'lighter';
       ctx.globalAlpha = this.ga;
       //ctx.fillStyle = 'rgb(123, 252, 100)';
-	  ctx.fillStyle = 'rgba(255, 255, 255,0.6)';
+	  ctx.fillStyle = 'rgba(255, 255, 255,0.8)';
       //ctx.fillStyle = 'rgb(255,255,255)';
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
