@@ -61,7 +61,15 @@
 		"animated": true,
 		"changesFont": false,
 		"licences" : [ "theme_stripes" ]
-	},			
+	},		
+	{
+		"alias": "snow",
+		"image": "snow.png",
+		"name": "Snow",
+		"animated": true,
+		"changesFont": true,
+		"unreleased": true
+	},	
 	{
 		"alias": "glory",
 		"image": "glory.png",
