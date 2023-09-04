@@ -31,10 +31,10 @@
     var Y = canvas.height = window.innerHeight;
     var mouseX = null;
     var mouseY = null;
-    var shapeNum = 500;
+    var shapeNum = 300;
     var shapes = [];
-    var minSize = 15;
-    var maxSize = 45;
+    var minSize = 25;
+    var maxSize = 55;
     var fillStyleColor = 'rgba(255,255,255,1)'; //'white';
     var fadeOutSpeed = 100; // 25
     var style = {
