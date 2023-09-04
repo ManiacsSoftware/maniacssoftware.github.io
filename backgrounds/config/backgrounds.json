@@ -1,80 +1,67 @@
 [
 	{
-        "pack": "free",
-		"name": "Free pack",
-        "licences": [],
-        "themes": [
-		    {
-                "alias": "black",
-                "image": "black.png",
-                "name": "Blank",
-                "animated": false,
-                "changesFont": false
-            },
-			{
-                "alias": "sparkles",
-                "image": "sparkles.png",
-                "name": "Sparkles",
-                "animated": true,
-                "changesFont": false
-            },
-			{
-                "alias": "blueshapes",
-                "image": "blueshapes.png",
-                "name": "Blue shapes",
-                "animated": true,
-                "changesFont": false
-            },
-			{
-                "alias": "waves-purple",
-                "image": "waves-purple.png",
-                "name": "Waves Purple",
-                "animated": true,
-                "changesFont": false
-            },
-			{
-                "alias": "waves-donut",
-                "image": "waves-donut.png",
-                "name": "Waves Donut",
-                "animated": true,
-                "changesFont": false
-            },
-			{
-                "alias": "waves-pumpkin",
-                "image": "waves-pumpkin.png",
-                "name": "Waves Pumpkin",
-                "animated": true,
-                "changesFont": false
-            },
-			{
-                "alias": "gray-pattern",
-                "image": "gray-pattern.png",
-                "name": "Gray pattern",
-                "animated": true,
-                "changesFont": true
-            }	
-        ]
-    },
+		"alias": "black",
+		"image": "black.png",
+		"name": "Blank",
+		"animated": false,
+		"changesFont": false
+	},
 	{
-        "pack": "modern",
-		"name": "Modern",
-        "licences": ["theme_basics"],
-        "themes": [		
-			{
-                "alias": "stripes",
-                "image": "stripes.png",
-                "name": "Stripes",
-                "animated": true,
-                "changesFont": false
-            },			
-			{
-                "alias": "glory",
-                "image": "glory.png",
-                "name": "Gloria",
-                "animated": true,
-                "changesFont": true,
-				"unreleased": true
-            }
-        ]
-    }
+		"alias": "sparkles",
+		"image": "sparkles.png",
+		"name": "Sparkles",
+		"animated": true,
+		"changesFont": false,
+		"licences" : [ "theme_sparkles" ]
+	},
+	{
+		"alias": "blueshapes",
+		"image": "blueshapes.png",
+		"name": "Blue shapes",
+		"animated": true,
+		"changesFont": false
+	},
+	{
+		"alias": "waves-purple",
+		"image": "waves-purple.png",
+		"name": "Waves Purple",
+		"animated": true,
+		"changesFont": false
+	},
+	{
+		"alias": "waves-donut",
+		"image": "waves-donut.png",
+		"name": "Waves Donut",
+		"animated": true,
+		"changesFont": false
+	},
+	{
+		"alias": "waves-pumpkin",
+		"image": "waves-pumpkin.png",
+		"name": "Waves Pumpkin",
+		"animated": true,
+		"changesFont": false
+	},
+	{
+		"alias": "gray-pattern",
+		"image": "gray-pattern.png",
+		"name": "Gray pattern",
+		"animated": true,
+		"changesFont": true
+	},
+	{
+		"alias": "stripes",
+		"image": "stripes.png",
+		"name": "Stripes",
+		"animated": true,
+		"changesFont": false
+	},			
+	{
+		"alias": "glory",
+		"image": "glory.png",
+		"name": "Gloria",
+		"animated": true,
+		"changesFont": true,
+		"unreleased": true
+	}
 ]
