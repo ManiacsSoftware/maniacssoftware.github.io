@@ -8,9 +8,10 @@
     outline-style: solid;
 }
 */
-
-#@import url(https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display:ital,wght@0,900;1,400);
-#@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+/*
+@import url(https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display:ital,wght@0,900;1,400);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+*/
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
 
 
@@ -32,7 +33,7 @@
 }
 
 .frame .inframe {
-	font-size: 90%;
+	font-size: 70%;
 	padding: 1.8em;
 	border: 0.03em solid white;
 }

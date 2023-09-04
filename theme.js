@@ -15,4 +15,5 @@ function loadBackground(backgroundName) {
 
 function clearBackground() {
 	enable("blackground");
+	loadBackground("black");
 }
