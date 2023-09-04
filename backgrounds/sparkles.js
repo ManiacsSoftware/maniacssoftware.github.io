@@ -33,9 +33,9 @@
     var mouseY = null;
     var shapeNum = 300;
     var shapes = [];
-    var minSize = 10;
-    var maxSize = 25;
-    var fillStyleColor = 'white';
+    var minSize = 15;
+    var maxSize = 45;
+    var fillStyleColor = 'rgba(255,255,255,1)'; //'white';
     var fadeOutSpeed = 100; // 25
     var style = {
       black: 'black',
@@ -89,7 +89,7 @@
 
     Shape.prototype.updatePosition = function() {
       this.x += rand(0, 2) - 1;//Math.random();
-      this.y += rand(0, 5)/5.0;
+      this.y += -rand(0, 5)/2.0 + 0.8;
     };
     
     Shape.prototype.draw = function() {
@@ -98,7 +98,8 @@
       ctx.globalCompositeOperation = 'lighter';
       ctx.globalAlpha = this.ga;
       //ctx.fillStyle = 'rgb(123, 252, 100)';
-      ctx.fillStyle = fillStyleColor;
+	  ctx.fillStyle = 'rgba(255, 255, 255,0.6)';
+      //ctx.fillStyle = 'rgb(255,255,255)';
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
       ctx.fill();

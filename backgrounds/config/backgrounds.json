@@ -5,7 +5,7 @@
         "licences": [],
         "themes": [
 		    {
-                "alias": "black",
+                "alias": "",
                 "image": "black.png",
                 "name": "Blank",
                 "animated": false,
@@ -19,9 +19,23 @@
                 "changesFont": false
             },
 			{
+                "alias": "blueshapes",
+                "image": "blueshapes.png",
+                "name": "Blue shapes",
+                "animated": true,
+                "changesFont": false
+            },
+			{
                 "alias": "waves-purple",
                 "image": "waves-purple.png",
                 "name": "Waves Purple",
+                "animated": true,
+                "changesFont": false
+            },
+			{
+                "alias": "waves-donut",
+                "image": "waves-donut.png",
+                "name": "Waves Donut",
                 "animated": true,
                 "changesFont": false
             },
@@ -33,12 +47,12 @@
                 "changesFont": false
             },
 			{
-                "alias": "waves-donut",
-                "image": "waves-donut.png",
-                "name": "Waves Donut",
+                "alias": "gray-pattern",
+                "image": "gray-pattern.png",
+                "name": "Gray pattern",
                 "animated": true,
-                "changesFont": false
-            }
+                "changesFont": true
+            }	
         ]
     },
 	{
@@ -52,20 +66,6 @@
                 "name": "Stripes",
                 "animated": true,
                 "changesFont": false
-            },
-			{
-                "alias": "blueshapes",
-                "image": "blueshapes.png",
-                "name": "Blue shapes",
-                "animated": true,
-                "changesFont": false
-            },
-			{
-                "alias": "gray-pattern",
-                "image": "gray-pattern.png",
-                "name": "Gray pattern",
-                "animated": true,
-                "changesFont": true
             },			
 			{
                 "alias": "glory",
