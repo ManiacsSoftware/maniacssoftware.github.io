@@ -19,16 +19,16 @@
                 "changesFont": false
             },
 			{
-                "alias": "waves",
-                "image": "waves.png",
-                "name": "Waves",
+                "alias": "waves-donut",
+                "image": "waves-donut.png",
+                "name": "Waves Donut",
                 "animated": true,
                 "changesFont": false
             },
 			{
-                "alias": "waves-redish",
-                "image": "waves-redish.png",
-                "name": "Waves Redish",
+                "alias": "waves-purple",
+                "image": "waves-purple.png",
+                "name": "Waves Purple",
                 "animated": true,
                 "changesFont": false
             },
