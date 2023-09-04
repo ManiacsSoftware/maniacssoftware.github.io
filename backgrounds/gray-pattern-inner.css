@@ -4,13 +4,14 @@ body {
 	#font-family:"arial",heletica,sans-serif;
 	#font-size:12px;
     background: #ff80b9 url('gray-pattern-bg.png') repeat 0 0;
-	background-color: rgba(62,81,112,0.1);
+	background-color: rgba(77, 132, 221, 0.15);
     background-blend-mode: multiply;
 	-webkit-animation: 50s linear 0s normal none infinite animate;
 	-moz-animation: 100s linear 0s normal none infinite animate;
 	-ms-animation: 100s linear 0s normal none infinite animate;
 	-o-animation: 100s linear 0s normal none infinite animate;
 	animation: 100s linear 0s normal none infinite animate;
+	background-size: 5em;
  
 }
 
