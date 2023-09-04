@@ -12,9 +12,9 @@
                 "changesFont": false
             },
 			{
-                "alias": "stripes",
-                "image": "stripes.png",
-                "name": "Stripes",
+                "alias": "sparkles",
+                "image": "sparkles.png",
+                "name": "Sparkles",
                 "animated": true,
                 "changesFont": false
             },
@@ -45,7 +45,14 @@
         "pack": "modern",
 		"name": "Modern",
         "licences": ["theme_basics"],
-        "themes": [
+        "themes": [		
+			{
+                "alias": "stripes",
+                "image": "stripes.png",
+                "name": "Stripes",
+                "animated": true,
+                "changesFont": false
+            },
 			{
                 "alias": "blueshapes",
                 "image": "blueshapes.png",
@@ -58,8 +65,7 @@
                 "image": "gray-pattern.png",
                 "name": "Gray pattern",
                 "animated": true,
-                "changesFont": true,
-				"unreleased": true
+                "changesFont": true
             },			
 			{
                 "alias": "glory",

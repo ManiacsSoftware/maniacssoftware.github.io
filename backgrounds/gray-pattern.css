@@ -9,26 +9,32 @@
 }
 */
 
-@import url(https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display:ital,wght@0,900;1,400);
+#@import url(https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display:ital,wght@0,900;1,400);
+#@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+
+
 
 #source, #verse, #announcement {
-	font-family: 'Sedgwick Ave Display' !important;
+	font-family: 'Roboto' !important;
+	font-style: normal;
+    font-weight: 300;
+	#font-family: 'Sedgwick Ave Display' !important;
 }
 
-.frame {
-  
+.frame {  
   #max-width: 90%; 
   background: rgb(69,89,122);
-  background: linear-gradient(230deg, rgba(69,89,122,0.94) 0%, rgba(62,81,112,0.921988863904937) 21%, rgba(11,24,42,0.92) 100%);
+  background: linear-gradient(200deg, rgba(69,89,122,0.94) 0%, rgba(62,81,112,0.921988863904937) 21%, rgba(11,24,42,0.92) 100%);
   word-wrap: break-word;
   #position: relative;
   padding: 0.8em;
 }
 
 .frame .inframe {
-	font-size: 75%;
+	font-size: 90%;
 	padding: 1.8em;
-	border: 0.08em solid white;
+	border: 0.03em solid white;
 }
 
 #source {
