@@ -1,0 +1,33 @@
+#verse > div, #announcements > div, #source {
+	background-color: #FFFFFFD6;
+	#padding: 2px;
+	#margin: 2px;
+	line-height: 1.2em;
+	text-shadow: none;
+	color: #000000c9;
+	#padding-right: 3em;
+	box-decoration-break: clone;
+	vertical-align: center;
+	#box-shadow: 10px 0 0 orange, -10px 0 0 orange;
+	display: inline;
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+	#padding-left: 3em;
+	background-blend-mode: color-burn;
+	padding: 0.04em 2.5em;
+	flex-grow: 1;
+	display: inline;
+	text-align-last: center;	
+}
+
+
+#verses, #announcements {
+  text-shadow: 0px 2px 3px #00000061;
+  color: #282626;
+  font-size: 2.8em;
+}
+
+#verse .label {
+  color: #717171;
+  top: -0.32em;
+}

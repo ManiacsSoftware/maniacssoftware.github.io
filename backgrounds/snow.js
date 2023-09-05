@@ -12,11 +12,11 @@ let colorType = {
 };
 
 let colors = {
-  color1: "rgba(255,255,255,1)",
-  color2: "rgba(233,239,250,1)",
-  color3: "rgba(222,241,250,1)",
-  color4: "rgba(178,209,219,1)",
-  color5: "rgba(135,143,145,1)"
+  color1: "rgba(255, 255, 255, 1)",
+  color2: "rgba(233, 239, 250, 1)",
+  color3: "rgba(234, 245, 250, 1)",
+  color4: "rgba(222, 234, 234, 1)",
+  color5: "rgba(202, 214, 217, 1)"
 };
 
 let options = {
@@ -26,37 +26,37 @@ let options = {
   twinkle: false,
   bounce: false,
   alphaSpeed: 12,//2,
-  alphaVariance: 1,
+  alphaVariance: 0,
   color: [colors.color1, colors.color2, colors.color3, colors.color4],
   composition: "source-over",
-  count: 80,
-  direction: 180,
+  count: 50,
+  direction: 188,
   drift: 10,
-  glow: 50,
+  glow: 0,
   imageUrl: [
-    "https://assets.codepen.io/13471/snowflake.png",
-    "https://assets.codepen.io/13471/snowflake(1).png",
-    "https://assets.codepen.io/13471/snowflake(2).png",
-    "https://assets.codepen.io/13471/snowflake(3).png",
-    "https://assets.codepen.io/13471/snowflake(4).png",
-    "https://assets.codepen.io/13471/snowflake(5).png",
-    "https://assets.codepen.io/13471/snowflake(6).png",
-    "https://assets.codepen.io/13471/snowflake(7).png",
-    "https://assets.codepen.io/13471/snowflake(8).png"
+    "snow/snowflake.webp",
+    "snow/snowflake(1).webp",
+    "snow/snowflake(2).webp",
+    "snow/snowflake(3).webp",
+    "snow/snowflake(4).webp",
+    "snow/snowflake(5).webp",
+    "snow/snowflake(6).webp",
+    "snow/snowflake(7).webp",
+    "snow/snowflake(8).webp"
   ],
-  maxAlpha: 2,
+  maxAlpha: 20,
   maxSize: 30,
-  minAlpha: 1.4,
-  minSize: 6,
-  parallax: 6,
+  minAlpha: -1,
+  minSize: 25,
+  parallax: 2,
   rotate: false,
   rotation: 0.5,
   shape: ["image"],
-  speed: 10,
+  speed: 0.2,
   style: "fill",
   twinkle: false,
-  xVariance: 3.2,
-  yVariance: 3.2,
+  xVariance: 50,
+  yVariance: 25,
 };
 
 window.onload = function() {

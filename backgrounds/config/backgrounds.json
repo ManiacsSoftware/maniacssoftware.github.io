@@ -13,7 +13,15 @@
 		"animated": true,
 		"changesFont": false,
 		"licences" : [ "theme_sparkles" ]
-	},
+	},			
+	{
+		"alias": "snow",
+		"image": "snow.png",
+		"name": "Snow",
+		"animated": true,
+		"changesFont": true
+		"licences" : [ "theme_snow" ]
+	},	
 	{
 		"alias": "blueshapes",
 		"image": "blueshapes.png",
@@ -61,15 +69,7 @@
 		"animated": true,
 		"changesFont": false,
 		"licences" : [ "theme_stripes" ]
-	},		
-	{
-		"alias": "snow",
-		"image": "snow.png",
-		"name": "Snow",
-		"animated": true,
-		"changesFont": true,
-		"unreleased": true
-	},	
+	},
 	{
 		"alias": "glory",
 		"image": "glory.png",
