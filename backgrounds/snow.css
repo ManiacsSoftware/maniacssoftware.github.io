@@ -2,7 +2,7 @@
   padding: 0 2em;
 }
 
-#verse > div, #announcements > div, #source {
+#verse > div, #announcements > div {
 	background-color: rgba(255, 255, 255, 0.84);
     line-height: 1.2em;
     text-shadow: none;

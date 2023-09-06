@@ -19,8 +19,8 @@ main {
   display: grid;
   padding-top: 30px;
   z-index: 1;
-  background-image: linear-gradient(rgba(186, 203, 211, 0.2), rgba(186, 203, 211, 0.05) 30%, rgba(186, 203, 211, 0.05) 80%, rgba(180, 203, 214, 0.3)) , url("snow/koushik-chowdavarapu-qitMAOQVEC4-unsplash_small.jpg");
-  #background-image: linear-gradient(rgba(186, 203, 211, 0.4), rgba(180, 203, 214, 0.6)), url("snow/koushik-chowdavarapu-qitMAOQVEC4-unsplash_small.jpg");
+  background-image: linear-gradient(rgba(186, 203, 211, 0.2), rgba(186, 203, 211, 0.05) 30%, rgba(186, 203, 211, 0.05) 80%, rgba(180, 203, 214, 0.3)) , url("snow/koushik-chowdavarapu-qitMAOQVEC4-unsplash_mod.jpg");
+  /*background-image: linear-gradient(rgba(186, 203, 211, 0.4), rgba(180, 203, 214, 0.6)), url("snow/koushik-chowdavarapu-qitMAOQVEC4-unsplash_small.jpg");*/
   background-size: cover;
   background-position: bottom center;
 }
