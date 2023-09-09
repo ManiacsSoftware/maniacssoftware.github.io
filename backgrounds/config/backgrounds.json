@@ -28,30 +28,27 @@
 		"animated": true,
 		"changesFont": false,
 		"licences": ["theme_blueshapes"]
-	},
+	},		
 	{
 		"alias": "waves-purple",
 		"image": "waves-purple.png",
 		"name": "Waves Purple",
 		"animated": true,
-		"changesFont": false,
-		"licences": ["theme_waves-purple"]
+		"changesFont": false
 	},
 	{
 		"alias": "waves-donut",
 		"image": "waves-donut.png",
 		"name": "Waves Donut",
 		"animated": true,
-		"changesFont": false,
-		"licences": ["theme_waves-donut"]
+		"changesFont": false
 	},
 	{
 		"alias": "waves-pumpkin",
 		"image": "waves-pumpkin.png",
 		"name": "Waves Pumpkin",
 		"animated": true,
-		"changesFont": false,
-		"licences": ["theme_waves-pumpkin"]
+		"changesFont": false
 	},
 	{
 		"alias": "gray-pattern",
@@ -59,7 +56,7 @@
 		"name": "Gray pattern",
 		"animated": true,
 		"changesFont": true,
-		"licences": ["theme_gray-pattern"]
+		"licences": ["theme_gray_pattern"]
 	},
 	{
 		"alias": "stripes",
@@ -67,7 +64,8 @@
 		"name": "Stripes",
 		"animated": true,
 		"changesFont": false,
-		"licences": ["theme_stripes"]
+		"licences": ["theme_stripes"],
+		"unreleased": true
 	},
 	{
 		"alias": "glory",
