@@ -110,10 +110,20 @@ function displayVerseElement() {
 }
 */
 
-function setSize(size) {
-	removeClassByQuerySelector('.sizable', 'huge');
-    removeClassByQuerySelector('.sizable', 'large');
-    removeClassByQuerySelector('.sizable', 'medium');
-    removeClassByQuerySelector('.sizable', 'small');
-    addClassByQuerySelector('.sizable', size);
+function setVerseSize(size) {
+	removeClassByQuerySelector('#verses .sizable', 'huge');
+    removeClassByQuerySelector('#verses .sizable', 'large');
+    removeClassByQuerySelector('#verses .sizable', 'medium');
+    removeClassByQuerySelector('#verses .sizable', 'small');
+    addClassByQuerySelector('#verses .sizable', size);
+	debug('setVerseSize:' + size);
+}
+
+function setAnnouncementSize(size) {
+	removeClassByQuerySelector('#announcements .sizable', 'huge');
+    removeClassByQuerySelector('#announcements .sizable', 'large');
+    removeClassByQuerySelector('#announcements .sizable', 'medium');
+    removeClassByQuerySelector('#announcements .sizable', 'small');
+    addClassByQuerySelector('#announcements .sizable', size);
+	debug('setAnnouncementSize:' + size);
 }

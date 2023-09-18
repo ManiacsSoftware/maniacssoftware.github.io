@@ -142,6 +142,11 @@
 						}
 						debug("a4");
 						
+						
+						if(customData.size) {
+							setVerseSize(customData.size);
+						}	
+						
 					} else if(customData.target == "announcements") {
 						fadeToAnnouncement();
 						debug("b1");
@@ -154,7 +159,12 @@
 						} else {
 							document.getElementById('announcement').textContent = customData.message;
 						}
-						debug("b3");						
+						debug("b3");	
+
+
+						if(customData.size) {
+							setAnnouncementSize(customData.size);
+						}							
 					}
 					
 					setDemo(customData.demo && customData.demo === "true");
@@ -169,11 +179,7 @@
 					
 
 					debug("Target: " + customData.target);
-					
-					if(customData.size) {
-						setSize(customData.size);
-					}			
-					
+								
 					debug("...DONE");
 					//document.getElementById('welcome').classList.add('hidden');
 					//document.querySelector('verses').classList.remove('hidden');
