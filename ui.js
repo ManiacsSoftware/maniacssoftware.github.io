@@ -2,7 +2,15 @@ function fadeToBlack() {
     enable("black");
 	disable("backgroundInsert");
 	disable("verses");
-	disablSplash();
+	disableSplash();
+	disable("announcements");
+}
+
+function fadeToBackground() {    
+	enable("backgroundInsert");
+	disable("black");
+	disable("verses");
+	disableSplash();
 	disable("announcements");
 }
 
@@ -23,7 +31,7 @@ function fadeToVerse() {
 	enable("verses");
 	enable("backgroundInsert");
     disable("black");
-    disablSplash();
+    disableSplash();
 	disable("announcements");    
 }
 
@@ -31,12 +39,12 @@ function fadeToAnnouncement() {
 	enable("announcements");    
 	enable("backgroundInsert");
     disable("black");
-    disablSplash();
+    disableSplash();
 	disable("verses");	
 }
 
 var splashRemoved = false;
-function disablSplash() {
+function disableSplash() {
 	if(!splashRemoved) {
 		disable("splash");
 		
