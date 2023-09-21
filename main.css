@@ -156,7 +156,7 @@ body {
 #verse {
 	text-align: justify;
 	text-justify: inter-character;
-	line-height: 1.4em;
+	/*line-height: 1.4em;*/
 }
 
 #verse div {
