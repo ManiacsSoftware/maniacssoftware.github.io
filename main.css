@@ -159,6 +159,10 @@ body {
 	/*line-height: 1.4em;*/
 }
 
+#verse > div {
+  line-height: 1.4;
+}
+
 #verse div {
 	display: inline;
 }
