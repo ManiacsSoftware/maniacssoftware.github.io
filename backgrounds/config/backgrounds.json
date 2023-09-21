@@ -22,6 +22,15 @@
 		"licences": ["theme_snow"]
 	},
 	{
+		"alias": "animated-gradients",
+		"image": "animated-gradients.png",
+		"name": "Animated Gradients",
+		"animated": true,
+		"changesFont": true,
+		"licences": ["theme_animated_gradients"],		
+		"unreleased": true
+	},
+	{
 		"alias": "blueshapes",
 		"image": "blueshapes.png",
 		"name": "Blue shapes",
@@ -54,9 +63,9 @@
 		"alias": "gray-pattern",
 		"image": "gray-pattern.png",
 		"name": "Gray pattern",
-		"animated": true,
-		"changesFont": true,
-		"licences": ["theme_gray_pattern"]
+		"animated": true,		
+		"licences": ["theme_gray_pattern"],
+		"changesFont": true
 	},
 	{
 		"alias": "stripes",
