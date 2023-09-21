@@ -22,6 +22,15 @@
 		"licences": ["theme_snow"]
 	},
 	{
+		"alias": "animated-blobs",
+		"image": "animated-blobs.png",
+		"name": "Animated Blobs",
+		"animated": true,
+		"changesFont": true,
+		"licences": ["theme_animated_blobs"],		
+		"unreleased": true
+	},
+	{
 		"alias": "animated-gradients",
 		"image": "animated-gradients.png",
 		"name": "Animated Gradients",
