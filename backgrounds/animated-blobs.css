@@ -18,7 +18,7 @@
   --color-2: #7011FB44;
   --color-3: #ff008066;
   --color-4: #5011DFBB;
-  --blur: blur(260px);
+  --blur: blur(260px);  
 }
 
 body {
@@ -39,6 +39,7 @@ gradient-container {
   flex-wrap: wrap;
   overflow: hidden;
   position: relative;
+  filter: blur(260px); 
 }
 
 gradient-color {
@@ -131,7 +132,8 @@ gradient-backdrop {
   left: 0;
   top: 0;
   background: transparent;
-  backdrop-filter: var(--blur);
+  /*var(--blur); */
+  /* backdrop-filter: var(--blur);*/
 }
 
 #verses #verse {
