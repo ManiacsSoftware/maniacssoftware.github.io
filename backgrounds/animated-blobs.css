@@ -152,7 +152,7 @@ gradient-backdrop {
     color: #fff;
     
     background: black;
-    box-shadow: 2.5em 0px 0px 1px black, -2.5em 0 0 1px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset;
+    box-shadow: 2.5em 0px 0px 0px black, -2.5em 0 0 0px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset;
 	padding-right: 1px;
 	
 	
