@@ -62,10 +62,11 @@ gradient-color {
     transform: scale(2) rotate(-110deg) translate(10%, -40%);
   }
 }
+
 @keyframes animate2 {
   0% {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 60%;
-    transform: scale(2) rotate(0deg) translate(10%, 10%);
+    transform: scale(2) rotate(0deg) translate(10%, -65%);
   }
   100% {
     border-radius: 88% 10% 22% 58% / 73% 56% 34% 77%;
@@ -87,11 +88,23 @@ gradient-color {
 @keyframes animate4 {
   0% {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 60%;
-    transform: scale(0.8) rotate(42deg) translate(10%, 10%);
+    transform: scale(0.8) rotate(42deg) translate(10%, -50%);
   }
   100% {
     border-radius: 88% 10% 22% 58% / 73% 56% 34% 77%;
     transform: scale(1.8) rotate(140deg) translate(10%, -30%);
+  }
+}
+
+
+@keyframes animate5 {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 60%;
+    transform: scale(0.8) rotate(42deg) translate(-100%, -112%);
+  }
+  100% {
+    border-radius: 88% 10% 22% 58% / 73% 56% 34% 77%;
+    transform: scale(1.8) rotate(140deg) translate(-67%, -103%);
   }
 }
 
@@ -122,6 +135,14 @@ gradient-color:nth-child(4) {
   background-color: var(--color-4);
   animation-name: animate4;
   animation-duration: 25s;
+  animation-delay: -45s;
+}
+
+
+gradient-color:nth-child(5) {
+  background-color: var(--color-3);
+  animation-name: animate5;
+  animation-duration: 21s;
   animation-delay: -45s;
 }
 
