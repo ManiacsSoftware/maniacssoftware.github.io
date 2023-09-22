@@ -33,23 +33,33 @@ body {
 		background-position: 0% 50%;
 	}
 }
-/*  Decorative background stripes for text */
 
-#verse, #announcement, #source {
-	font-size: 0.85em;
+/*  Decorative background stripes for text */
+#verse {
+	padding: 0 2.5em;
+	line-height: 1.6em;
 }
 
 #verse > div {
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-  background-color: rgba(0, 0, 0, 0.70);
-  line-height: 1.7;
-  padding: 0.1em 2.5em;
+    line-height: 1.5em;
+    display: inline;
+    color: #fff;
+    
+    background: black;
+    box-shadow: 2.5em 0px 0px 0px black, -2.5em 0 0 0px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset;
+	padding-right: 1px;
+	
+    -webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
 }
 
+#verses {
+	font-size: 2.6em;
+}
 
 #verse .label {
-  top: -0.32em;
+  top: -0.28em;
+  font-weight: bold;
 }
 
 .frame {
@@ -57,6 +67,7 @@ body {
 }
 
 /* Decorative box for announcements */
+
 #announcement {
 	padding: 1em 2.5em;
 	text-shadow: none;
