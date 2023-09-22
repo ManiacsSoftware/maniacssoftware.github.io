@@ -134,6 +134,73 @@ gradient-backdrop {
 
 /*  Decorative background stripes for text */
 
+#verse {
+	padding: 0 2.5em;
+	transform: rotate(-0.0000000001deg);
+    -webkit-transform: rotate(-0.0000000001deg);
+}
+
+#verse > div {
+	/*
+  	background-color: rgba(255, 255, 255, 0.84);
+    
+    text-shadow: none;
+    color: black;
+    box-decoration-break: clone;
+    vertical-align: center;
+    display: inline;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    background-blend-mode: color-burn;
+    display: inline;
+    text-align-last: center;
+	-webkit-box-shadow: -2.5em 0 0 0 rgba(255, 255, 255, 0.84), 2.5em 0 0 0 rgba(255, 255, 255, 0.84)
+    -moz-box-shadow: -2.5em 0 0 0 rgba(255, 255, 255, 0.84), 2.5em 0 0 0 rgba(255, 255, 255, 0.84);
+    box-shadow: -2.5em 0 0 0 rgba(255, 255, 255, 0.84), 2.5em 0 0 0 rgba(255, 255, 255, 0.84);
+	*/
+	/*
+	background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 20px,
+    #000000cc 20px,
+    #000000cc 59px
+    );
+	*/
+	
+	/* background: repeating-linear-gradient(0deg, transparent, transparent 20px, #000000cc 20px, #000000cc 4.2em); */
+	/*
+	font-size: 1.8em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	line-height: 1.9em;
+    display: inline;
+    color: #fff;
+    background: blue;
+    box-shadow: 9px 0 0 7px blue, -9px 0 0 7px blue;
+	 -webkit-box-decoration-break: clone;
+	
+	*/
+	
+	/*
+	line-height: 1.9em;
+    display: inline;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.84);
+    box-shadow: 2.5em 0 0 7px rgba(255, 255, 255, 0.84), -2.5em 0 0 7px rgba(255, 255, 255, 0.84);
+    -webkit-box-decoration-break: clone;
+*/
+
+    line-height: 1.9em;
+    display: inline;
+    color: #fff;
+    background: black;
+    box-shadow: 2.5em 0 0 0px black, -2.5em 0 0 0px black;
+    -webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+/*
+
 #verse, #announcement, #source {
 	font-size: 0.85em;
 }
@@ -147,6 +214,8 @@ gradient-backdrop {
 }
 
 
+
+
 #verse .label {
   top: -0.32em;
 }
@@ -154,6 +223,7 @@ gradient-backdrop {
 .frame {
   max-width: 90%;
 }
+*/
 
 /* Decorative box for announcements */
 
