@@ -142,12 +142,13 @@ gradient-backdrop {
 }
 
 #verse > div {
-    /* line-height: 1.5em; */
+    line-height: 1.5em;
     display: inline;
     color: #fff;
     
     background: black;
     box-shadow: 2.5em 0px 0px 1px black, -2.5em 0 0 1px black, -5px 0 0 1px black inset, 5px 0 0 1px black inset;
+	padding-right: 1px;
 	
 	
 	/* background: rgba(0, 0, 0, 0.70);
