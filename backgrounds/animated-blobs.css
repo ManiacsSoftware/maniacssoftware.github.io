@@ -49,6 +49,7 @@ gradient-color {
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  animation-delay: -30s;
 }
 
 @keyframes animate1 {
@@ -98,27 +99,30 @@ gradient-color:nth-child(1) {
   background-color: var(--color-1);
   animation-direction: backwards;
   animation-name: animate2;
-  animation-duration: 43s;
-  animation-offset: 30s;
+  animation-duration: 33s;
+  animation-delay: -15s;
 }
 
 gradient-color:nth-child(2) {
   background-color: var(--color-2);
   animation-name: animate2;
-  animation-duration: 35s;
+  animation-duration: 22s;
+  animation-delay: -7s;
 }
 
 gradient-color:nth-child(3) {
   background-color: var(--color-3);
   animation-direction: backwards;
   animation-name: animate1;
-  animation-duration: 26s;
+  animation-duration: 20s;
+  animation-delay: -18s;
 }
 
 gradient-color:nth-child(4) {
   background-color: var(--color-4);
   animation-name: animate4;
-  animation-duration: 30s;
+  animation-duration: 25s;
+  animation-delay: -45s;
 }
 
 gradient-backdrop {
@@ -133,17 +137,9 @@ gradient-backdrop {
 /* end background */
 
 /*  Decorative background stripes for text */
-#verses {
-	/* transform: scale(0.8); */
-}
-
 #verse {
 	padding: 0 2.5em;
-	/* transform: rotate(-0.0000000001deg);
-    -webkit-transform: rotate(-0.0000000001deg); */
 	line-height: 1.6em;
-	/* box-shadow: 2.5em 0px 0px 1px black, -2.5em 0 0 1px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset; */
-
 }
 
 #verse > div {
@@ -155,27 +151,13 @@ gradient-backdrop {
     box-shadow: 2.5em 0px 0px 0px black, -2.5em 0 0 0px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset;
 	padding-right: 1px;
 	
-	
-	/* background: rgba(0, 0, 0, 0.70);
-	    background: black;
-    box-shadow: 2.5em 0px 0px 1px rgba(0, 0, 0, 0.70), -2.5em 0 0 1px rgba(0, 0, 0, 0.70), -1px 0 0 1px rgba(0, 0, 0, 0.70) inset, 1px 0 0 1px rgba(0, 0, 0, 0.70) inset; */
-	/* box-shadow: 2.5em 0 0 0px rgba(0, 0, 0, 0.70), -2.5em 0 0 0px rgba(0, 0, 0, 0.70), -0.3px 0 0 0 rgba(0, 0, 0, 0.70) inset, 0.3px 0 0 0 rgba(0, 0, 0, 0.70) inset; */
-	
     -webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
 }
 
-#verse, #announcement, #source {
-	font-size: 0.75em;
+#verses {
+	font-size: 2.6em;
 }
-/*
-#verse > div {
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-  background-color: rgba(0, 0, 0, 0.70);
-  line-height: 1.7;
-}
-*/
 
 #verse .label {
   top: -0.28em;
