@@ -134,14 +134,15 @@ gradient-backdrop {
 
 /*  Decorative background stripes for text */
 #verses {
-	transform: scale(0.8);
+	/* transform: scale(0.8); */
 }
 
 #verse {
 	padding: 0 2.5em;
-	transform: rotate(-0.0000000001deg);
-    -webkit-transform: rotate(-0.0000000001deg);
+	/* transform: rotate(-0.0000000001deg);
+    -webkit-transform: rotate(-0.0000000001deg); */
 	line-height: 1.6em;
+	/* box-shadow: 2.5em 0px 0px 1px black, -2.5em 0 0 1px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset; */
 
 }
 
