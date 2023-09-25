@@ -30,6 +30,14 @@
 		"licences": ["theme_animated_blobs"]
 	},
 	{
+		"alias": "gray-pattern",
+		"image": "gray-pattern.png",
+		"name": "Gray pattern",
+		"animated": true,		
+		"licences": ["theme_gray_pattern"],
+		"changesFont": true
+	},
+	{
 		"alias": "animated-gradients",
 		"image": "animated-gradients.png",
 		"name": "Animated Gradients",
@@ -65,14 +73,6 @@
 		"name": "Waves Pumpkin",
 		"animated": true,
 		"changesFont": false
-	},
-	{
-		"alias": "gray-pattern",
-		"image": "gray-pattern.png",
-		"name": "Gray pattern",
-		"animated": true,		
-		"licences": ["theme_gray_pattern"],
-		"changesFont": true
 	},
 	{
 		"alias": "stripes",
