@@ -27,8 +27,7 @@
 		"name": "Animated Blobs",
 		"animated": true,
 		"changesFont": true,
-		"licences": ["theme_animated_blobs"],		
-		"unreleased": true
+		"licences": ["theme_animated_blobs"]
 	},
 	{
 		"alias": "animated-gradients",
@@ -36,8 +35,7 @@
 		"name": "Animated Gradients",
 		"animated": true,
 		"changesFont": true,
-		"licences": ["theme_animated_gradients"],		
-		"unreleased": true
+		"licences": ["theme_animated_gradients"]
 	},
 	{
 		"alias": "blueshapes",
