@@ -1,5 +1,6 @@
 function fadeToBlack() {
     enable("black");
+	disable("songs");
 	disable("backgroundInsert");
 	disable("verses");
 	disableSplash();
@@ -8,6 +9,7 @@ function fadeToBlack() {
 
 function fadeToBackground() {    
 	enable("backgroundInsert");
+	disable("songs");
 	disable("black");
 	disable("verses");
 	disableSplash();
@@ -22,6 +24,7 @@ function fadeToSplash() {
 	
 	enable("splash");	
 	disable("backgroundInsert");
+	disable("songs");
     disable("black");    
     disable("verses");
 	disable("announcements");	
@@ -30,6 +33,16 @@ function fadeToSplash() {
 function fadeToVerse() {
 	enable("verses");
 	enable("backgroundInsert");
+	disable("songs");
+    disable("black");
+    disableSplash();
+	disable("announcements");    
+}
+
+function fadeToSong() {
+	enable("songs");
+	enable("backgroundInsert");
+	disable("verses");
     disable("black");
     disableSplash();
 	disable("announcements");    
@@ -38,6 +51,7 @@ function fadeToVerse() {
 function fadeToAnnouncement() {
 	enable("announcements");    
 	enable("backgroundInsert");
+	disable("songs");
     disable("black");
     disableSplash();
 	disable("verses");	
@@ -79,6 +93,10 @@ function debug(str) {
 
 function setVerseStyle(str) {
 	document.getElementById('verseStyle').innerHTML = str;
+}
+
+function setSongStyle(str) {
+	document.getElementById('songStyle').innerHTML = str;
 }
 
 function setAnnouncementStyle(str) {
@@ -125,6 +143,15 @@ function setVerseSize(size) {
     removeClassByQuerySelector('#verses .sizable', 'small');
     addClassByQuerySelector('#verses .sizable', size);
 	debug('setVerseSize:' + size);
+}
+
+function setSongSize(size) {
+	removeClassByQuerySelector('#songs .sizable', 'huge');
+    removeClassByQuerySelector('#songs .sizable', 'large');
+    removeClassByQuerySelector('#songs .sizable', 'medium');
+    removeClassByQuerySelector('#songs .sizable', 'small');
+    addClassByQuerySelector('#songs .sizable', size);
+	debug('setSongSize:' + size);
 }
 
 function setAnnouncementSize(size) {

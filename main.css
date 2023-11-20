@@ -93,7 +93,7 @@ body {
 	visibility: hidden;
 }
 
-#verses, #splash, #announcements, #black, #blackground{
+#verses, #splash, #announcements, #black, #blackground, #songs {
 	transition: opacity 1s ease-in-out;
 	-moz-transition: opacity 1s ease-in-out;
 	-webkit-transition: opacity 1s ease-in-out;
@@ -101,7 +101,7 @@ body {
 	opacity: 1;
 }
 
-#verses, #splash, #announcements {
+#verses, #splash, #announcements, #songs {
 	background-color: transparent;
 }
 /*
@@ -129,7 +129,7 @@ body {
   margin-top: -1em;
 }
 
-#verses, #announcements {
+#verses, #announcements, #songs {
 	text-shadow: 0px 2px 8px black;
 }
 
@@ -149,20 +149,24 @@ body {
    margin-left: 1em;
 }
 
-#verses {
-	font-size: 3em
+#verses, #songs {
+	font-size: 3em;
 }
 
-#verse {
-	text-align: justify;
+#verse, #song {
 	text-justify: inter-character;
 	/*line-height: 1.4em;*/
 }
 
 #verse {
+	text-align: justify;
+}
+
+#verse, #song {
   line-height: 1.4;
 }
 
+/* Remove new lines from biblical text */
 #verse div {
 	display: inline;
 }
@@ -186,7 +190,7 @@ body {
 
 }
 	
-#verse .note {
+#verse .note  {
 		display: none;
 }
 	
@@ -247,7 +251,7 @@ body {
 	font-size: 70%;
 }
 
-#footer {
+#footer, #song-footer {
 	font-size: 0.7em;	
 	padding: 1em;
 	position: absolute;
@@ -259,7 +263,7 @@ body {
 	align-items: baseline;
 }
 
-#source {
+#source, #song-source {
 	text-align: right;
 }
 

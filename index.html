@@ -12,6 +12,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"-->
 		<style id="verseStyle">
 		</style>
+		<style id="songStyle">
 		<style id="announcementStyle">
 		</style>
 		<link id="templateStyle" rel="stylesheet" href="backgrounds/blank.css"/>
@@ -46,10 +47,25 @@
 				<div id="verse" class="inframe centertext fit sizable">
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div id="footer">
 				<span class="demoText hiddenMy">VerseCast for Chromecast</span>
 				<span/>
-				<span id="source"></span>
+				<span id="source">2 Timothy 4:2 NIV</span>
+			</div>
+		</div>
+		<div id="songs" class="screen dimable">
+			<div class="frame centered">
+				<div id="song" class="inframe centertext fit sizable">	
+				</div>
+			</div>
+			<div id="song-footer">
+				<span class="demoText hiddenMy">VerseCast for Chromecast</span>
+				<span/>
+				<span id="song-source"></span>
 			</div>
 		</div>
 		<div id="black" class="screen dimable fit"></div>
@@ -124,6 +140,31 @@
 					} else if(customData.target == 'background') {
 						fadeToBackground();
 						return;
+					} else if(customData.target == 'song') {
+						fadeToSong();
+						// TODO: try animated verse swap: https://alvarotrigo.com/blog/css-text-animations/
+						debug("x1");
+						if(customData.style) {
+							document.getElementById('song').innerHTML = customData.message;
+						} else {
+							document.getElementById('song').textContent = customData.message;
+						}
+						debug("x2");							
+						if(customData.source) {
+							document.getElementById('song-source').textContent = customData.source;
+						} else {
+							document.getElementById('song-source').textContent = "";
+						}				
+						debug("x3");
+						if(customData.style) { 
+							setSongStyle(customData.style);
+						}
+						debug("x4");
+												
+						if(customData.size) {
+							setSongSize(customData.size);
+						}	
+						
 					} else if(customData.target == 'verse') {
 						fadeToVerse();
 						// TODO: try animated verse swap: https://alvarotrigo.com/blog/css-text-animations/
