@@ -158,9 +158,13 @@ gradient-backdrop {
 /* end background */
 
 /*  Decorative background stripes for text */
-#verse, #song {
+#verse {
 	padding: 0 2.5em;
 	line-height: 1.6em;
+}
+
+#song {
+	padding: 0 1.5em;
 }
 
 #verse > div {
