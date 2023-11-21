@@ -10,12 +10,26 @@
 }
 
 /*  Decorative background stripes for text */
-#verse, #song {
+#verse {
 	padding: 0 2.5em;
 	line-height: 1.6em;
 }
 
-#verse > div, #song > div {
+#song {
+	padding: 0 1.5em;
+}
+
+
+#song > div > span {
+	 line-height: 1.5em;
+    color: #fff;
+    background: white;
+    padding: 0 2.3em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+#verse > div {
     line-height: 1.5em;
     display: inline;
     
@@ -25,6 +39,11 @@
 	
     -webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
+}
+
+#songs br {
+	display: block;
+	margin-bottom: 0.7em;
 }
 
 #verses, #songs {
