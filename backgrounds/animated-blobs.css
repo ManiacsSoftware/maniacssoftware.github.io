@@ -163,7 +163,7 @@ gradient-backdrop {
 	line-height: 1.6em;
 }
 
-#verse > div, .line > span {
+#verse > div {
     line-height: 1.5em;
     color: #fff;
     
@@ -175,8 +175,13 @@ gradient-backdrop {
 	box-decoration-break: clone;
 }
 
-.line {
-	/*display: inline; */
+#song > div > span {
+	 line-height: 1.5em;
+    color: #fff;
+    background: black;
+    padding: 0 2.3em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 #verse > div { /*, #song > div { */
@@ -192,7 +197,7 @@ gradient-backdrop {
 	font-size: 2.6em;
 }
 
-#verse .label, #song .label {
+#verse .label {
   top: -0.28em;
   font-weight: bold;
 }
