@@ -40,6 +40,9 @@ body {
 	line-height: 1.6em;
 }
 
+#song {
+	padding: 0 1em;
+}
 
 #song > div > span {
 	line-height: 1.5em;
