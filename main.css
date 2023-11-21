@@ -291,3 +291,7 @@ body {
 #black {
 	z-index: 990;
 }
+
+#song-footer {
+	display: none;
+}

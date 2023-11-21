@@ -163,10 +163,6 @@ gradient-backdrop {
 	line-height: 1.6em;
 }
 
-.line {
-	text-transform: uppercase;
-}
-
 #verse > div, .line > span {
     line-height: 1.5em;
     color: #fff;
