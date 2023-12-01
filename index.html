@@ -18,7 +18,7 @@
 		</style>
 		<link id="templateStyle" rel="stylesheet" href="backgrounds/blank.css"/>
 	</head>
-	<body>
+	<body onload="startTime()">
 		<!-- The video player -->
 		<!--video id="video">controls autoplay</video-->
 		<!--cast-media-player style="display: none"></cast-media-player-->
@@ -46,8 +46,8 @@
 		<div id="verses" class="screen dimable">
 			<div class="frame centered">
 				<div id="verse" class="inframe centertext fit sizable">
-				</div>
-			</div>
+								</div>
+							</div>
 			<div id="footer">
 				<span class="demoText hiddenMy">VerseCast for Chromecast</span>
 				<span/>
@@ -56,7 +56,7 @@
 		</div>
 		<div id="songs" class="screen dimable">
 			<div class="frame centered">
-				<div id="song" class="inframe centertext fit sizable">	
+				<div id="song" class="inframe centertext fit sizable">
 				</div>
 			</div>
 			<div id="song-footer">
@@ -65,11 +65,25 @@
 				<span id="song-source"></span>
 			</div>
 		</div>
+		<div id="timers" class="screen dimable">
+			<div class="frame centered">
+				<div id="timer" class="inframe centertext fit sizable">
+					<div id="countdown" class="hiddenMy"><span id='hours'></span><span id='minutes'></span><span id='seconds'></span></div>
+					<div id="timerMessage"></div>
+				</div>
+			</div>
+			<div id="timer-footer">
+				<span class="demoText hiddenMy">VerseCast for Chromecast</span>
+				<span/>
+				<span class="clock"></span>
+			</div>
+		</div>
 		<div id="black" class="screen dimable fit"></div>
 		<div id="debug" class="screen hiddenMy fit">Debug</div>
 		<!-- Include the Cast Receiver SDK -->
 		<script type="text/javascript" src="ui.js"></script>
 		<script type="text/javascript" src="theme.js"></script>
+		<script type="text/javascript" src="time.js"></script>
 		<script type="text/javascript" src="http://www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
 		<!-- Initialize the CastReceiverContext -->
 		<script type="text/javascript">
@@ -140,23 +154,23 @@
 					} else if(customData.target == 'song') {
 						fadeToSong();
 						// TODO: try animated verse swap: https://alvarotrigo.com/blog/css-text-animations/
-						debug("x1");
+						debug("a1");
 						if(customData.style) {
 							document.getElementById('song').innerHTML = customData.message;
 						} else {
 							document.getElementById('song').textContent = customData.message;
 						}
-						debug("x2");							
+						debug("a2");							
 						if(customData.source) {
 							document.getElementById('song-source').textContent = customData.source;
 						} else {
 							document.getElementById('song-source').textContent = "";
 						}				
-						debug("x3");
+						debug("a3");
 						if(customData.style) { 
 							setSongStyle(customData.style);
 						}
-						debug("x4");
+						debug("a4");
 												
 						if(customData.size) {
 							setSongSize(customData.size);
@@ -165,23 +179,23 @@
 					} else if(customData.target == 'verse') {
 						fadeToVerse();
 						// TODO: try animated verse swap: https://alvarotrigo.com/blog/css-text-animations/
-						debug("a1");
+						debug("b1");
 						if(customData.style) {
 							document.getElementById('verse').innerHTML = customData.message;
 						} else {
 							document.getElementById('verse').textContent = customData.message;
 						}
-						debug("a2");							
+						debug("b2");							
 						if(customData.source) {
 							document.getElementById('source').textContent = customData.source;
 						} else {
 							document.getElementById('source').textContent = "";
 						}				
-						debug("a3");
+						debug("b3");
 						if(customData.style) { 
 							setVerseStyle(customData.style);
 						}
-						debug("a4");
+						debug("b4");
 						
 						
 						if(customData.size) {
@@ -190,31 +204,57 @@
 						
 					} else if(customData.target == "announcements") {
 						fadeToAnnouncement();
-						debug("b1");
+						debug("c1");
 					    if(customData.style) { 
 							setAnnouncementStyle(customData.style);
 						}
-						debug("b2");
+						debug("c2");
 						if(customData.style) {
 							document.getElementById('announcement').innerHTML = customData.message;
 						} else {
 							document.getElementById('announcement').textContent = customData.message;
 						}
-						debug("b3");	
+						debug("c3");	
 
 
 						if(customData.size) {
 							setAnnouncementSize(customData.size);
 						}							
+					} else if(customData.target == "timer") {
+						fadeToTimer();
+						debug("d1");
+					    if(customData.style) { 
+							setTimerStyle(customData.style);
+						}
+						debug("d2");
+						if(customData.style) {
+							document.getElementById('timerMessage').innerHTML = customData.message.text;
+						} else {
+							document.getElementById('timerMessage').textContent = customData.message.text;
+						}
+						debug("d3");								
+						if(customData.source) {
+							document.getElementById('source').textContent = customData.source;
+						} else {
+							document.getElementById('source').textContent = "";
+						}	
+						
+						setTime(customData.message.countdownSeconds);
+						
+						debug("d4");
+
+						if(customData.size) {
+							setAnnouncementSize(customData.size);
+						}						
 					}
 					
 					setDemo(customData.demo && customData.demo === "true");
 					
 					if(customData.background) {
-					    debug("d1");
+					    debug("x1");
 						loadBackground(customData.background);
 					} else {
-					    debug("d2");
+					    debug("x2");
 						clearBackground();
 					}
 					
