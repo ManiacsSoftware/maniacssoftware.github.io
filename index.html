@@ -88,11 +88,11 @@
 		<!-- Initialize the CastReceiverContext -->
 		<script type="text/javascript">
 			window.addEventListener('load', function () {
-				debug("load finished");
+				//debug("load finished");
 				fadeToSplash();
 			});
 			showDebug();
-			debug("Starting...");
+			//debug("Starting...");
 
 			//fadeToVerse();
 
@@ -221,6 +221,7 @@
 							setAnnouncementSize(customData.size);
 						}							
 					} else if(customData.target == "timer") {
+						debug("d0");
 						fadeToTimer();
 						debug("d1");
 						/*
