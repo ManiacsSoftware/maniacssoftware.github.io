@@ -1,5 +1,6 @@
 function fadeToBlack() {
     enable("black");
+	disable("timers");
 	disable("songs");
 	disable("backgroundInsert");
 	disable("verses");
@@ -9,6 +10,7 @@ function fadeToBlack() {
 
 function fadeToBackground() {    
 	enable("backgroundInsert");
+	disable("timers");
 	disable("songs");
 	disable("black");
 	disable("verses");
@@ -24,6 +26,7 @@ function fadeToSplash() {
 	
 	enable("splash");	
 	disable("backgroundInsert");
+	disable("timers");
 	disable("songs");
     disable("black");    
     disable("verses");
@@ -33,6 +36,7 @@ function fadeToSplash() {
 function fadeToVerse() {
 	enable("verses");
 	enable("backgroundInsert");
+	disable("timers");
 	disable("songs");
     disable("black");
     disableSplash();
@@ -42,6 +46,7 @@ function fadeToVerse() {
 function fadeToSong() {
 	enable("songs");
 	enable("backgroundInsert");
+	disable("timers");
 	disable("verses");
     disable("black");
     disableSplash();
@@ -51,6 +56,17 @@ function fadeToSong() {
 function fadeToAnnouncement() {
 	enable("announcements");    
 	enable("backgroundInsert");
+	disable("timers");
+	disable("songs");
+    disable("black");
+    disableSplash();
+	disable("verses");	
+}
+
+function fadeToTimer() {
+	enable("timers");    
+	enable("backgroundInsert");
+	disable("announcements");
 	disable("songs");
     disable("black");
     disableSplash();
@@ -97,6 +113,11 @@ function setVerseStyle(str) {
 
 function setSongStyle(str) {
 	document.getElementById('songStyle').innerHTML = str;
+}
+
+
+function setTimerStyle(str) {
+	document.getElementById('timerStyle').innerHTML = str;
 }
 
 function setAnnouncementStyle(str) {
