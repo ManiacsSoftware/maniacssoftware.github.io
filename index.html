@@ -223,25 +223,25 @@
 					} else if(customData.target == "timer") {
 						fadeToTimer();
 						debug("d1");
+						/*
+						// TODO: Enable/Disable time based on style
 					    if(customData.style) { 
 							setTimerStyle(customData.style);
 						}
-						debug("d2");
-						if(customData.style) {
-							document.getElementById('timerMessage').innerHTML = customData.message.text;
-						} else {
-							document.getElementById('timerMessage').textContent = customData.message.text;
-						}
-						debug("d3");								
-						if(customData.source) {
-							document.getElementById('source').textContent = customData.source;
-						} else {
-							document.getElementById('source').textContent = "";
-						}	
+						*/
 						
-						setTime(customData.message.countdownSeconds);
+						debug("d2");
+						if(customData.message) {
+							document.getElementById('timerMessage').innerHTML = customData.message;
+						} else {
+							document.getElementById('timerMessage').textContent = customData.message;
+						}
+						debug("d3");
+						
+						setTime(customData.source);
 						
 						debug("d4");
+
 
 						if(customData.size) {
 							setAnnouncementSize(customData.size);
