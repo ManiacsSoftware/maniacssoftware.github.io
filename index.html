@@ -11,6 +11,27 @@
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"-->
 		<style id="verseStyle">
+		/* CSS styles for the text message */
+		/*
+		.welcomme {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  #font-size: 36px;
+		  #font-weight: bold;
+		  color: #ffffff;
+		  background-color: rgba(0, 0, 0, 0);
+		  z-index: 999;
+		}
+		*/
+		/* for debug resons */
+		 .verse.v2 { display: initial !important; margin-right: 0.2em; } 
+	    
 		</style>
 		<style id="songStyle">
 		</style>
@@ -36,6 +57,13 @@
 		<div id="announcements" class="screen dimable">
 			<div class="frame centered">
 				<div id="announcement" class="inframe fit sizable">
+					<h1 class="ql-align-center">Vitajte!</h1><p class="ql-align-center">Začíname o chvíľu...</p>
+					<!--h1 class="ql-align-center">Title</h1>
+					<ul>
+						<li>First item</li>
+						<li>Second item</li>
+						<li>Third item</li>
+					</ul-->
 				</div>
 			</div>
 			<div id="footer">
@@ -46,6 +74,36 @@
 		<div id="verses" class="screen dimable">
 			<div class="frame centered">
 				<div id="verse" class="inframe centertext fit sizable">
+					<div class="version vid464 iso6393slk" data-vid="464" data-iso6393="slk">
+						<div class="book bk2TI">
+							<div class="chapter ch4" data-usfm="2TI.4">
+								<div class="label">4</div>
+								<div class="p">
+									<span class="content">  </span>
+									<span class="verse v1" data-usfm="2TI.4.1">
+										<span class="label">1</span>
+										<span class="content">In the presence of God and of Christ Jesus, who will judge the living and the dead, and in view of his appearing and his kingdom, I give you this charge: </span>
+									</span>
+									<span class="verse v2" data-usfm="2TI.4.2">
+										<span class="label">2</span>
+										<span class="content">Preach the word; be prepared in season and out of season; correct, rebuke and encourage&#8212;with great patience and careful instruction. </span>
+									</span>
+									<span class="verse v3" data-usfm="2TI.4.3">
+										<span class="label">3</span>
+										<span class="content">For the time will come when people will not put up with sound doctrine. Instead, to suit their own desires, they will gather around them a great number of teachers to say what their itching ears want to hear. </span>
+									</span>
+									<span class="verse v4" data-usfm="2TI.4.4">
+										<span class="label">4</span>
+										<span class="content">They will turn their ears away from the truth and turn aside to myths. </span>
+									</span>
+									<span class="verse v5" data-usfm="2TI.4.5">
+										<span class="label">5</span>
+										<span class="content">But you, keep your head in all situations, endure hardship, do the work of an evangelist, discharge all the duties of your ministry.</span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div id="footer">
@@ -57,6 +115,16 @@
 		<div id="songs" class="screen dimable">
 			<div class="frame centered">
 				<div id="song" class="inframe centertext fit sizable">
+					<div><span>Refren</span></div>
+					<div><span>Že Boh je dobrý smiem</span></div>
+					<div><span>Emi</span></div>
+					<div><span>to cítiť aj dnes!</span></div>
+					<div><span>V Jeho lásku verím,</span></div>
+					<div><span>Jeho milosť chcem.</span></div>
+					<div><span>I CALL YOU FAITHFUL</span></div>
+					<br>
+					<div><span>FOR THE PROMISES YOU'VE KEPT</span></div>
+					<div><span>AND EVERY NEED YOU'VE MET</span></div>
 				</div>
 			</div>
 			<div id="song-footer">
@@ -68,14 +136,14 @@
 		<div id="timers" class="screen dimable">
 			<div class="frame centered">
 				<div id="timer" class="inframe centertext fit sizable">
-					<div id="countdown" class="hiddenMy"><span id='hours'></span><span id='minutes'></span><span id='seconds'></span></div>
-					<div id="timerMessage"></div>
+					<div id="countdown" class="hiddenMy"><span id="hours"></span><span id="minutes"></span><span id="seconds"></span></div>
+					<div id="timerMessage"><h1>Welcome</h1><div>We will start shortly..</div></div>
 				</div>
 			</div>
 			<div id="timer-footer">
 				<span class="demoText hiddenMy">VerseCast for Chromecast</span>
 				<span/>
-				<span class="clock"></span>
+				<span class="clock">10:31</span>
 			</div>
 		</div>
 		<div id="black" class="screen dimable fit"></div>
@@ -88,11 +156,11 @@
 		<!-- Initialize the CastReceiverContext -->
 		<script type="text/javascript">
 			window.addEventListener('load', function () {
-				//debug("load finished");
+				debug("load finished");
 				fadeToSplash();
 			});
-			showDebug();
-			//debug("Starting...");
+			//showDebug();
+			debug("Starting...");
 
 			//fadeToVerse();
 
@@ -216,37 +284,27 @@
 						}
 						debug("c3");	
 
-
 						if(customData.size) {
 							setAnnouncementSize(customData.size);
 						}							
 					} else if(customData.target == "timer") {
-						debug("d0");
 						fadeToTimer();
 						debug("d1");
-						/*
-						// TODO: Enable/Disable time based on style
-					    if(customData.style) { 
-							setTimerStyle(customData.style);
-						}
-						*/
-						
-						debug("d2");
 						if(customData.message) {
 							document.getElementById('timerMessage').innerHTML = customData.message;
 						} else {
 							document.getElementById('timerMessage').textContent = customData.message;
 						}
+						debug("d2");
+						
+						setTime(customData.source);
+						
 						debug("d3");
-						
-						startCountdown(customData.source);
-						
-						debug("d4");
 
 
 						if(customData.size) {
 							setAnnouncementSize(customData.size);
-						}						
+						}	
 					}
 					
 					setDemo(customData.demo && customData.demo === "true");
