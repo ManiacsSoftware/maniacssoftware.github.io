@@ -46,8 +46,8 @@
 		<div id="verses" class="screen dimable">
 			<div class="frame centered">
 				<div id="verse" class="inframe centertext fit sizable">
-								</div>
-							</div>
+				</div>
+			</div>
 			<div id="footer">
 				<span class="demoText hiddenMy">VerseCast for Chromecast</span>
 				<span/>
@@ -91,7 +91,7 @@
 				debug("load finished");
 				fadeToSplash();
 			});
-			//showDebug();
+			showDebug();
 			debug("Starting...");
 
 			//fadeToVerse();
@@ -238,7 +238,7 @@
 						}
 						debug("d3");
 						
-						setTime(customData.source);
+						startCountdown(customData.source);
 						
 						debug("d4");
 
