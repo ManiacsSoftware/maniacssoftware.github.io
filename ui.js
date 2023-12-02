@@ -183,3 +183,12 @@ function setAnnouncementSize(size) {
     addClassByQuerySelector('#announcements .sizable', size);
 	debug('setAnnouncementSize:' + size);
 }
+
+function setTimerSize(size) {
+	removeClassByQuerySelector('#timers .sizable', 'huge');
+    removeClassByQuerySelector('#timers .sizable', 'large');
+    removeClassByQuerySelector('#timers .sizable', 'medium');
+    removeClassByQuerySelector('#timers .sizable', 'small');
+    addClassByQuerySelector('#timers .sizable', size);
+	debug('setTimersSize:' + size);
+}
