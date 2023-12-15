@@ -153,6 +153,20 @@ body {
 	font-size: 3em;
 }
 
+#timers {
+	font-size: 2em;
+	line-height: 
+}
+
+#timer h1 {
+	font-size: 3em;
+	margin: 0;
+}
+
+#countdown {
+	font-size: 4em;
+}
+
 #verse, #song {
 	text-justify: inter-character;
 	/*line-height: 1.4em;*/
