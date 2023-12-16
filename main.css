@@ -89,6 +89,25 @@ body {
 }
 */
 
+#countdown:not(.zeroSize) {
+	max-height: 500px;
+	/* transition: max-height 0.50s ease-in; */
+	overflow: hidden;
+}
+
+.zeroSize {
+	max-height: 0;
+    /* transition: max-height 0.50s ease-out; */
+    overflow: hidden;
+	/*
+	max-height: 0;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 2s ease-in, max-height 2s ease-in;
+	*/
+}
+
+
 .hiddenMy {
 	visibility: hidden;
 }
@@ -97,6 +116,21 @@ body {
 	transition: opacity 1s ease-in-out;
 	-moz-transition: opacity 1s ease-in-out;
 	-webkit-transition: opacity 1s ease-in-out;
+	
+	opacity: 1;
+}
+
+#countdown {
+	/*
+	transition-property: transform, box-shadow, filter, color;
+	transition-duration: 0.5s, 0.2s, 0.2s, 0.25s;
+	transition-timing-function: ease-in-out, ease-out, ease-out, ease-in;
+	transition-delay: 0s, 0s, 0s, 0.2s
+	*/
+	
+	transition: opacity 1s ease-out, opacity 1s ease-in, max-height 3s ease-in-out;
+	-moz-transition: opacity 1s ease-out, opacity 1s ease-in, max-height 3s ease-in-out;
+	-webkit-transition: opacity 1s ease-out, opacity 1s ease-in, max-height 3s ease-in-out;
 	
 	opacity: 1;
 }

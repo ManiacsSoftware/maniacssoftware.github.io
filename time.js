@@ -4,9 +4,11 @@ function setTimerMessage(message) {
 
 function setTimerVisibility(visible) {
 	if(visible) {
+		enable('countdown');	
 		removeClassByQuerySelector('#countdown', 'hiddenMy');
 	} else {
-		addClassByQuerySelector('#countdown', 'hiddenMy');
+		disable('countdown');
+		//addClassByQuerySelector('#countdown', 'hiddenMy');
 	}
 }
 
@@ -25,19 +27,30 @@ function setRemaining(hours, minutes, seconds) {
 }
 
 var targetTime = 0;
+var targetTimePlusOne = 0;
 
 
 function startCountdown(inSeconds) {
 	let now = new Date();
 	const milliseconds = inSeconds * 1000; // 1000 milliseconds = 1 second
 	targetTime = new Date(now.getTime() + milliseconds);
+	targetTimePlusOne = new Date(now.getTime() + milliseconds - 1000);
 	
 	countdownTick();
-	setTimerVisibility(true);
+	removeClassByQuerySelector('#countdown', 'zeroSize');
+	setTimerVisibility(true);	
 }
 
-function finishTimer() {
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+
+function finishTimer() {	
 	setTimerVisibility(false);
+	//sleep(2000).then(() => { 
+		addClassByQuerySelector('#countdown', 'zeroSize');
+	//});
 }
 
 function countdownTick() {
@@ -53,7 +66,7 @@ function countdownTick() {
 	
 	setRemaining(h, m, s);
 	
-	if( today.valueOf() > targetTime.valueOf() ) {
+	if( today.valueOf() >= targetTimePlusOne.valueOf() ) {
 		finishTimer();
 		return;
 	}
