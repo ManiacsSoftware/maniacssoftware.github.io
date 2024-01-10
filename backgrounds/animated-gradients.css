@@ -71,8 +71,13 @@ body {
 	margin-bottom: 0.7em;
 }
 
-#verses, #songs, #announcements {
+#verses, #announcements {
 	font-size: 2.6em;
+}
+
+
+#songs {
+	font-size: 3em;
 }
 
 #verse .label {
