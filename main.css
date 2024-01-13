@@ -286,6 +286,9 @@ body {
 	display: none;
 }
 
+.xhuge {
+	font-size: 150%;
+}
 
 .huge {
 	font-size: 120%;
