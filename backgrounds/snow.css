@@ -1,5 +1,5 @@
 /* Font colors and backgrounds */
-#verses, #announcements, #source, #songs, #timers {
+#verses, #announcements, #source, #songs, #timerMessage {
   text-shadow: 0px 2px 3px #00000061;
   color: #282626;
 }

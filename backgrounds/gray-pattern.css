@@ -16,7 +16,7 @@
 
 
 
-#source, #verse, #announcement, #song {
+#source, #verse, #announcement, #song, #timerMessage {
 	font-family: 'Roboto' !important;
 	font-style: normal;
     font-weight: 300;

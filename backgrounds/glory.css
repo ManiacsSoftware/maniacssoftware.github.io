@@ -3,7 +3,7 @@
 /* @import url(https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap); */
 @import url(https://fonts.googleapis.com/css2?family=Gluten&display=swap);
 
-#source, #verse, #announcement, #song {
+#source, #verse, #announcement, #song, #timerMessage {
   #font-family: 'Caveat' !important;
   #font-size: 1.3em;
   
