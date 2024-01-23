@@ -11,6 +11,27 @@
 		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"-->
 		<style id="verseStyle">
+		/* CSS styles for the text message */
+		/*
+		.welcomme {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  #font-size: 36px;
+		  #font-weight: bold;
+		  color: #ffffff;
+		  background-color: rgba(0, 0, 0, 0);
+		  z-index: 999;
+		}
+		*/
+		/* for debug resons */
+		 .verse.v2 { display: initial !important; margin-right: 0.2em; } 
+	    
 		</style>
 		<style id="songStyle">
 		</style>
@@ -20,7 +41,10 @@
 	</head>
 	<body onload="startTime()">
 		<!-- The video player -->
+		<!--video id="video">controls autoplay</video-->
+		<!--cast-media-player style="display: none"></cast-media-player-->
 		<cast-media-player style="opacity: 0"></cast-media-player>
+		<!--cast-media-player></cast-media-player-->
 		<embed id="background" class="screen" type="text/html" src="backgrounds/black.html" style="width:100%;height:100vh;"></embed>
 		<div id="blackground" class="screen dimable fit enabled"></div>
 		<div id="splash" class="dimable">
@@ -33,6 +57,7 @@
 		<div id="announcements" class="screen dimable">
 			<div class="frame centered">
 				<div id="announcement" class="inframe fit sizable">
+				</div>
 			</div>
 			<div id="footer">
 				<span class="demoText hiddenMy">VerseCast for Chromecast</span>
@@ -95,7 +120,6 @@
 
 			// Create a CastReceiverContext
 			const context = cast.framework.CastReceiverContext.getInstance();
-
 
 			//debug("1");
 			const playerManager = context.getPlayerManager();
@@ -241,7 +265,7 @@
 			// Start the receiver
 			context.start({disableIdleTimeout: true});
 
-			debug("Init done...")
+			debug("Init done...");
 		</script>
 	</body>
 </html>
