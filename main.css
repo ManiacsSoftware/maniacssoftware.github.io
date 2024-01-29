@@ -273,6 +273,10 @@ body {
 	#margin-right: 0.5em;
 }
 
+#verse .q2:before {
+    content: " ";
+}
+
 /*#verse .verse, ?? what is this ??*/ 
 #verse .verse, #verse .heading {
 	display: none;
