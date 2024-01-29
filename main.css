@@ -270,11 +270,7 @@ body {
 
 #verse .q1, #verse .q2, #verse .s1 {	
 	display: inline;
-	#margin-right: 0.5em;
-}
-
-#verse .q2:before {
-    content: " ";
+	/* margin-right: 0.5em;*/
 }
 
 /*#verse .verse, ?? what is this ??*/ 
