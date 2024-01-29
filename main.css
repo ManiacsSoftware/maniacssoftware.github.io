@@ -306,6 +306,27 @@ body {
 	font-size: 2.5vi;
 }
 
+
+.verses .xhuge {
+	font-size: 5vi;
+}
+
+.verses .huge {
+	font-size: 4vi;
+}
+
+.verses .large {
+	font-size: 3vi;
+}
+
+.verses .medium {
+	font-size: 2.5vi;
+}
+
+.verses .small {
+	font-size: 2.0vi;
+}
+
 #footer, #song-footer, #timer-footer {
 	font-size: 0.7em;	
 	padding: 1em;
