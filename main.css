@@ -287,23 +287,23 @@ body {
 }
 
 .xhuge {
-	font-size: 150%;
+	font-size: 5vi;
 }
 
 .huge {
-	font-size: 120%;
+	font-size: 4vi;
 }
 
 .large {
-	font-size: 100%;
+	font-size: 3vi;
 }
 
 .medium {
-	font-size: 85%;
+	font-size: 2.8vi;
 }
 
 .small {
-	font-size: 70%;
+	font-size: 2.5vi;
 }
 
 #footer, #song-footer, #timer-footer {
