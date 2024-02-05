@@ -11,7 +11,7 @@
 
 /*  Decorative background stripes for text */
 #verse {
-	padding: 0 2.5em;
+	padding: 0 1.3em;
 	line-height: 1.6em;
 }
 
@@ -33,7 +33,7 @@
     display: inline;
     
     background: white;
-    box-shadow: 2.5em 0px 0px 0px white, -2.5em 0 0 0px white, -2px 0 0 2px white inset, 2px 0 0 2px white inset;
+    box-shadow: 1.3em 0px 0px 0px white, -1.3em 0 0 0px white, -2px 0 0 2px white inset, 2px 0 0 2px white inset;
 	padding-right: 1px;
 	
     -webkit-box-decoration-break: clone;
