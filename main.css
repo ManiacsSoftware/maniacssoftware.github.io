@@ -26,7 +26,7 @@ body {
   font-family: 'Roboto';
   letter-spacing: 0.05em;
   
-  font-size: 1vi; /* 3vh; force font sizes relative to viewport */
+  font-size: 1.2vi; /* 3vh; 1vi; force font sizes relative to viewport */
 }
 
 .dimable:not(.enabled) {
