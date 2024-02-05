@@ -330,6 +330,7 @@ body {
 }
 */
 
+/* Remember to modify ui.js (setVerseSize e.t.c.) when adding new sizes! */
 .xhuge {
 	font-size: 150%;
 }

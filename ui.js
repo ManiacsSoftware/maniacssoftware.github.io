@@ -158,8 +158,11 @@ function displayVerseElement() {
 */
 
 function setVerseSize(size) {
+	removeClassByQuerySelector('#verses .sizable', 'xhuge');
 	removeClassByQuerySelector('#verses .sizable', 'huge');
+	removeClassByQuerySelector('#verses .sizable', 'lhuge');
     removeClassByQuerySelector('#verses .sizable', 'large');
+	removeClassByQuerySelector('#verses .sizable', 'mlarge');
     removeClassByQuerySelector('#verses .sizable', 'medium');
     removeClassByQuerySelector('#verses .sizable', 'small');
     addClassByQuerySelector('#verses .sizable', size);
@@ -167,8 +170,11 @@ function setVerseSize(size) {
 }
 
 function setSongSize(size) {
+	removeClassByQuerySelector('#songs .sizable', 'xhuge');
 	removeClassByQuerySelector('#songs .sizable', 'huge');
+	removeClassByQuerySelector('#songs .sizable', 'lhuge');
     removeClassByQuerySelector('#songs .sizable', 'large');
+	removeClassByQuerySelector('#songs .sizable', 'mlarge');
     removeClassByQuerySelector('#songs .sizable', 'medium');
     removeClassByQuerySelector('#songs .sizable', 'small');
     addClassByQuerySelector('#songs .sizable', size);
@@ -176,8 +182,11 @@ function setSongSize(size) {
 }
 
 function setAnnouncementSize(size) {
+	removeClassByQuerySelector('#announcements .sizable', 'xhuge');
 	removeClassByQuerySelector('#announcements .sizable', 'huge');
+	removeClassByQuerySelector('#announcements .sizable', 'lhuge');
     removeClassByQuerySelector('#announcements .sizable', 'large');
+	removeClassByQuerySelector('#announcements .sizable', 'mlarge');
     removeClassByQuerySelector('#announcements .sizable', 'medium');
     removeClassByQuerySelector('#announcements .sizable', 'small');
     addClassByQuerySelector('#announcements .sizable', size);
@@ -185,8 +194,11 @@ function setAnnouncementSize(size) {
 }
 
 function setTimerSize(size) {
+	removeClassByQuerySelector('#timers .sizable', 'xhuge');
 	removeClassByQuerySelector('#timers .sizable', 'huge');
+	removeClassByQuerySelector('#timers .sizable', 'lhuge');
     removeClassByQuerySelector('#timers .sizable', 'large');
+	removeClassByQuerySelector('#timers .sizable', 'mlarge');
     removeClassByQuerySelector('#timers .sizable', 'medium');
     removeClassByQuerySelector('#timers .sizable', 'small');
     addClassByQuerySelector('#timers .sizable', size);

@@ -48,7 +48,7 @@ body {
 	line-height: 1.5em;
     color: #fff;
     background: black;
-    padding: 0 2.3em;
+    padding: 0 1em;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 }
