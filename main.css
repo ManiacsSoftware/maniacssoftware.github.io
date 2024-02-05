@@ -338,8 +338,16 @@ body {
 	font-size: 120%;
 }
 
+.lhuge {
+	font-size: 110%;
+}
+
 .large {
 	font-size: 100%;
+}
+
+.mlarge {
+	font-size: 92%;
 }
 
 .medium {
