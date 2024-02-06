@@ -116,9 +116,9 @@ body {
 }
 
 #verses, #splash, #announcements, #black, #blackground, #songs, #timers {
-	transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-webkit-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out, background-color 1s ease-in-out, color 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out, background-color 1s ease-in-out, color 1s ease-in-out;
+	-webkit-transition: opacity 1s ease-in-out, background-color 1s ease-in-out, color 1s ease-in-out;
 	
 	opacity: 1;
 }

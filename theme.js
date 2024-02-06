@@ -16,4 +16,18 @@ function loadBackground(backgroundName) {
 function clearBackground() {
 	enable("blackground");
 	loadBackground("black");
+	
+	
+}
+
+
+function disableBackground() {
+	enable("blackground");
+	addClassByQuerySelector('#rootElement', 'blackground');
+	
+}
+
+function enableBackground() {
+	disable("blackground");
+	removeClassByQuerySelector('#rootElement', 'blackground');
 }

@@ -1,10 +1,15 @@
 /* Font colors and backgrounds */
-#verses, #announcements, #source, #songs, #timerMessage, #countdown {
+#announcements, #songs, #timerMessage, #countdown {
   text-shadow: 0px 2px 3px #00000061;
   color: #282626;
 }
 
-#verse .label {
+body:not(.blackground) > #verses, body:not(.blackground) #source {
+  text-shadow: 0px 2px 3px #00000061;
+  color: #282626;
+}
+
+body:not(.blackground) > #verse .label {
   color: #505050;
   top: -0.32em;
 }
@@ -28,7 +33,7 @@
     box-decoration-break: clone;
 }
 
-#verse > div {
+body:not(.blackground) #verse > div {
     line-height: 1.5em;
     display: inline;
     
