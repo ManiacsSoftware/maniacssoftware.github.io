@@ -1,10 +1,5 @@
 /* Font colors and backgrounds */
-#announcements, #songs, #timerMessage, #countdown {
-  text-shadow: 0px 2px 3px #00000061;
-  color: #282626;
-}
-
-body:not(.blackground) > #verses, body:not(.blackground) #source {
+body:not(.blackground) > #announcements, body:not(.blackground) > #songs, body:not(.blackground) > #timerMessage, body:not(.blackground) > #countdown,body:not(.blackground) > #verses, body:not(.blackground) #source {
   text-shadow: 0px 2px 3px #00000061;
   color: #282626;
 }
