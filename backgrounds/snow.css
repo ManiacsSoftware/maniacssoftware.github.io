@@ -1,10 +1,15 @@
 /* Font colors and backgrounds */
-body:not(.blackground) > #announcements, body:not(.blackground) > #songs, body:not(.blackground) > #timerMessage, body:not(.blackground) > #countdown,body:not(.blackground) > #verses, body:not(.blackground) #source {
+#announcements, #songs, #timerMessage, #countdown {
   text-shadow: 0px 2px 3px #00000061;
   color: #282626;
 }
 
-body:not(.blackground) > #verse .label {
+#verses:not(.blackground), #verses:not(.blackground) #source {
+  text-shadow: 0px 2px 3px #00000061;
+  color: #282626;
+}
+
+#verses:not(.blackground) #verse .label {
   color: #505050;
   top: -0.32em;
 }
@@ -29,15 +34,25 @@ body:not(.blackground) > #verse .label {
 }
 
 body:not(.blackground) #verse > div {
-    line-height: 1.5em;
-    display: inline;
     
+}
+
+
+#verse > div {
+	line-height: 1.5em;
+    display: inline;
     background: white;
+    
     box-shadow: 1.3em 0px 0px 0px white, -1.3em 0 0 0px white, -2px 0 0 2px white inset, 2px 0 0 2px white inset;
 	padding-right: 1px;
 	
     -webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
+}
+
+.blackground #verse > div {
+	background: black;
+	box-shadow: 1.3em 0px 0px 0px black, -1.3em 0 0 0px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset;
 }
 
 #songs br {

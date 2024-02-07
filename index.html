@@ -30,7 +30,7 @@
 		}
 		*/
 		/* for debug resons */
-		 .verse.v2 { display: initial !important; margin-right: 0.2em; } 
+	    .verse.v3 { display: initial !important; margin-right: 0.2em; }
 	    
 		</style>
 		<style id="songStyle">
@@ -415,19 +415,14 @@
 					}
 					
 					setDemo(customData.demo && customData.demo === "true");
-										
+					
 					if(customData.background) {
 						debug("x1");
-						loadBackground(customData.background);
+						var onBlack = customData.onblack && customData.onblack === "true";
+						loadBackground(customData.background, onBlack);
 					} else {
 						debug("x2");
 						clearBackground();
-					}
-					
-					if(customData.onblack && customData.onblack === "true") {
-						disableBackground();
-					} else {
-						enableBackground();
 					}
 
 					debug("Target: " + customData.target);								

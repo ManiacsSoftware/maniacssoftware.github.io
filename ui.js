@@ -1,4 +1,13 @@
+function blackground(on) {
+	if(on == true) {
+		enable("blackground");
+	} else {
+		disable("blackground");
+	}
+}
+
 function fadeToBlack() {
+	blackground(true);
     enable("black");
 	disable("timers");
 	disable("songs");
@@ -8,7 +17,8 @@ function fadeToBlack() {
 	disable("announcements");
 }
 
-function fadeToBackground() {    
+function fadeToBackground() {
+	blackground(false);
 	enable("backgroundInsert");
 	disable("timers");
 	disable("songs");
@@ -23,7 +33,7 @@ function fadeToSplash() {
 		fadeToBlack();
 		return;
 	}
-	
+	blackground(false);
 	enable("splash");	
 	disable("backgroundInsert");
 	disable("timers");
@@ -33,17 +43,22 @@ function fadeToSplash() {
 	disable("announcements");	
 }
 
-function fadeToVerse() {
+function fadeToVerse() {	
+	if(versesOnBlack == true) {
+		blackground(true);
+	}
+	
 	enable("verses");
 	enable("backgroundInsert");
 	disable("timers");
 	disable("songs");
     disable("black");
     disableSplash();
-	disable("announcements");    
+	disable("announcements");
 }
 
-function fadeToSong() {
+function fadeToSong() {	
+	blackground(false);	
 	enable("songs");
 	enable("backgroundInsert");
 	disable("timers");
@@ -53,7 +68,8 @@ function fadeToSong() {
 	disable("announcements");    
 }
 
-function fadeToAnnouncement() {
+function fadeToAnnouncement() {	
+	blackground(false);
 	enable("announcements");    
 	enable("backgroundInsert");
 	disable("timers");
@@ -64,6 +80,7 @@ function fadeToAnnouncement() {
 }
 
 function fadeToTimer() {
+	blackground(false);
 	enable("timers");    
 	enable("backgroundInsert");
 	disable("announcements");
