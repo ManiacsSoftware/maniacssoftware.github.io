@@ -17,7 +17,7 @@ function enableBackground() {
 function loadBackground(backgroundName, onBlack) {	
 	debug("onBlack changed to " + onBlack);
 		
-	if(versesOnBlack !== onBlack) {
+	if(versesOnBlack != onBlack) {
 		versesOnBlack = onBlack;
 		if(onBlack) {
 			disableBackground();
