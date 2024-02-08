@@ -16,13 +16,17 @@ function enableBackground() {
 
 function loadBackground(backgroundName, onBlack) {	
 	debug("onBlack changed to " + onBlack);
-		
-	if(versesOnBlack != onBlack) {
-		versesOnBlack = onBlack;
-		if(onBlack) {
-			disableBackground();
-		} else {
-			enableBackground();
+	
+	// onBlack can be null (no change)
+	if(onBlack != null) {
+		var boolOnBlack = onBlack === "true";
+		if(versesOnBlack != boolOnBlack) {
+			versesOnBlack = boolOnBlack;
+			if(boolOnBlack) {
+				disableBackground();
+			} else {
+				enableBackground();
+			}
 		}
 	}
 	

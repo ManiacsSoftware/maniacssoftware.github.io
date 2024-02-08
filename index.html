@@ -418,8 +418,7 @@
 					
 					if(customData.background) {
 						debug("x1");
-						var onBlack = customData.onblack && customData.onblack === "true";
-						loadBackground(customData.background, onBlack);
+						loadBackground(customData.background, customData.onblack);
 					} else {
 						debug("x2");
 						clearBackground();
