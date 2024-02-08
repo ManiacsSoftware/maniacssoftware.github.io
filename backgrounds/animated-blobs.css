@@ -1,7 +1,7 @@
 /* font */
 
 @import url(https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Roboto:wght@100&display=swap);
-#source, #verse, #announcement, #song, #timerMessage {
+#source, #verses:not(.blackground) #verse, #announcement, #song, #timerMessage {
 	font-style: normal;
     font-weight: 300;
 	font-family: "Exo", sans-serif !important;
