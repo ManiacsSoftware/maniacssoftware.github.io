@@ -33,26 +33,25 @@
     box-decoration-break: clone;
 }
 
-body:not(.blackground) #verse > div {
-    
-}
-
-
 #verse > div {
 	line-height: 1.5em;
     display: inline;
-    background: white;
-    
-    box-shadow: 1.3em 0px 0px 0px white, -1.3em 0 0 0px white, -2px 0 0 2px white inset, 2px 0 0 2px white inset;
 	padding-right: 1px;
 	
     -webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
 }
 
+
+body:not(.blackground) #verse > div {
+    background: white;    
+    box-shadow: 1.3em 0px 0px 0px white, -1.3em 0 0 0px white, -2px 0 0 2px white inset, 2px 0 0 2px white inset;
+}
+
+
 .blackground #verse > div {
-	background: black;
-	box-shadow: 1.3em 0px 0px 0px black, -1.3em 0 0 0px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset;
+	background: transparent;
+	box-shadow: 1.3em 0px 0px 0px transparent, -1.3em 0 0 0px transparent, -2px 0 0 2px transparent inset, 2px 0 0 2px transparent inset;
 }
 
 #songs br {
