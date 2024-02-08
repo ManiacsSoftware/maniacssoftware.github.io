@@ -38,7 +38,7 @@
 	border: 0.03em solid white;
 }
 
-#source {
+#verses:not(.blackground) #source {
 	color: #444D;
     text-shadow: 0px 2px 2px #A888;
 }
