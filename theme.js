@@ -1,5 +1,5 @@
 var loadedBackground = "black";
-var versesOnBlack = false;
+var versesOnBlack = null;
 
 function disableBackground() {
 	backgroundDisabled = true;
