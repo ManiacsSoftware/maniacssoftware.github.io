@@ -46,6 +46,8 @@ function fadeToSplash() {
 function fadeToVerse() {	
 	if(versesOnBlack == true) {
 		blackground(true);
+	} else {
+		blackground(false);
 	}
 	
 	enable("verses");
