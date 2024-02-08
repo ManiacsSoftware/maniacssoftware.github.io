@@ -183,7 +183,7 @@ body {
 }
 
 #verse:first-letter {
-   margin-left: 1em;
+   margin-left: 2.5em;
 }
 
 #verses, #songs, #timers {
@@ -412,8 +412,4 @@ body {
 #seconds:before {
     content: ":";
     /* margin-right: 6px; */
-}
-
-.chapter {
-	padding-left: 1.5em;
 }
