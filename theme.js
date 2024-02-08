@@ -27,7 +27,7 @@ function loadBackground(backgroundName, onBlack) {
 	}
 	
 	if(loadedBackground !== backgroundName) {
-		loadBackground = backgroundName;
+		loadedBackground = backgroundName;
 		document.getElementById('background').src = 'backgrounds/' + backgroundName + '.html';
 		document.getElementById('templateStyle').href = 'backgrounds/' + backgroundName + '.css';
 	}
