@@ -170,13 +170,19 @@ gradient-backdrop {
 #verse > div {
     line-height: 1.5em;
     color: #fff;
-    
-    background: black;
-    box-shadow: 1.3em 0px 0px 0px black, -1.3em 0 0 0px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset;
-	padding-right: 1px;
-	
+	padding-right: 1px;	
     -webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
+}
+
+#verses:not(.blackground) #verse > div {
+	background: black;
+    box-shadow: 1.3em 0px 0px 0px black, -1.3em 0 0 0px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset;
+}
+
+.blackground #verse > div {
+	background: transparent;
+	box-shadow: 1.3em 0px 0px 0px transparent, -1.3em 0 0 0px transparent, -2px 0 0 2px transparent inset, 2px 0 0 2px transparent inset;
 }
 
 #song > div > span {

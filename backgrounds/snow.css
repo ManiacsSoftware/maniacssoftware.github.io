@@ -43,7 +43,7 @@
 }
 
 
-body:not(.blackground) #verse > div {
+#verses:not(.blackground) #verse > div {
     background: white;    
     box-shadow: 1.3em 0px 0px 0px white, -1.3em 0 0 0px white, -2px 0 0 2px white inset, 2px 0 0 2px white inset;
 }
