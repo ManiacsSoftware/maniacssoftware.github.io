@@ -167,22 +167,14 @@ gradient-backdrop {
 	padding: 0 0.5em;
 }
 
-#verse > div {
+#verses:not(.blackground) #verse > div {
     line-height: 1.5em;
     color: #fff;
 	padding-right: 1px;	
-    -webkit-box-decoration-break: clone;
-	box-decoration-break: clone;
-}
-
-#verses:not(.blackground) #verse > div {
 	background: black;
     box-shadow: 1.3em 0px 0px 0px black, -1.3em 0 0 0px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset;
-}
-
-.blackground #verse > div {
-	background: transparent;
-	box-shadow: 1.3em 0px 0px 0px transparent, -1.3em 0 0 0px transparent, -2px 0 0 2px transparent inset, 2px 0 0 2px transparent inset;
+    -webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
 }
 
 #song > div > span {
@@ -203,15 +195,15 @@ gradient-backdrop {
 	margin-bottom: 0.7em;
 }
 
-#verses:not(.blackground) #verses, #announcements {
+#verses:not(.blackground) {
 	font-size: 2.6em;
 }
 
-#songs {
+#songs, #announcements {
 	font-size: 2.6em;
 }
 
-#verse .label {
+#verses:not(.blackground) #verse .label {
   top: -0.28em;
   font-weight: bold;
 }

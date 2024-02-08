@@ -53,19 +53,17 @@ body {
     box-decoration-break: clone;
 }
 
-#verse > div {
+#verses:not(.blackground) #verse > div {
     line-height: 1.5em;
     display: inline;
     color: #fff;
     padding-right: 1px;
 	
-    -webkit-box-decoration-break: clone;
-	box-decoration-break: clone;
-}
-
-#verses:not(.blackground) #verse > div {
 	background: black;
     box-shadow: 1.3em 0px 0px 0px black, -1.3em 0 0 0px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset;
+	
+    -webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
 }
 
 .blackground #verse > div {
@@ -82,12 +80,11 @@ body {
 	font-size: 2.6em;
 }
 
-
 #songs {
 	font-size: 2.6em;
 }
 
-#verse .label {
+#verses:not(.blackground) #verse .label {
   top: -0.28em;
   font-weight: bold;
 }

@@ -15,7 +15,7 @@
 }
 
 /*  Decorative background stripes for text */
-#verse {
+#verses:not(.blackground) #verse {
 	padding: 0 1.3em;
 	line-height: 1.6em;
 }
@@ -33,21 +33,16 @@
     box-decoration-break: clone;
 }
 
-#verse > div {
+#verses:not(.blackground) #verse > div {
 	line-height: 1.5em;
     display: inline;
 	padding-right: 1px;
+	background: white;    
+    box-shadow: 1.3em 0px 0px 0px white, -1.3em 0 0 0px white, -2px 0 0 2px white inset, 2px 0 0 2px white inset;
 	
     -webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
 }
-
-
-#verses:not(.blackground) #verse > div {
-    background: white;    
-    box-shadow: 1.3em 0px 0px 0px white, -1.3em 0 0 0px white, -2px 0 0 2px white inset, 2px 0 0 2px white inset;
-}
-
 
 .blackground #verse > div {
 	background: transparent;
@@ -67,7 +62,7 @@
 	font-size: 2.6em;
 }
 
-#verse .label {
+#verses:not(.blackground) #verse .label {
   top: -0.28em;
   font-weight: bold;
 }
