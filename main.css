@@ -413,3 +413,7 @@ body {
     content: ":";
     /* margin-right: 6px; */
 }
+
+.chapter {
+	padding-left: 1em;
+}
