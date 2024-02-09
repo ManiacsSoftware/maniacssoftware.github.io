@@ -30,9 +30,10 @@ function fadeToBackground() {
 
 function fadeToSplash() {
 	if(splashRemoved) {
-		fadeToBlack();
+		//fadeToBlack();
 		return;
 	}
+	
 	blackground(false);
 	enable("splash");	
 	disable("backgroundInsert");
@@ -41,6 +42,7 @@ function fadeToSplash() {
     disable("black");    
     disable("verses");
 	disable("announcements");	
+	disableSplash();
 }
 
 function fadeToVerse() {	
@@ -100,7 +102,7 @@ function disableSplash() {
 		setTimeout(function(){
 			document.getElementById("splash")?.remove();
 			splashRemoved = true;
-		}, 1500); 
+		}, 5000); 
 	}
 }
 
