@@ -30,7 +30,7 @@ function fadeToBackground() {
 
 function fadeToSplash() {
 	if(splashRemoved) {
-		//fadeToBlack();
+		fadeToBlack(); // DIS
 		return;
 	}
 	
@@ -42,11 +42,11 @@ function fadeToSplash() {
     disable("black");    
     disable("verses");
 	disable("announcements");	
-	disableSplash();
+	//disableSplash();
 }
 
 function fadeToVerse() {	
-	if(versesOnBlack === "true") {
+	if(versesOnBlack == true) {
 		blackground(true);
 	} else {
 		blackground(false);
