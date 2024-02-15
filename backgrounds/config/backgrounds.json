@@ -58,21 +58,24 @@
 		"image": "waves-purple.png",
 		"name": "Waves Purple",
 		"animated": true,
-		"changesFont": false
+		"changesFont": false,		
+		"licences": ["monthly", "yearly", "perpetual_license"]
 	},
 	{
 		"alias": "waves-donut",
 		"image": "waves-donut.png",
 		"name": "Waves Donut",
 		"animated": true,
-		"changesFont": false
+		"changesFont": false,	
+		"licences": ["monthly", "yearly", "perpetual_license"]
 	},
 	{
 		"alias": "waves-pumpkin",
 		"image": "waves-pumpkin.png",
 		"name": "Waves Pumpkin",
 		"animated": true,
-		"changesFont": false
+		"changesFont": false,	
+		"licences": ["monthly", "yearly", "perpetual_license"]
 	},
 	{
 		"alias": "stripes",
