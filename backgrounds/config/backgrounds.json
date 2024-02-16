@@ -59,7 +59,7 @@
 		"name": "Waves Purple",
 		"animated": true,
 		"changesFont": false,		
-		"licences": ["monthly", "yearly", "perpetual_license"]
+		"licences": ["MONTHLY_THEME_PACK"]
 	},
 	{
 		"alias": "waves-donut",
@@ -67,7 +67,7 @@
 		"name": "Waves Donut",
 		"animated": true,
 		"changesFont": false,	
-		"licences": ["monthly", "yearly", "perpetual_license"]
+		"licences": ["YEARLY_THEME_PACK"]
 	},
 	{
 		"alias": "waves-pumpkin",
@@ -75,7 +75,7 @@
 		"name": "Waves Pumpkin",
 		"animated": true,
 		"changesFont": false,	
-		"licences": ["monthly", "yearly", "perpetual_license"]
+		"licences": ["FANCY"]
 	},
 	{
 		"alias": "stripes",
