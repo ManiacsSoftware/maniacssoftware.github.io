@@ -67,7 +67,7 @@
 		"name": "Waves Donut",
 		"animated": true,
 		"changesFont": false,	
-		"licences": ["YEARLY_THEME_PACK"]
+		"licences": ["MONTHLY_THEME_PACK"]
 	},
 	{
 		"alias": "waves-pumpkin",
@@ -75,7 +75,7 @@
 		"name": "Waves Pumpkin",
 		"animated": true,
 		"changesFont": false,	
-		"licences": ["FANCY"]
+		"licences": ["MONTHLY_THEME_PACK"]
 	},
 	{
 		"alias": "stripes",
