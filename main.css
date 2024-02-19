@@ -50,8 +50,10 @@ body {
 .centered {
 	left:50%;
 	top: 50%;
+	/* 
 	#padding:10vmin;
 	#position:fixed;
+	*/
 	position:fixed;
 	transform:translate(-50%, -50%);
 	max-width: 85%;
@@ -59,13 +61,16 @@ body {
 }
 
 .centertext, .ql-align-center {
+  /*
   #background-color:rgba(255,255,255,.8);
   #border-radius:.25em;
   #box-shadow:0 0 .25em rgba(0,0,0,.25);
+  */
   text-align:center;
   
-  
+  /*
   #font-style: additive;
+  */
 }
 
 .screen {
@@ -148,19 +153,19 @@ body {
 */
 
 #splash h1 {
-  #font-family: 'Ballet', sans-serif;
+  /* #font-family: 'Ballet', sans-serif; */
   font-family: 'Anton', sans-serif;
-  #font-family: 'Pacifico', serif;
-  #font-family:monospace;
+  /* #font-family: 'Pacifico', serif;
+  #font-family:monospace; */
   font-size: 10em;
   margin: 0px;
   font-weight: normal;
 }
 
 #splash p {
-  #font-family: 'Over the Rainbow', serif;
+  /* #font-family: 'Over the Rainbow', serif; */
   font-family: 'Great Vibes', serif;
-  #font-family: 'Dancing script', serif;
+  /* #font-family: 'Dancing script', serif; */
   font-size: 3em;
   margin: 0px;
   margin-top: -1em;
@@ -175,7 +180,7 @@ body {
 }
 
 #announcement h1, #announcement h2, #announcement p {
-  #font-size: 1.3em;
+  /* #font-size: 1.3em; */
   margin-block-start: 0.13em;
   margin-block-end: 0.13em;
   margin-inline-start: 0px;
@@ -232,16 +237,17 @@ body {
  
 #verse .label {
 		color: #A0A0A0;
-		//color: silver;
+		/* color: silver; */
 		padding-right: 0.5em;
 		font-size: 0.75em;
 		position: relative;
 		top: -0.4em;
 		
-		
+		/*
 		//font: 800 40px Arial;
 		//-webkit-text-fill-color: transparent;
 		//-webkit-text-stroke: 1px;
+		*/
 
 }
 	
@@ -338,23 +344,23 @@ body {
 }
 
 .xxhuge {
-	font-size: 150%;
+	font-size: 145%;
 }
 
 .xhuge {
-	font-size: 140%;
-}
-
-.huge {
 	font-size: 130%;
 }
 
-.lhuge {
+.huge {
 	font-size: 120%;
 }
 
+.lhuge {
+	font-size: 110%;
+}
+
 .large {
-	font-size: 105%;
+	font-size: 100%;
 }
 
 .mlarge {
@@ -396,7 +402,7 @@ body {
 	text-align: left;
 	width: 100%;
 	height: 100%;
-	#padding: 1em;
+	/* #padding: 1em; */
 	z-index: 999;
 }
 

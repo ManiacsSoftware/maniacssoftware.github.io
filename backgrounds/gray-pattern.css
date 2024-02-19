@@ -20,20 +20,25 @@
 	font-family: 'Roboto' !important;
 	font-style: normal;
     font-weight: 300;
-	#font-family: 'Sedgwick Ave Display' !important;
+	/* #font-family: 'Sedgwick Ave Display' !important; */
 }
 
 .frame {  
-  #max-width: 90%; 
+  /* #max-width: 90%; */
   background: rgb(69,89,122);
   background: linear-gradient(200deg, rgba(69,89,122,0.94) 0%, rgba(62,81,112,0.921988863904937) 21%, rgba(11,24,42,0.92) 100%);
   word-wrap: break-word;
-  #position: relative;
+  /* #position: relative; */
   padding: 0.8em;
 }
 
+
+#verses, #announcements, #songs {
+	font-size: 2.4em;
+}
+
 .frame .inframe {
-	font-size: 70%;
+	/* font-size: 0.5em; */
 	padding: 1.8em;
 	border: 0.03em solid white;
 }

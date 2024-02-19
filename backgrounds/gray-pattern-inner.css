@@ -1,12 +1,12 @@
 body {
 	margin:0;
 	padding:0;
-	#font-family:"arial",heletica,sans-serif;
-	#font-size:12px;
+	/* font-family:"arial",heletica,sans-serif;
+	#font-size:12px; */
     background: url('gray-pattern-bg.png') repeat 0 0;
-	#background-color: rgba(77, 132, 221, 0.1);
+	/* #background-color: rgba(77, 132, 221, 0.1);
 	#background-color: rgba(62,81,112,0.1);
-    #background-blend-mode: multiply;
+    #background-blend-mode: multiply; */
 	-webkit-animation: 50s linear 0s normal none infinite animate;
 	-moz-animation: 100s linear 0s normal none infinite animate;
 	-ms-animation: 100s linear 0s normal none infinite animate;
