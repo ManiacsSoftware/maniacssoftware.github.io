@@ -50,7 +50,7 @@ function random(min, max) {
     var hold = max;
     max = min;
     min = hold;
-  }
+  } //
 
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -62,8 +62,8 @@ function maxOrbit(x,y) {
 }
 
 var Star = function() {
-
-  this.orbitRadius = random(maxOrbit(w,h));
+  var radi = random(50, maxOrbit(w,h));
+  this.orbitRadius = (radi)/1.5;// / 10;
   this.radius = 4 + random(10, this.orbitRadius) / 45;// star size min/max
   this.orbitX = w / 2;
   this.orbitY = h / 2;
@@ -98,7 +98,7 @@ for (var i = 0; i < maxStars; i++) {
 
 function animation() {
     ctx.globalCompositeOperation = 'source-over';
-    ctx.globalAlpha = 0.4; // BLUR
+    ctx.globalAlpha = 0.6; // BLUR
     ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 1)';
     ctx.fillRect(0, 0, w, h)
   
