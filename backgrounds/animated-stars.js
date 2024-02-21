@@ -78,7 +78,7 @@ var Star = function() {
 Star.prototype.draw = function() {
   var x = Math.sin(this.timePassed) * this.orbitRadius + this.orbitX,
       y = Math.cos(this.timePassed) * this.orbitRadius + this.orbitY,
-      twinkle = random(20); // Twinkle rate
+      twinkle = random(8); // Twinkle rate
 
   if (twinkle === 1 && this.alpha > 0) {
     this.alpha -= 0.15;
