@@ -14,18 +14,19 @@ var canvas = document.getElementById('canvas'),
 // Cache gradient
 var canvas2 = document.createElement('canvas'),
     ctx2 = canvas2.getContext('2d');
-    canvas2.width = 25;
-    canvas2.height = 25;
+    canvas2.width = 15;
+    canvas2.height = 15;
 var half = canvas2.width/2,
     gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
-    gradient2.addColorStop(0.025, '#fff');
-    gradient2.addColorStop(0.1, 'hsl(' + hue + ', 15%, 25%)');
-    gradient2.addColorStop(0.25, 'hsl(' + hue + ', 10%, 5%)');
+    gradient2.addColorStop(0.025, '#fff'); 
+    //gradient2.addColorStop(0.1, 'hsl(' + hue + ', 15%, 25%)');
+    gradient2.addColorStop(0.2, 'hsl(' + hue + ', 25%, 5%)');
     gradient2.addColorStop(1, 'transparent');
 
     ctx2.fillStyle = gradient2;
     ctx2.beginPath();
     ctx2.arc(half, half, half, 0, Math.PI * 2);
+    //ctx2.arc(half + 15, half + 15, half, 5, Math.PI * 2);
     ctx2.fill();
 
 // End cache
@@ -58,7 +59,7 @@ var Star = function() {
   this.orbitX = w / 2;
   this.orbitY = h / 2;
   this.timePassed = random(0, maxStars);
-  this.speed = random(this.orbitRadius) / 15000; // Rot speed
+  this.speed = random(this.orbitRadius) / 12000; // Rot speed
   this.alpha = random(2, 100) / 50; // overal brightness
 
   count++;
@@ -78,6 +79,9 @@ Star.prototype.draw = function() {
 
   ctx.globalAlpha = this.alpha;
     ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
+  
+  //ctx.globalAplha = this.alpha/2; 
+  //ctx.drawImage(canvas2,  x - this.radius / 2, y - this.radius / 2, this.radius/4, this.radius/4);
   this.timePassed += this.speed;
 }
 
