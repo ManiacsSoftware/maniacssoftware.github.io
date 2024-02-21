@@ -23,9 +23,9 @@
         var half = canvas2.width / 2,
         gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
         gradient2.addColorStop(0.025, '#fff');
-        //gradient2.addColorStop(0.1, 'hsl(' + hue + ', 15%, 25%)');
+        gradient2.addColorStop(0.1, 'hsl(' + hue + ', 15%, 25%)');
         gradient2.addColorStop(0.25, 'hsl(' + hue + ', 10%, 5%)');
-        gradient2.addColorStop(1, 'transparent');
+        //gradient2.addColorStop(1, 'transparent');
 
         ctx2.fillStyle = gradient2;
         ctx2.beginPath();
