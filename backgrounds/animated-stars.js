@@ -2,8 +2,8 @@
 
 var canvas = document.getElementById('canvas'),
   ctx = canvas.getContext('2d'),
-  w = canvas.width = window.innerWidth,
-  h = canvas.height = window.innerHeight,
+  w = canvas.width = window.innerWidth - 10,
+  h = canvas.height = window.innerHeight - 10,
     
   hue = 235,
   stars = [],
@@ -62,8 +62,8 @@ function maxOrbit(x,y) {
 }
 
 var Star = function() {
-  var radi = random(50, maxOrbit(w,h));
-  this.orbitRadius = (radi)/1.5;// / 10;
+  var radi = random(30, maxOrbit(w,h));
+  this.orbitRadius = (radi)/1.3;// / 10;
   this.radius = 4 + random(10, this.orbitRadius) / 45;// star size min/max
   this.orbitX = w / 2;
   this.orbitY = h / 2;
@@ -87,7 +87,7 @@ Star.prototype.draw = function() {
   }
 
   ctx.globalAlpha = this.alpha;
-    ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
+  ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
   
   this.timePassed += this.speed;
 }
