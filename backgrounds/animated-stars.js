@@ -12,7 +12,7 @@
         hue = 235,
         stars = [],
         count = 0,
-        maxStars = 1000;
+        maxStars = 5000;
 
         // Thanks @jackrugile for the performance tip! https://codepen.io/jackrugile/pen/BjBGoM
         // Cache gradient
@@ -62,7 +62,7 @@
             this.orbitX = w / 2;
             this.orbitY = h / 2;
             this.timePassed = random(0, maxStars);
-            this.speed = random(this.orbitRadius) / 1500000; // Rot speed
+            this.speed = random(this.orbitRadius) / 15000; // Rot speed
             this.alpha = random(2, 100) / 50; // overal brightness
 
             count++;
