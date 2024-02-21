@@ -58,8 +58,12 @@ body {
 	font-size: 2.4em;
 }
 
-#songs, #announcements {
+#announcements {
 	font-size: 2.5em;
+}
+
+#songs {
+	font-size: 2.7em;
 }
 
 #verses:not(.blackground) #verse .label {
