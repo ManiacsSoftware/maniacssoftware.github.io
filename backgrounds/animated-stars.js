@@ -68,7 +68,7 @@ var Star = function() {
   this.orbitX = w / 2;
   this.orbitY = h / 2;
   this.timePassed = random(0, maxStars);
-  this.speed = random(this.orbitRadius) / 12000; // Rot speed
+  this.speed = random(this.orbitRadius) / 120000; // Rot speed
   this.alpha = random(2, 100) / 50; // overal brightness
 
   count++;
