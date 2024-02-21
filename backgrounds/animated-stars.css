@@ -6,7 +6,8 @@
 	font-style: normal;
 	font-weight: 800;
 	font-display: swap;
-	text-shadow: 0px 0px 5em rgba(69, 121, 244, 0.6);
+	/* text-shadow: 0px 0px 5em rgba(69, 121, 244, 0.6); LARGE SLOW DOWN due to blur! */
+	text-shadow: 0px 0px 0.5em rgba(69, 121, 244, 0.7);
 	/*font-family: 'Sedgwick Ave Display' !important; */
 }
 
