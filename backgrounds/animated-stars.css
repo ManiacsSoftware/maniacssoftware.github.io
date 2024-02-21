@@ -3,7 +3,7 @@
 
 #verses:not(.blackground) #source, #verses:not(.blackground) #verse, #announcement, #song, #timerMessage {
 	font-family: 'Exo 2';
-	font-style: italic;
+	font-style: normal;
 	font-weight: 800;
 	font-display: swap;
 	text-shadow: 0px 0px 35px rgba(69, 121, 244, 0.8);
@@ -12,7 +12,7 @@
 
 /*  Decorative background stripes for text */
 #verses:not(.blackground) #verse {
-	padding: 0 1.3em;
+	//padding: 0 1.3em;
 	line-height: 1.6em;
 }
 
@@ -49,11 +49,11 @@
 }
 
 #verses:not(.blackground) {
-	font-size: 2.35em;
+	font-size: 2.4em;
 }
 
 #songs, #announcements {
-	font-size: 2.35em;
+	font-size: 2.4em;
 }
 
 #verses:not(.blackground) #verse .label {
