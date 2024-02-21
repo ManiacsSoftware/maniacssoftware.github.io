@@ -64,11 +64,11 @@ function maxOrbit(x,y) {
 var Star = function() {
 
   this.orbitRadius = random(maxOrbit(w,h));
-  this.radius = 8 + random(10, this.orbitRadius) / 35;// star size min/max
+  this.radius = 4 + random(10, this.orbitRadius) / 45;// star size min/max
   this.orbitX = w / 2;
   this.orbitY = h / 2;
   this.timePassed = random(0, maxStars);
-  this.speed = random(this.orbitRadius) / 120000; // Rot speed
+  this.speed = random(this.orbitRadius) / 150000; // Rot speed
   this.alpha = random(2, 100) / 50; // overal brightness
 
   count++;
