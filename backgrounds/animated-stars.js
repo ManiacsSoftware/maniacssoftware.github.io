@@ -8,36 +8,36 @@ var canvas = document.getElementById('canvas'),
   hue = 235,
   stars = [],
   count = 0,
-  maxStars = 3000;
+  maxStars = 1000;
 
 // Thanks @jackrugile for the performance tip! https://codepen.io/jackrugile/pen/BjBGoM
 // Cache gradient
 var canvas2 = document.createElement('canvas'),
     ctx2 = canvas2.getContext('2d');
-    canvas2.width = 15;
-    canvas2.height = 15;
+    canvas2.width = 10;
+    canvas2.height = 10;
 var half = canvas2.width/2,
     full = canvas2.width,
     gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
-    gradient2.addColorStop(0.025, '#fff'); 
-    //gradient2.addColorStop(0.1, '#4c4e67'); //hsl(' + hue + ', 15%, 25%)');
-    gradient2.addColorStop(0.2, '#0a0a10');//'hsl(' + hue + ', 25%, 5%)');
-    gradient2.addColorStop(1, 'transparent');
+    gradient2.addColorStop(0.1, '#fff'); 
+    gradient2.addColorStop(0.4, '#4c4e6710'); //hsl(' + hue + ', 15%, 25%)');
+    //gradient2.addColorStop(0.7, '#0a0a10');//'hsl(' + hue + ', 25%, 5%)');
+    //gradient2.addColorStop(1, 'transparent');
 
     ctx2.fillStyle = gradient2;
-/*
+
     ctx2.beginPath();
     //ctx2.arc(half, half, half, 0, Math.PI * 2);
     ctx2.arc(half, half, half, 0, Math.PI * 2);
     ctx2.fill();
-    */
+/*    
     ctx2.beginPath();
     ctx2.moveTo(0,half);
     ctx2.lineTo(half, full);
     ctx2.lineTo(full,half);
     ctx2.lineTo(half,0);
     ctx2.fill();
-
+*/
 // End cache
 
 function random(min, max) {
@@ -64,11 +64,11 @@ function maxOrbit(x,y) {
 var Star = function() {
 
   this.orbitRadius = random(maxOrbit(w,h));
-  this.radius = random(100, this.orbitRadius) / 15;// star size min/max
+  this.radius = 8 + random(10, this.orbitRadius) / 35;// star size min/max
   this.orbitX = w / 2;
   this.orbitY = h / 2;
   this.timePassed = random(0, maxStars);
-  this.speed = random(this.orbitRadius) / 1200000; // Rot speed
+  this.speed = random(this.orbitRadius) / 120000; // Rot speed
   this.alpha = random(2, 100) / 50; // overal brightness
 
   count++;
