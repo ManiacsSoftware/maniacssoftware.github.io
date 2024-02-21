@@ -17,16 +17,25 @@ var canvas2 = document.createElement('canvas'),
     canvas2.width = 15;
     canvas2.height = 15;
 var half = canvas2.width/2,
+    full = canvas2.width,
     gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
     gradient2.addColorStop(0.025, '#fff'); 
-    //gradient2.addColorStop(0.1, 'hsl(' + hue + ', 15%, 25%)');
-    gradient2.addColorStop(0.2, 'hsl(' + hue + ', 25%, 5%)');
+    //gradient2.addColorStop(0.1, '#4c4e67'); //hsl(' + hue + ', 15%, 25%)');
+    gradient2.addColorStop(0.2, '#0a0a10');//'hsl(' + hue + ', 25%, 5%)');
     gradient2.addColorStop(1, 'transparent');
 
     ctx2.fillStyle = gradient2;
+/*
     ctx2.beginPath();
+    //ctx2.arc(half, half, half, 0, Math.PI * 2);
     ctx2.arc(half, half, half, 0, Math.PI * 2);
-    //ctx2.arc(half + 15, half + 15, half, 5, Math.PI * 2);
+    ctx2.fill();
+    */
+    ctx2.beginPath();
+    ctx2.moveTo(0,half);
+    ctx2.lineTo(half, full);
+    ctx2.lineTo(full,half);
+    ctx2.lineTo(half,0);
     ctx2.fill();
 
 // End cache
@@ -80,8 +89,6 @@ Star.prototype.draw = function() {
   ctx.globalAlpha = this.alpha;
     ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
   
-  //ctx.globalAplha = this.alpha/2; 
-  //ctx.drawImage(canvas2,  x - this.radius / 2, y - this.radius / 2, this.radius/4, this.radius/4);
   this.timePassed += this.speed;
 }
 
