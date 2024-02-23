@@ -101,5 +101,13 @@
 		"animated": true,
 		"changesFont": true,
 		"unreleased": true
+	},
+	{
+		"alias": "test",
+		"image": "test.png",
+		"name": "Test",
+		"animated": true,
+		"changesFont": true,
+		"unreleased": true
 	}
 ]
