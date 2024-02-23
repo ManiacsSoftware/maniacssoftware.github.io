@@ -20,8 +20,8 @@ void main(void) {
 
   if (gl_Position.w > 0.0) {
     gl_PointSize = 5.0 / gl_Position.w;
-    if (gl_PointSize > 12.0) {
-      gl_PointSize = 12.0;
+    if (gl_PointSize > 8.0) {
+      gl_PointSize = 8.0;
     }
   } else {
     gl_PointSize = 0.0;
@@ -87,7 +87,7 @@ const buffer = gl.createBuffer()
 gl.bindBuffer(gl.ARRAY_BUFFER, buffer)
 gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(points), gl.STATIC_DRAW)
   
-gl.clearColor(0.0, 0.0, 0.0, 1.0)
+gl.clearColor(1.0, 1.0, 1.0, 1.0)
 gl.clear(gl.COLOR_BUFFER_BIT)
 
 gl.useProgram(program)
