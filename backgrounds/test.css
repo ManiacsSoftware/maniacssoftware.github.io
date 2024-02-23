@@ -9,6 +9,10 @@ html, body, canvas {
     width: 100%;
 }
 
+canvas {
+	background: radial-gradient(ellipse at bottom, #1b2735c4 0%, #090a0f 100%);
+}
+
 #verses:not(.blackground) #source, #verses:not(.blackground) #verse, #announcement, #song, #timerMessage {
 	font-family: 'Exo 2';
 	font-style: normal;
