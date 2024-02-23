@@ -38,7 +38,7 @@ precision highp float;
 
 varying float v_w;
 
-const vec4 begin = vec4(0.55, 0.55, 1.0, 0.3); // Colors
+const vec4 begin = vec4(0.55, 0.55, 1.0, 1.0); // Colors
 const vec4 end = vec4(1.0, 1.0, 1.0, 1.0);
 
 vec4 interpolate4f(vec4 a,vec4 b, float p) {
@@ -52,7 +52,7 @@ void main(void) {
   float dist = (1.0 - sqrt(pc.x * pc.x + pc.y * pc.y));
   vec4 color = interpolate4f(begin, end, dist);
   float distPart = v_w/70.0 + dist/1.0;
-  float opa =  dist * v_w;
+  float opa =  dist * v_w/1.5 - 0.1;
 
   gl_FragColor = vec4(distPart, distPart, distPart, opa) * color;
 
