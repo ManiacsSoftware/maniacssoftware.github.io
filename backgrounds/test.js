@@ -3,7 +3,8 @@ const gl = canvas.getContext('webgl')
 
 const vertexShader = gl.createShader(gl.VERTEX_SHADER)
 gl.shaderSource(vertexShader, `
-precision mediump float;
+//precision mediump float;
+precision highp float;
 
 uniform mat4 u_mvp;
 
