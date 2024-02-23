@@ -3,7 +3,6 @@ const gl = canvas.getContext('webgl')
 
 const vertexShader = gl.createShader(gl.VERTEX_SHADER)
 gl.shaderSource(vertexShader, `
-//precision mediump float;
 precision highp float;
 
 uniform mat4 u_mvp;
@@ -20,7 +19,10 @@ void main(void) {
   v_w = 1.0 / finalPosition.w;
 
   if (gl_Position.w > 0.0) {
-    gl_PointSize = 4.5 + 1.0 / gl_Position.w;
+    gl_PointSize = 5.0 / gl_Position.w;
+    if (gl_PointSize > 12.0) {
+      gl_PointSize = 12.0;
+    }
   } else {
     gl_PointSize = 0.0;
   }
@@ -36,8 +38,8 @@ precision highp float;
 
 varying float v_w;
 
-const vec4 begin = vec4(0.3, 0.45, 1.0, 1.0);
-const vec4 end = vec4(1.0, 1.0, 1.0, 0.3);
+const vec4 begin = vec4(0.55, 0.55, 1.0, 0.3); // Colors
+const vec4 end = vec4(1.0, 1.0, 1.0, 1.0);
 
 vec4 interpolate4f(vec4 a,vec4 b, float p) {
   return p * b + (1.0 - p) * a;
@@ -49,8 +51,10 @@ void main(void) {
 
   float dist = (1.0 - sqrt(pc.x * pc.x + pc.y * pc.y));
   vec4 color = interpolate4f(begin, end, dist);
+  float distPart = v_w/70.0 + dist/1.0;
+  float opa =  dist * v_w;
 
-  gl_FragColor = vec4(dist, dist, dist, dist * dist * v_w) * color;
+  gl_FragColor = vec4(distPart, distPart, distPart, opa) * color;
 
 }`)
 
@@ -71,11 +75,11 @@ const uniforms = {
   mvp: gl.getUniformLocation(program, 'u_mvp')
 }
 
-const NUM_POINTS = 500000
+const NUM_POINTS = 20000
 const points = []
 for (let index = 0; index < NUM_POINTS; index++) {
   points.push((Math.random() - 0.5) * 8)
-  points.push((Math.random() - 0.5) * 8)
+  points.push((Math.random() - 0.5) * 2)
   points.push((Math.random() - 0.5) * 8)
 }
 
@@ -83,7 +87,7 @@ const buffer = gl.createBuffer()
 gl.bindBuffer(gl.ARRAY_BUFFER, buffer)
 gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(points), gl.STATIC_DRAW)
   
-gl.clearColor(1.0, 1.0, 1.0, 1.0)
+gl.clearColor(0.0, 0.0, 0.0, 1.0)
 gl.clear(gl.COLOR_BUFFER_BIT)
 
 gl.useProgram(program)
@@ -102,7 +106,7 @@ const mvMatrix = mat4.create()
 const mvpMatrix = mat4.create()
 const position = vec3.create()
 
-mat4.perspective(pMatrix, Math.PI * 0.35, canvas.width / canvas.height, 0.01, 100000.0)
+mat4.perspective(pMatrix, Math.PI * 0.35, canvas.width / canvas.height, 0.01, 10000.0)
 
 vec3.set(position,0.0,0.0,0.0)
 
@@ -123,17 +127,17 @@ function render(now) {
   
   if (isDirty) {
     gl.viewport(0, 0, canvas.width, canvas.height)
-    mat4.perspective(pMatrix, Math.PI * 0.20, canvas.width / canvas.height, 0.01, 100000.0)
+    mat4.perspective(pMatrix, Math.PI * 0.55, canvas.width / canvas.height, 0.01, 1000.0)
     isDirty = false
   }
   
-  angle += 0.0005
+  angle += 0.0003
   
   // P * V * M
   // mat4.translate(mvpMatrix, mvpMatrix, position);
   // mat4.identity(mMatrix)
   
-  position[2] = Math.sin(now / 30000)
+  position[2] = Math.sin(now / 20000)/3
   
   mat4.identity(vMatrix)
   mat4.translate(vMatrix, vMatrix, position)
