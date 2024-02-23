@@ -38,20 +38,20 @@
 		"licences": ["theme_animated_stars"]
 	},
 	{
-		"alias": "gray-pattern",
-		"image": "gray-pattern.png",
-		"name": "Gray pattern",
-		"animated": true,		
-		"licences": ["theme_gray_pattern"],
-		"changesFont": true
-	},
-	{
 		"alias": "animated-gradients",
 		"image": "animated-gradients.png",
 		"name": "Animated Gradients",
 		"animated": true,
 		"changesFont": true,
 		"licences": ["theme_animated_gradients"]
+	},
+	{
+		"alias": "gray-pattern",
+		"image": "gray-pattern.png",
+		"name": "Gray pattern",
+		"animated": true,		
+		"licences": ["theme_gray_pattern"],
+		"changesFont": true
 	},
 	{
 		"alias": "blueshapes",
