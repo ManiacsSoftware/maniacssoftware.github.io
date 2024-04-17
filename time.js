@@ -26,13 +26,13 @@ function setRemaining(hours, minutes, seconds) {
 	document.getElementById('seconds').innerHTML = seconds;
 }
 
-var targetTime = new Date();
+var targetTime = 0;
 
 
 function startCountdown(inSeconds) {
 	let now = new Date();
 	const milliseconds = inSeconds * 1000; // 1000 milliseconds = 1 second
-	targetTime = new Date(now.getTime() + milliseconds);
+	targetTime = new Date(now.getTime() + milliseconds).getTime();
 			
 	removeClassByQuerySelector('#countdown', 'zeroSize');
 	setTimerVisibility(true);	
@@ -43,12 +43,13 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+
 function countdownTick() {
 	const now = new Date();
-	var difMs = targetTime.getTime() - now.getTime();
+	var difMs =  targetTime - now.getTime();
 	
 	var difSec = Math.trunc(difMs/1000);
-	var minutes =Math.trunc(difSec/60);
+	var minutes = Math.trunc(difSec/60);
 	var seconds = difSec%60;
 	
 	var m = checkTime(minutes);
@@ -56,14 +57,9 @@ function countdownTick() {
 	
 	setRemaining("", m, s);
 	
-	// TODO: How will this translate to templating of timers?
-	if( difMs < 1000) {
-		addClassByQuerySelector('#countdown', 'zeroSize');
-	}
-	
-	if( difMs < 0) {
-		
+	if( difMs < 0) {		
 		setTimerVisibility(false);
+		addClassByQuerySelector('#countdown', 'zeroSize');
 		return;
 	}	
 	
