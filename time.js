@@ -27,14 +27,12 @@ function setRemaining(hours, minutes, seconds) {
 }
 
 var targetTime = 0;
-var targetTimePlusOne = 0;
 
 
 function startCountdown(inSeconds) {
 	let now = new Date();
 	const milliseconds = inSeconds * 1000; // 1000 milliseconds = 1 second
 	targetTime = new Date(now.getTime() + milliseconds + 500);
-	targetTimePlusOne = new Date(now.getTime() + milliseconds - 1000);
 		
 	removeClassByQuerySelector('#countdown', 'zeroSize');
 	setTimerVisibility(true);	
@@ -66,7 +64,7 @@ function countdownTick() {
 	
 	setRemaining(h, m, s);
 	
-	if( today.valueOf() >= targetTimePlusOne.valueOf() ) {
+	if( dif < 2000) {
 		finishTimer();
 		return;
 	}
