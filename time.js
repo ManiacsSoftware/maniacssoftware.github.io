@@ -43,19 +43,10 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-
-function finishTimer() {	
-	setTimerVisibility(false);
-	//sleep(2000).then(() => { 
-		addClassByQuerySelector('#countdown', 'zeroSize');
-	//});
-}
-
 function countdownTick() {
 	const now = new Date();
 	var difMs = targetTime.getTime() - now.getTime();
 	
-	//document.getElementById('hours').innerHTML = "a" + difMs;
 	var difSec = Math.trunc(difMs/1000);
 	var minutes =Math.trunc(difSec/60);
 	var seconds = difSec%60;
@@ -65,12 +56,15 @@ function countdownTick() {
 	
 	setRemaining("", m, s);
 	
-	//document.getElementById('hours').innerHTML = "a" + dif.getTime(); 
-	
+	// TODO: How will this translate to templating of timers?
 	if( difMs < 1000) {
-		finishTimer();
-		return;
+		setTimerVisibility(false);
 	}
+	
+	if( difMs < 0) {
+		addClassByQuerySelector('#countdown', 'zeroSize');
+		return;
+	}	
 	
 	setTimeout(countdownTick, 100); 
 }
