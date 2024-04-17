@@ -57,7 +57,7 @@ function countdownTick() {
 	
 	setRemaining("", m, s);
 	
-	if( difMs < 0) {		
+	if( difMs < 1000) {		
 		setTimerVisibility(false);
 		addClassByQuerySelector('#countdown', 'zeroSize');
 		return;
