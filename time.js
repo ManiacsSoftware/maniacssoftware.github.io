@@ -33,12 +33,12 @@ var targetTimePlusOne = 0;
 function startCountdown(inSeconds) {
 	let now = new Date();
 	const milliseconds = inSeconds * 1000; // 1000 milliseconds = 1 second
-	targetTime = new Date(now.getTime() + milliseconds);
+	targetTime = new Date(now.getTime() + milliseconds + 500);
 	targetTimePlusOne = new Date(now.getTime() + milliseconds - 1000);
-	
-	countdownTick();
+		
 	removeClassByQuerySelector('#countdown', 'zeroSize');
 	setTimerVisibility(true);	
+	countdownTick();
 }
 
 function sleep(ms) {
