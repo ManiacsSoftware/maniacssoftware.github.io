@@ -100,13 +100,13 @@ body {
 #countdown:not(.zeroSize) {
 	max-height: 500px;
 	/* transition: max-height 0.50s ease-in; */
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .zeroSize {
 	max-height: 0;
     /* transition: max-height 0.50s ease-out; */
-    overflow: hidden;
+    
 	/*
 	max-height: 0;
     transform: scale(1, 0);
@@ -135,6 +135,7 @@ body {
 	transition-timing-function: ease-in-out, ease-out, ease-out, ease-in;
 	transition-delay: 0s, 0s, 0s, 0.2s
 	*/
+	overflow: hidden;
 	
 	transition: opacity 1s ease-out, opacity 1s ease-in, max-height 3s ease-out;
 	-moz-transition: opacity 1s ease-out, opacity 1s ease-in, max-height 3s ease-out;
