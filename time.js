@@ -58,11 +58,12 @@ function countdownTick() {
 	
 	// TODO: How will this translate to templating of timers?
 	if( difMs < 1000) {
-		setTimerVisibility(false);
+		addClassByQuerySelector('#countdown', 'zeroSize');
 	}
 	
 	if( difMs < 0) {
-		addClassByQuerySelector('#countdown', 'zeroSize');
+		
+		setTimerVisibility(false);
 		return;
 	}	
 	
