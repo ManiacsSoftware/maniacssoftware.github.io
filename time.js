@@ -26,14 +26,14 @@ function setRemaining(hours, minutes, seconds) {
 	document.getElementById('seconds').innerHTML = seconds;
 }
 
-var targetTime = 0;
+var targetTime = new Date();
 
 
 function startCountdown(inSeconds) {
 	let now = new Date();
 	const milliseconds = inSeconds * 1000; // 1000 milliseconds = 1 second
-	targetTime = new Date(now.getTime() + milliseconds + 500);
-		
+	targetTime = new Date(now.getTime() + milliseconds);
+			
 	removeClassByQuerySelector('#countdown', 'zeroSize');
 	setTimerVisibility(true);	
 	countdownTick();
@@ -52,24 +52,27 @@ function finishTimer() {
 }
 
 function countdownTick() {
-	const today = new Date();
-	var dif = new Date(targetTime - today );
+	const now = new Date();
+	var difMs = targetTime.getTime() - now.getTime();
 	
-	let h = dif.getHours();
-	let m = dif.getMinutes();
-	let s = dif.getSeconds();
-	h = checkTime(h);
-	m = checkTime(m);
-	s = checkTime(s);
+	//document.getElementById('hours').innerHTML = "a" + difMs;
+	var difSec = Math.trunc(difMs/1000);
+	var minutes =Math.trunc(difSec/60);
+	var seconds = difSec%60;
 	
-	setRemaining(h, m, s);
+	var m = checkTime(minutes);
+	var s = checkTime(seconds);
 	
-	if( dif < 2000) {
+	setRemaining("", m, s);
+	
+	//document.getElementById('hours').innerHTML = "a" + dif.getTime(); 
+	
+	if( difMs < 1000) {
 		finishTimer();
 		return;
 	}
 	
-	setTimeout(countdownTick, 1000); 
+	setTimeout(countdownTick, 100); 
 }
 
 
