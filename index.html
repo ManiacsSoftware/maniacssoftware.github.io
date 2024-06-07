@@ -18,12 +18,13 @@
 		</style>
 		<link id="templateStyle" rel="stylesheet" href="backgrounds/blank.css" title="temaplateStyle"/>
 	</head>
-	<body onload="startTime()" id="rootElement">
+	<body onload="startTime(); keepChromecastActive();" id="rootElement">
 		<!-- The video player -->
 		<!--video id="video">controls autoplay</video-->
 		<!--cast-media-player style="display: none"></cast-media-player-->
 		<cast-media-player style="opacity: 0"></cast-media-player>
 		<!--cast-media-player></cast-media-player-->
+		<div id="keepAlive"></div>
 		<embed id="background" class="screen" type="text/html" src="backgrounds/black.html" style="width:100%;height:100vh;"></embed>
 		<div id="blackground" class="screen dimable fit enabled"></div>
 		<div id="splash" class="dimable">

@@ -1,3 +1,11 @@
+function keepChromecastActive() {
+	// Update a hidden element with the current timestamp
+	document.getElementById('keepAlive').innerHTML = new Date().toLocaleString();
+
+	// Schedule the next update after 1 minute (60 000,000 milliseconds)
+	setTimeout(keepChromecastActive, 60000); // 5 minutes
+}
+
 function setTimerMessage(message) {
 	document.getElementById('timerMessage').innerHTML = message;
 }
