@@ -160,3 +160,18 @@ function render(now) {
 }
 
 frameID = window.requestAnimationFrame(render)
+
+// Function to update a hidden element to prevent screensaver
+function keepChromecastActive() {
+	//console.log("TADA");
+	// Update a hidden element with the current timestamp
+	document.getElementById('keepAlive').innerHTML = new Date().toLocaleString();
+
+	// Schedule the next update after 5 minutes (300,000 milliseconds)
+	setTimeout(keepChromecastActive, 60000); // 5 minutes
+}
+
+// Initialize the function when the page loads
+window.onload = function() {
+	keepChromecastActive();
+};
