@@ -13,7 +13,6 @@ function enableBackground() {
 	removeClassByQuerySelector('#verses', 'blackground');
 }
 
-
 function loadBackground(backgroundName, onBlack) {	
 	debug("onBlack changed to " + onBlack);
 	
@@ -32,8 +31,8 @@ function loadBackground(backgroundName, onBlack) {
 	
 	if(loadedBackground !== backgroundName) {
 		loadedBackground = backgroundName;
-		document.getElementById('background').src = 'backgrounds/' + backgroundName + '.html';
-		document.getElementById('templateStyle').href = 'backgrounds/' + backgroundName + '.css';
+		document.getElementById('background').src = base + 'backgrounds/' + backgroundName + '.html';
+		document.getElementById('templateStyle').href =  base + 'backgrounds/' + backgroundName + '.css';
 	}
 }
 
