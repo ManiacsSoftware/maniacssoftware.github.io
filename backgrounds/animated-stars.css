@@ -27,6 +27,11 @@ canvas {
 	/*font-family: 'Sedgwick Ave Display' !important; */
 }
 
+#countdown {
+	font-weight: bold;
+	text-shadow: 0px 0px 0.2em rgba(69, 121, 244, 0.5);
+}
+
 /*  Decorative background stripes for text */
 #verses:not(.blackground) #verse {
 	//padding: 0 1.3em;
