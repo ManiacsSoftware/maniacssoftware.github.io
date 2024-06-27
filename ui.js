@@ -100,24 +100,42 @@ function disableSplash() {
 		disable("splash");
 		
 		setTimeout(function(){
-			document.getElementById("splash")?.remove();
+			let el = document.getElementById("splash");
+			if(el) {
+				el.remove();
+			}
 			splashRemoved = true;
 		}, 5000); 
 	}
 }
 
 function disable(elementName) {
-    document.getElementById(elementName)?.classList.remove('enabled');
+	let el = document.getElementById(elementName);
+	if(!el) {
+		return;
+	}
+	
+	el.classList.remove('enabled');
 }
 
 function enable(elementName) {
-    document.getElementById(elementName)?.classList.add('enabled');
+	let el = document.getElementById(elementName);
+	if(!el) {
+		return;
+	}
+	
+	el.classList.add('enabled');
 }
 
 var debugEnabled = false;
 function showDebug() {
 	debugEnabled = true;
-    document.getElementById('debug')?.classList.remove('hiddenMy');
+	let el = document.getElementById("debug");
+	if(!el) {
+		return;
+	}
+	
+	el.classList.remove('hiddenMy');
 }
 
 function debug(str) {
