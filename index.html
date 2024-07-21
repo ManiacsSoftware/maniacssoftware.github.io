@@ -94,6 +94,7 @@
 		<!-- Initialize the CastReceiverContext -->
 		<script type="text/javascript">
 			window.addEventListener('load', function () {
+				fadeToSplash();
 				debug("load finished");				
 			});
 			//showDebug();
@@ -204,6 +205,24 @@
 							setAnnouncementSize(customData.size);
 						}							
 					} else if(customData.target == "timer") {
+						fadeToTimer();
+						debug("d1");
+						if(customData.message) {
+							document.getElementById('timerMessage').innerHTML = customData.message;
+						} else {
+							document.getElementById('timerMessage').textContent = customData.message;
+						}
+						debug("d2");
+						
+						startCountdown(customData.source);
+						
+						debug("d3");
+
+
+						if(customData.size) {
+							setTimerSize(customData.size);
+						}	
+					} else if(customData.target == "youtubevideo") {
 						fadeToTimer();
 						debug("d1");
 						if(customData.message) {
