@@ -380,8 +380,15 @@ body {
 	font-size: 70%;
 }
 
-#footer, #song-footer, #timer-footer {
-	font-size: 0.7em;	
+#footer, #song-footer, #announcement-footer {
+	font-size: 0.8em;	
+}
+
+#timer-footer {
+	font-size: 1.2em;
+}
+
+#footer, #song-footer, #timer-footer, #announcement-footer {
 	padding: 1em;
 	position: absolute;
 	bottom: 0px;
