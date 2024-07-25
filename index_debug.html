@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chromecast Receiver</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="main.css"/>
+		<!--link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ballet" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"-->
+		<style id="verseStyle">
+		/* CSS styles for the text message */
+		/*
+		.welcomme {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  #font-size: 36px;
+		  #font-weight: bold;
+		  color: #ffffff;
+		  background-color: rgba(0, 0, 0, 0);
+		  z-index: 999;
+		}
+		*/
+		/* for debug resons */
+	    .verse.v2 { display: initial !important; margin-right: 0.2em; }
+	    
+		</style>
+		<style id="songStyle">
+		</style>
+		<style id="announcementStyle">
+		</style>
+		<link id="templateStyle" rel="stylesheet" href="backgrounds/blank.css" title="temaplateStyle"/>
+	</head>
+	<body onload="startTime()" id="rootElement">
+		<!-- The video player -->
+		<!--video id="video">controls autoplay</video-->
+		<!--cast-media-player style="display: none"></cast-media-player-->
+		<cast-media-player style="opacity: 0"></cast-media-player>
+		<!--cast-media-player></cast-media-player-->
+		<embed id="background" class="screen" type="text/html" src="backgrounds/black.html" style="width:100%;height:100vh;"></embed>
+		<div id="blackground" class="screen dimable fit enabled"></div>
+		<div id="splash" class="dimable">
+			<object data="backgrounds/intro.html" class="screen fit" style="width:100%;height:100vh;"></object>
+			<div id="welcome" class="centered centertext">
+				<h1 id="title">VerseCast</h1>
+				<p id="message">Loading...</p>
+			</div>
+		</div>
+		<div id="announcements" class="screen dimable">
+			<div class="frame centered">
+				<div id="announcement" class="inframe fit sizable">
+				</div>
+			</div>
+			<div id="footer">
+				<span class="demoText hiddenMy">VerseCast for Chromecast</span>
+				<span/>
+			</div>
+		</div>
+		<div id="verses" class="screen dimable">
+			<div class="frame centered">
+				<div id="verse" class="inframe centertext fit sizable">
+					<div class="version vid464 iso6393slk" data-vid="464" data-iso6393="slk">
+						<div class="book bk2TI">
+							<div class="chapter ch4" data-usfm="2TI.4">
+								<div class="label">4</div>
+								<div class="p">
+									<span class="content">  </span>
+									<span class="verse v1" data-usfm="2TI.4.1">
+										<span class="label">1</span>
+										<span class="content">In the presence of God and of Christ Jesus, who will judge the living and the dead, and in view of his appearing and his kingdom, I give you this charge: </span>
+									</span>
+									<span class="verse v2" data-usfm="2TI.4.2">
+										<span class="label">2</span>
+										<span class="content">Preach the word; be prepared in season and out of season; correct, rebuke and encourage&#8212;with great patience and careful instruction. </span>
+									</span>
+									<span class="verse v3" data-usfm="2TI.4.3">
+										<span class="label">3</span>
+										<span class="content">For the time will come when people will not put up with sound doctrine. Instead, to suit their own desires, they will gather around them a great number of teachers to say what their itching ears want to hear. </span>
+									</span>
+									<span class="verse v4" data-usfm="2TI.4.4">
+										<span class="label">4</span>
+										<span class="content">They will turn their ears away from the truth and turn aside to myths. </span>
+									</span>
+									<span class="verse v5" data-usfm="2TI.4.5">
+										<span class="label">5</span>
+										<span class="content">But you, keep your head in all situations, endure hardship, do the work of an evangelist, discharge all the duties of your ministry.</span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<span class="demoText hiddenMy">VerseCast for Chromecast</span>
+				<span/>
+				<span id="source">2 Timothy 4:2 NIV</span>
+			</div>
+		</div>
+		<div id="songs" class="screen dimable">
+			<div class="frame centered">
+				<div id="song" class="inframe centertext fit sizable">
+					<div>
+						<span>NOTIFIKÁCIA DOLE ZNAMENÁ</span>
+					</div>
+					<div>
+						<span>ŽE TÁTO PIESEŇ BOLA IMPORTOVANÁ</span>
+					</div>
+					<div>
+						<span>A MOŽNO POTREBUJE SKONTROLOVAŤ ROZLOŽENIE.</span>
+					</div>
+					<div>
+						<span>PO ULOŽENÍ PIESNE SA INDIKÁTOR</span>
+					</div>
+					<div>
+						<span>ZMENÍ NA "PRIPRAVENÉ"</span>
+					</div>
+				</div>
+			</div>
+			<div id="song-footer">
+				<span class="demoText hiddenMy">VerseCast for Chromecast</span>
+				<span/>
+				<span id="song-source"></span>
+			</div>
+		</div>
+		<div id="timers" class="screen dimable">
+			<div class="frame centered">
+				<div id="timer" class="inframe centertext fit sizable">
+					<div id="countdown" class="dimable zeroSize">
+						<span id="hours"></span><span id="minutes"></span><span id="seconds"></span>
+					</div>
+					<div id="timerMessage"></div>
+				</div>
+			</div>
+			<div id="timer-footer">
+				<span class="demoText hiddenMy">VerseCast for Chromecast</span>
+				<span/>
+				<span class="clock"></span>
+			</div>
+		</div>
+		<div id="black" class="screen dimable fit enabled"></div>
+		<div id="debug" class="screen hiddenMy fit">Debug</div>
+		<!-- Include the Cast Receiver SDK -->
+		<script type="text/javascript" src="ui.js"></script>
+		<script type="text/javascript" src="theme.js"></script>
+		<script type="text/javascript" src="time.js"></script>
+		<script type="text/javascript" src="http://www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+		<!-- Initialize the CastReceiverContext -->
+		<script type="text/javascript">
+			window.addEventListener('load', function () {
+				debug("load finished");
+				
+				loadBackground('animated-stars', 'false')
+				fadeToVerse();
+				
+			});
+			//showDebug();
+			debug("Starting...");
+
+			//fadeToVerse();
+
+			// Create a CastReceiverContext
+			const context = cast.framework.CastReceiverContext.getInstance();
+
+			//debug("1");
+			const playerManager = context.getPlayerManager();
+			//debug("2");
+			// Handle incoming messages
+			playerManager.setMessageInterceptor(
+			  cast.framework.messages.MessageType.LOAD,
+			  request => {		
+				if (request.media && request.media.customData) {			
+				
+					const customDataStr = JSON.stringify(request.media.customData);
+					//debug("CustomData: " + customDataStr);
+					
+					const customData = JSON.parse(customDataStr);
+					//debug("CustomData obj: " + JSON.stringify(customData));
+
+					debug("...PARSED...");
+					
+					
+					if(customData.debug) {
+						document.getElementById('debug').classList.remove('hiddenMy');
+					}
+					
+					if(!customData.target || customData.target == 'splash') {
+						fadeToSplash();
+						return;
+					} else if(customData.target == 'black') {
+						fadeToBlack();
+						return;
+					} else if(customData.target == 'background') {
+						fadeToBackground();
+						return;
+					} else if(customData.target == 'song') {
+						fadeToSong();
+						// TODO: try animated verse swap: https://alvarotrigo.com/blog/css-text-animations/
+						debug("a1");
+						if(customData.style) {
+							document.getElementById('song').innerHTML = customData.message;
+						} else {
+							document.getElementById('song').textContent = customData.message;
+						}
+						debug("a2");							
+						if(customData.source) {
+							document.getElementById('song-source').textContent = customData.source;
+						} else {
+							document.getElementById('song-source').textContent = "";
+						}				
+						debug("a3");
+						if(customData.style) { 
+							setSongStyle(customData.style);
+						}
+						debug("a4");
+												
+						if(customData.size) {
+							setSongSize(customData.size);
+						}	
+						
+					} else if(customData.target == 'verse') {
+						fadeToVerse();
+						// TODO: try animated verse swap: https://alvarotrigo.com/blog/css-text-animations/
+						debug("b1");
+						if(customData.style) {
+							document.getElementById('verse').innerHTML = customData.message;
+						} else {
+							document.getElementById('verse').textContent = customData.message;
+						}
+						debug("b2");							
+						if(customData.source) {
+							document.getElementById('source').textContent = customData.source;
+						} else {
+							document.getElementById('source').textContent = "";
+						}				
+						debug("b3");
+						if(customData.style) { 
+							setVerseStyle(customData.style);
+						}
+						debug("b4");
+						
+						
+						if(customData.size) {
+							setVerseSize(customData.size);
+						}	
+						
+					} else if(customData.target == "announcements") {
+						fadeToAnnouncement();
+						debug("c1");
+					    if(customData.style) { 
+							setAnnouncementStyle(customData.style);
+						}
+						debug("c2");
+						if(customData.style) {
+							document.getElementById('announcement').innerHTML = customData.message;
+						} else {
+							document.getElementById('announcement').textContent = customData.message;
+						}
+						debug("c3");	
+
+						if(customData.size) {
+							setAnnouncementSize(customData.size);
+						}							
+					} else if(customData.target == "timer") {
+						fadeToTimer();
+						debug("d1");
+						if(customData.message) {
+							document.getElementById('timerMessage').innerHTML = customData.message;
+						} else {
+							document.getElementById('timerMessage').textContent = customData.message;
+						}
+						debug("d2");
+						
+						startCountdown(customData.source);
+						
+						debug("d3");
+
+
+						if(customData.size) {
+							setTimerSize(customData.size);
+						}	
+					}
+					
+					setDemo(customData.demo && customData.demo === "true");
+					
+					if(customData.background) {
+						debug("x1");
+						loadBackground(customData.background, customData.onblack);
+					} else {
+						debug("x2");
+						clearBackground();
+					}
+
+					debug("Target: " + customData.target);								
+					debug("...DONE");
+				}
+			  }
+			);
+			//debug("3");
+			const messageEl = document.getElementById('message');
+			messageEl.textContent = "Present verses with Chromecast!";
+
+			//debug("4");
+			// Start the receiver
+			context.start({disableIdleTimeout: true});
+
+			debug("Init done...");
+		</script>
+	</body>
+</html>

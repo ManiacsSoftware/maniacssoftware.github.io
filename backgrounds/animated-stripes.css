@@ -1,0 +1,213 @@
+/* font */
+
+/* @import url(https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Roboto:wght@100&display=swap); */
+@import url(https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Roboto:wght@700&display=swap);
+
+#source, #verse, #announcement, #timerMessage {
+	font-style: normal;
+    font-weight: 700;
+	font-family: "Roboto", sans-serif !important;
+	color: white;
+	/*font-family: 'Sedgwick Ave Display' !important; */
+}
+
+/* background */
+:root {
+  --color-1: #FC006B40;
+  --color-2: #7011FB44;
+  --color-3: #ff008066;
+  --color-4: #5011DFBB;
+  --blur: blur(6vh);  
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-size: 400% 400%;
+  background-color: #6600FF;
+}
+
+gradient-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: var(--color-2);
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+  filter: var(--blur);
+}
+
+gradient-color {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  border-radius: 30% 80% 75% 40% / 40% 40% 70% 50%;
+  animation-name: animate1;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: -30s;
+}
+
+@keyframes animate1 {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 60%;
+    transform: scale(2) rotate(0deg) translate(10%, 10%);
+  }
+  100% {
+    border-radius: 88% 10% 22% 58% / 73% 56% 34% 77%;
+    transform: scale(2) rotate(-110deg) translate(10%, -40%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 60%;
+    transform: scale(2) rotate(0deg) translate(10%, -65%);
+  }
+  100% {
+    border-radius: 88% 10% 22% 58% / 73% 56% 34% 77%;
+    transform: scale(2) rotate(80deg) translate(20%, -30%);
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 60%;
+    transform: scale(1.4) rotate(10deg) translate(10%, 30%);
+  }
+  100% {
+    border-radius: 88% 10% 22% 58% / 73% 56% 34% 77%;
+    transform: scale(2.5) rotate(70deg) translate(20%, -10%);
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 60%;
+    transform: scale(0.8) rotate(42deg) translate(10%, -50%);
+  }
+  100% {
+    border-radius: 88% 10% 22% 58% / 73% 56% 34% 77%;
+    transform: scale(1.8) rotate(140deg) translate(10%, -30%);
+  }
+}
+
+
+@keyframes animate5 {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 60%;
+    transform: scale(0.8) rotate(42deg) translate(-100%, -112%);
+  }
+  100% {
+    border-radius: 88% 10% 22% 58% / 73% 56% 34% 77%;
+    transform: scale(1.8) rotate(140deg) translate(-67%, -103%);
+  }
+}
+
+gradient-color:nth-child(1) {
+  background-color: var(--color-1);
+  animation-direction: backwards;
+  animation-name: animate2;
+  animation-duration: 38s;
+  animation-delay: -15s;
+}
+
+gradient-color:nth-child(2) {
+  background-color: var(--color-2);
+  animation-name: animate2;
+  animation-duration: 27s;
+  animation-delay: -7s;
+}
+
+gradient-color:nth-child(3) {
+  background-color: var(--color-3);
+  animation-direction: backwards;
+  animation-name: animate1;
+  animation-duration: 26;
+  animation-delay: -18s;
+}
+
+gradient-color:nth-child(4) {
+  background-color: var(--color-4);
+  animation-name: animate4;
+  animation-duration: 29s;
+  animation-delay: -45s;
+}
+
+
+gradient-color:nth-child(5) {
+  background-color: var(--color-3);
+  animation-name: animate5;
+  animation-duration: 31s;
+  animation-delay: -45s;
+}
+
+gradient-backdrop {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+}
+/* end background */
+
+/*  Decorative background stripes for text */
+#verse {
+	padding: 0 1.3em;
+	line-height: 1.6em;
+}
+
+#verse > div {
+    line-height: 1.5em;
+    display: inline;
+    color: #fff;
+	/* From https://css.glass */
+	/*
+	background: rgba(255, 255, 255, 0.19);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(8.1px);
+	-webkit-backdrop-filter: blur(8.1px);
+	border: 1px solid rgba(255, 255, 255, 0.65);
+	*/
+    
+    /* background: black;
+    box-shadow: 2.5em 0px 0px 0px black, -2.5em 0 0 0px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset;
+	padding-right: 1px;
+	
+    -webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+	*/
+}
+
+#verses {
+	font-size: 2.6em;
+}
+
+#verse .label {
+  top: -0.28em;
+  /* font-weight: bold; */
+}
+
+.frame {
+  max-width: 90%;
+}
+
+/* Decorative box for announcements */
+
+#announcement {
+	padding: 1em 2.5em;
+	text-shadow: none;
+	/* background-color: rgba(0, 0, 0, 0.70); */
+}
+
+
+
