@@ -102,6 +102,11 @@ body {
 	background-color: rgba(0, 0, 0, 0.70);
 }
 
+
+#announcement:has(> #giving) {
+	padding: 1em 1em;
+}
+
 #timer {
 	text-shadow: 0.1em 0.4em 0.4em #3059
 }

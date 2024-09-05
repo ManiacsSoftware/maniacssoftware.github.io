@@ -29,6 +29,7 @@
 		<!--cast-media-player></cast-media-player-->
 		<div id="keepAlive"></div>
 		<embed id="background" class="screen" type="text/html" src="backgrounds/black.html" style="width:100%;height:100vh;"></embed>
+		<!--img id="backgroundImg" src=""></img-->
 		<div id="blackground" class="screen dimable fit enabled"></div>
 		<div id="splash" class="dimable">
 			<object data="backgrounds/intro.html" class="screen fit" style="width:100%;height:100vh;"></object>
@@ -38,13 +39,12 @@
 			</div>
 		</div>
 		<div id="announcements" class="screen dimable">
-			<div class="frame centered">
-				<div id="announcement" class="inframe fit sizable">
-				</div>
+			<div id="announcementFrame" class="frame centered dimable enabled">
+				<div id="announcement" class="inframe fit sizable"></div>
 			</div>
 			<div id="announcement-footer">
 				<span class="demoText hiddenMy">VerseCast for Chromecast</span>
-				<span/>
+				<span id="announcement-footer-right"></span>
 			</div>
 		</div>
 		<div id="verses" class="screen dimable">
@@ -186,13 +186,20 @@
 							setVerseSize(customData.size);
 						}	
 						
-					} else if(customData.target == "announcements" || customData.target == "summary") {
+					} else if(customData.target == "announcements" || customData.target == "giving" || customData.target == "summary") {
 						fadeToAnnouncement();
 						debug("c1");
 					    if(customData.style) { 
 							setAnnouncementStyle(customData.style);
 						}
 						debug("c2");
+						
+						if(customData.message == null || customData.message.length == 0) {
+							document.getElementById('announcementFrame').classList.remove('enabled');
+						} else {
+							document.getElementById('announcementFrame').classList.add('enabled');
+						}
+						
 						if(customData.style) {
 							document.getElementById('announcement').innerHTML = customData.message;
 						} else {
@@ -202,7 +209,14 @@
 
 						if(customData.size) {
 							setAnnouncementSize(customData.size);
-						}							
+						}	
+						
+						if(customData.source) {	
+							document.getElementById('announcement-footer-right').innerHTML = customData.source;
+						} else {
+							document.getElementById('announcement-footer-right').innerHTML = "";
+						}
+						
 					} else if(customData.target == "timer") {
 						fadeToTimer();
 						debug("d1");
@@ -221,6 +235,8 @@
 						if(customData.size) {
 							setTimerSize(customData.size);
 						}	
+					} else if( customData.target == "youtubevideo") {
+						fadeToPlayer();
 					}
 					
 					setDemo(customData.demo && customData.demo === "true");

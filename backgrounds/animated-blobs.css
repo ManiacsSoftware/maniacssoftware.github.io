@@ -219,3 +219,7 @@ gradient-backdrop {
 	text-shadow: none;
 	background-color: rgba(0, 0, 0, 0.70);
 }
+
+#announcement:has(> #giving) {
+	padding: 1em 1em;
+}
