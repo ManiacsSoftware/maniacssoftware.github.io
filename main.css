@@ -125,7 +125,7 @@ body {
 	visibility: hidden;
 }
 
-#verses, #splash, #announcements, #black, #blackground, #songs, #timers {
+#verses, #splash, #announcements, #black, #blackground, #songs, #timers, #images {
 	transition: opacity 1s ease-in-out, background-color 1s ease-in-out, color 1s ease-in-out, box-shadow 1s ease-in-out;
 	-moz-transition: opacity 1s ease-in-out, background-color 1s ease-in-out, color 1s ease-in-out, box-shadow 1s ease-in-out;
 	-webkit-transition: opacity 1s ease-in-out, background-color 1s ease-in-out, color 1s ease-in-out, box-shadow 1s ease-in-out;
