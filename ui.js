@@ -8,6 +8,7 @@ function blackground(on) {
 
 function fadeToImage() {
 	blackground(false);	
+	disable("background");
 	enable("images");
 	disable("embed");
 	disable("songs");
@@ -20,7 +21,6 @@ function fadeToImage() {
 }
 
 function fadeToEmbed() {
-	blackground(false);	
 	enable("embed");
 	disable("songs");
 	disable("backgroundInsert");

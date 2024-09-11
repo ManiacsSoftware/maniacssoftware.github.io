@@ -84,7 +84,7 @@
 				<span class="clock"></span>
 			</div>
 		</div>
-		<div id="images" class="screen dimable fit"></div>
+		<div id="images" class="screen dimable fit"><img id="image" src=""></div>
 		<embed id="embed" class="screen dimable fit" type="text/html" src=""></embed>
 		<div id="black" class="screen dimable fit enabled"></div>
 		<div id="debug" class="screen hiddenMy fit">Debug</div>
@@ -239,9 +239,15 @@
 						}	
 					} else if( customData.target == "youtubevideo") {
 						fadeToPlayer();
+					} else if (customData.target == "embed") {
+						if(customData.message) {
+							document.getElementById('embed').src = customData.message;
+						}
+						
+						fadeToEmbed();
 					} else if (customData.target == "image") {
 						if(customData.message) {
-							document.getElementById('images').innerHTML = customData.message;
+							document.getElementById('image').src = customData.message;
 						}
 						
 						fadeToImage();
