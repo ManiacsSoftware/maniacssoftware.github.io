@@ -84,6 +84,8 @@
 				<span class="clock"></span>
 			</div>
 		</div>
+		<div id="images" class="screen dimable fit"></div>
+		<embed id="embed" class="screen dimable fit" type="text/html" src=""></embed>
 		<div id="black" class="screen dimable fit enabled"></div>
 		<div id="debug" class="screen hiddenMy fit">Debug</div>
 		<!-- Include the Cast Receiver SDK -->
@@ -237,6 +239,12 @@
 						}	
 					} else if( customData.target == "youtubevideo") {
 						fadeToPlayer();
+					} else if (customData.target == "image") {
+						if(customData.message) {
+							document.getElementById('images').innerHTML = customData.message;
+						}
+						
+						fadeToImage();
 					}
 					
 					setDemo(customData.demo && customData.demo === "true");

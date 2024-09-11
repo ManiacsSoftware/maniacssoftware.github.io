@@ -6,6 +6,45 @@ function blackground(on) {
 	}
 }
 
+function fadeToImage() {
+	blackground(false);	
+	enable("images");
+	disable("embed");
+	disable("songs");
+	disable("backgroundInsert");
+	disable("timers");
+	disable("verses");
+    disable("black");
+    disableSplash();
+	disable("announcements");  
+}
+
+function fadeToEmbed() {
+	blackground(false);	
+	enable("embed");
+	disable("songs");
+	disable("backgroundInsert");
+	disable("timers");
+	disable("verses");
+    disable("black");
+    disableSplash();
+	disable("announcements");  
+	disable("images");
+}
+
+function fadeToPlayer() {
+	blackground(false);	
+	disable("songs");
+	disable("backgroundInsert");
+	disable("timers");
+	disable("verses");
+    disable("black");
+    disableSplash();
+	disable("announcements");  
+	disable("embed");
+	disable("images");
+}
+
 function fadeToBlack() {
 	blackground(true);
     enable("black");
@@ -15,6 +54,8 @@ function fadeToBlack() {
 	disable("verses");
 	disableSplash();
 	disable("announcements");
+	disable("embed");
+	disable("images");
 }
 
 function fadeToBackground() {
@@ -26,6 +67,8 @@ function fadeToBackground() {
 	disable("verses");
 	disableSplash();
 	disable("announcements");
+	disable("embed");
+	disable("images");
 }
 
 function fadeToSplash() {
@@ -42,6 +85,8 @@ function fadeToSplash() {
     disable("black");    
     disable("verses");
 	disable("announcements");	
+	disable("embed");
+	disable("images");
 	//disableSplash();
 }
 
@@ -59,6 +104,8 @@ function fadeToVerse() {
     disable("black");
     disableSplash();
 	disable("announcements");
+	disable("embed");
+	disable("images");
 }
 
 function fadeToSong() {	
@@ -70,6 +117,8 @@ function fadeToSong() {
     disable("black");
     disableSplash();
 	disable("announcements");    
+	disable("embed");
+	disable("images");
 }
 
 function fadeToAnnouncement() {	
@@ -81,6 +130,8 @@ function fadeToAnnouncement() {
     disable("black");
     disableSplash();
 	disable("verses");	
+	disable("embed");
+	disable("images");
 }
 
 function fadeToTimer() {
@@ -92,6 +143,8 @@ function fadeToTimer() {
     disable("black");
     disableSplash();
 	disable("verses");	
+	disable("embed");
+	disable("images");
 }
 
 var splashRemoved = false;

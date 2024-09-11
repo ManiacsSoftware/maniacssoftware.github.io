@@ -25,6 +25,7 @@ html {
 }
 
 body {
+  overflow: hidden;
   margin:0;
   color: #ffffff;
   background-color: black;
@@ -484,4 +485,22 @@ body {
 
 .chapter {
 	padding-left: 1.5em;
+}
+
+#images {  
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#images img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
 }
