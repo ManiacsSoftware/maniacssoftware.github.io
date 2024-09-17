@@ -1,0 +1,43 @@
+/* Inspired by https://codepen.io/AzazelN28/pen/zvXZQw */
+@import url("text-on-black.css");
+
+/* font */
+@import url(https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,800;1,800&family=Roboto:ital,wght@0,300;0,900;1,400&display=swap);
+
+html, body, canvas {
+	overflow: hidden;
+	background: black;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+    width: 100%;
+}
+
+canvas {
+	/* background: radial-gradient(ellipse at bottom, #1b2735c4 0%, #090a0f 100%); */
+	background: radial-gradient(ellipse at bottom, #1b273599 0%, #090a0f 100%);
+}
+
+#canvas{
+  cursor: crosshair;
+  z-index: 2;
+  position: absolute;
+  top: 0; left: 0;
+}
+
+#overlay{
+  background: radial-gradient(ellipse at center, rgba(0,0,0,.0) 10%, rgba(0,0,0,.8) 80%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
+  z-index: 3;
+  position: absolute;
+  top:0;left:0;
+  height: 100%;
+  width: 100%;
+}
+
+#bg_glow{
+  z-index: 1;
+  position: absolute;
+  top:0;left:0;
+  height: 100%;
+  width: 100%;
+}

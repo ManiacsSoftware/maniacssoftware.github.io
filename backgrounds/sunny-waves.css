@@ -1,5 +1,4 @@
 /* font */
-
 @import url("text-on-black.css");
 
 @import url(https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Roboto:wght@100&display=swap);
@@ -12,6 +11,17 @@
 }
 
 /* background */
+body {
+  margin: 0;
+}
+canvas {
+  display: block;
+}
+
+#source {
+	shadow-color: black
+}
+
 :root {
   --color-1: #FC006B40;
   --color-2: #7011FB44;
