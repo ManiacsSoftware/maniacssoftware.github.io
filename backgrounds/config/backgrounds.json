@@ -46,6 +46,14 @@
 		"licences": ["theme_animated_gradients"]
 	},
 	{
+		"alias": "sunny-waves",
+		"image": "sunny-waves.png",
+		"name": "Sunny waves",
+		"animated": true,
+		"changesFont": true,
+		"licences": ["theme_sunny_waves"]
+	},
+	{
 		"alias": "gray-pattern",
 		"image": "gray-pattern.png",
 		"name": "Gray pattern",

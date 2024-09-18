@@ -1,4 +1,5 @@
 /* font */
+@import url("text-on-black.css");
 
 @import url(https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Roboto:wght@100&display=swap);
 #verses:not(.blackground) #source, #verses:not(.blackground) #verse, #announcement, #song, #timerMessage {
@@ -33,80 +34,4 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
-}
-
-/*  Decorative background stripes for text */
-#verses:not(.blackground) #verse {
-	padding: 0 1.3em;
-	line-height: 1.6em;
-}
-
-#song {
-	padding: 0 0.5em;
-}
-
-#song > div > span {
-	line-height: 1.5em;
-    color: #fff;
-    background: black;
-    padding: 0 1em;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-}
-
-#verses:not(.blackground) #verse > div {
-    line-height: 1.5em;
-    display: inline;
-    color: #fff;
-    padding-right: 1px;
-	
-	background: black;
-    box-shadow: 1.3em 0px 0px 0px black, -1.3em 0 0 0px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset;
-	
-    -webkit-box-decoration-break: clone;
-	box-decoration-break: clone;
-}
-
-.blackground #verse > div {
-	background: transparent;
-	box-shadow: 1.3em 0px 0px 0px transparent, -1.3em 0 0 0px transparent, -2px 0 0 2px transparent inset, 2px 0 0 2px transparent inset;
-}
-
-#songs br {
-	display: block;
-	margin-bottom: 0.7em;
-}
-
-#verses:not(.blackground) #verses, #announcements {
-	font-size: 2.6em;
-}
-
-#songs {
-	font-size: 2.6em;
-}
-
-#verses:not(.blackground) #verse .label {
-  top: -0.28em;
-  font-weight: bold;
-}
-
-.frame {
-  max-width: 90%;
-}
-
-/* Decorative box for announcements */
-
-#announcement {
-	padding: 1em 2.5em;
-	text-shadow: none;
-	background-color: rgba(0, 0, 0, 0.70);
-}
-
-
-#announcement:has(> #giving) {
-	padding: 1em 1em;
-}
-
-#timer {
-	text-shadow: 0.1em 0.4em 0.4em #3059
 }
