@@ -37,7 +37,7 @@ body {
   margin: 0;
   padding: 0;
   background-size: 400% 400%;
-  background-color: #6600FF;
+  /* background-color: #6600FF; */
 }
 
 gradient-container {
