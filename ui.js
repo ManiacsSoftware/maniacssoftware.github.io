@@ -6,7 +6,12 @@ function blackground(on) {
 	}
 }
 
+function fadeToGiving() {
+	fadeToAnnouncement();
+}
+
 function fadeToImage() {
+	//console.log("Fade to Image!");
 	blackground(false);	
 	disable("background");
 	enable("images");
@@ -21,6 +26,7 @@ function fadeToImage() {
 }
 
 function fadeToEmbed() {
+	blackground(false);	
 	enable("embed");
 	disable("songs");
 	disable("backgroundInsert");
