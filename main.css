@@ -475,8 +475,12 @@ img[src="about:blank"] {
 	z-index: 990;
 }
 
+.demoText {
+	font-size: 0.5em;
+}
+
 #song-footer {
-	display: none;
+	/* display: none; */
 }
 
 #hours {
