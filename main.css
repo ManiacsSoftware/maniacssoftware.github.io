@@ -17,8 +17,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,900;1,400);
 
 html {
-  height: 100vh;
-  width: 100vw;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  
 }
 
 #keepAlive {
@@ -35,7 +38,6 @@ body {
   
   font-size: 1.1vi; /* 3vh; 1vi; 1.2vi force font sizes relative to viewport */
 }
-
 
 img[src="about:blank"] {
     visibility:hidden
@@ -468,8 +470,10 @@ img[src="about:blank"] {
 
 #black, #blackground {
 	background-color: rgb(0, 0, 0);
-	width: 100vw;
-	height: 100vh;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
 }
 
 #black {
@@ -505,8 +509,8 @@ img[src="about:blank"] {
 	position: absolute;
     top: 50%;
     left: 50%;
-	width: calc(100vw + 1px);
-	height: calc(100vh + 1px);
+	width: 100vw;
+	height: 100vh;
     object-fit: cover;
     transform: translate(-50%, -50%);
 }
