@@ -227,7 +227,11 @@ img[src="about:blank"] {
   /* #font-family: 'Dancing script', serif; */
   font-size: 3em;
   margin: 0px;
-  margin-top: -1em;
+  margin-top: -0.6em;
+}
+
+#splash #press {
+	font-size: 2em;
 }
 
 #verses, #announcements, #songs, #timers {
