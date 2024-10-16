@@ -211,6 +211,10 @@ img[src="about:blank"] {
 }
 */
 
+#splash {
+	text-shadow: 0 0.5em 1.5em #0127, 0 0.1em 1px #0005, 0 0.3em 0.4em #0003;
+}
+
 #splash h1 {
   /* #font-family: 'Ballet', sans-serif; */
   font-family: 'Anton', sans-serif;
