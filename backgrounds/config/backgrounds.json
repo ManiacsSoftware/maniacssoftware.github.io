@@ -7,7 +7,7 @@
         "changesFont": false
     }, {
         "alias": "large",
-        "image": "black.png",
+        "image": "large.png",
         "name": "Large",
         "animated": false,
         "changesFont": false,
