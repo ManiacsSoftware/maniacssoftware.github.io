@@ -24,3 +24,7 @@ body {
 .centered {
 	max-width: 100%;
 }
+
+#footer, #song-footer, #timer-footer, #announcement-footer {
+	padding: 0;
+}
