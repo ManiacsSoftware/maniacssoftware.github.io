@@ -1,0 +1,23 @@
+.background {
+  background-color: #000;
+  bottom:0;
+  left:-50%;
+  
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index: -1;
+  font-size: 1.3vi;
+}
+
+#songs {
+	font-size: 4em;
+}
+
+#song {
+	line-height: 1.1;
+}
+
+.centered {
+	max-width: 100%;
+}
