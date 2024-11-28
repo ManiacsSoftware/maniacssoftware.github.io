@@ -1,121 +1,115 @@
-[{
-		"alias": "black",
-		"image": "black.png",
-		"name": "Blank",
-		"animated": false,
-		"changesFont": false
-	},
+[
 	{
-		"alias": "sparkles",
-		"image": "sparkles.png",
-		"name": "Sparkles",
-		"animated": true,
-		"changesFont": false,
-		"licences": ["theme_sparkles"]
-	},
-	{
-		"alias": "snow",
-		"image": "snow.png",
-		"name": "Snow",
-		"animated": true,
-		"changesFont": true,
-		"licences": ["theme_snow"]
-	},
-	{
-		"alias": "animated-blobs",
-		"image": "animated-blobs.png",
-		"name": "Animated Blobs",
-		"animated": true,
-		"changesFont": true,
-		"licences": ["theme_animated_blobs"]
-	},
-	{
-		"alias": "animated-stars",
-		"image": "animated-stars.png",
-		"name": "Animated Stars",
-		"animated": true,
-		"changesFont": true,
-		"licences": ["theme_animated_stars"]
-	},
-	{
-		"alias": "animated-gradients",
-		"image": "animated-gradients.png",
-		"name": "Animated Gradients",
-		"animated": true,
-		"changesFont": true,
-		"licences": ["theme_animated_gradients"]
-	},
-	{
-		"alias": "sunny-waves",
-		"image": "sunny-waves.png",
-		"name": "Sunny waves",
-		"animated": true,
-		"changesFont": true,
-		"licences": ["theme_sunny_waves"]
-	},
-	{
-		"alias": "gray-pattern",
-		"image": "gray-pattern.png",
-		"name": "Gray pattern",
-		"animated": true,		
-		"licences": ["theme_gray_pattern"],
-		"changesFont": true
-	},
-	{
-		"alias": "blueshapes",
-		"image": "blueshapes.png",
-		"name": "Blue shapes",
-		"animated": true,
-		"changesFont": false,
-		"licences": ["theme_blueshapes"]
-	},		
-	{
-		"alias": "waves-purple",
-		"image": "waves-purple.png",
-		"name": "Waves Purple",
-		"animated": true,
-		"changesFont": false,		
-		"licences": ["MONTHLY_THEME_PACK"]
-	},
-	{
-		"alias": "waves-donut",
-		"image": "waves-donut.png",
-		"name": "Waves Donut",
-		"animated": true,
-		"changesFont": false,	
-		"licences": ["MONTHLY_THEME_PACK"]
-	},
-	{
-		"alias": "waves-pumpkin",
-		"image": "waves-pumpkin.png",
-		"name": "Waves Pumpkin",
-		"animated": true,
-		"changesFont": false,	
-		"licences": ["MONTHLY_THEME_PACK"]
-	},
-	{
-		"alias": "stripes",
-		"image": "stripes.png",
-		"name": "Stripes",
-		"animated": true,
-		"changesFont": false,
-		"licences": ["theme_stripes"],
-		"unreleased": true
-	},
-	{
-		"alias": "glory",
-		"image": "glory.png",
-		"name": "Gloria",
-		"animated": true,
-		"changesFont": true,
-		"unreleased": true
-	},
-	{
-		"alias": "test",
-		"image": "test.png",
-		"name": "Test",
-		"animated": true,
-		"changesFont": true,
-		"unreleased": true
-	}
+        "alias": "black",
+        "image": "black.png",
+        "name": "Blank",
+        "animated": false,
+        "changesFont": false
+    }, {
+        "alias": "large",
+        "image": "black.png",
+        "name": "Large",
+        "animated": false,
+        "changesFont": false,
+        "unreleased": true
+    }, {
+        "alias": "sparkles",
+        "image": "sparkles.png",
+        "name": "Sparkles",
+        "animated": true,
+        "changesFont": false,
+        "licences": ["theme_sparkles"]
+    }, {
+        "alias": "snow",
+        "image": "snow.png",
+        "name": "Snow",
+        "animated": true,
+        "changesFont": true,
+        "licences": ["theme_snow"]
+    }, {
+        "alias": "animated-blobs",
+        "image": "animated-blobs.png",
+        "name": "Animated Blobs",
+        "animated": true,
+        "changesFont": true,
+        "licences": ["theme_animated_blobs"]
+    }, {
+        "alias": "animated-stars",
+        "image": "animated-stars.png",
+        "name": "Animated Stars",
+        "animated": true,
+        "changesFont": true,
+        "licences": ["theme_animated_stars"]
+    }, {
+        "alias": "animated-gradients",
+        "image": "animated-gradients.png",
+        "name": "Animated Gradients",
+        "animated": true,
+        "changesFont": true,
+        "licences": ["theme_animated_gradients"]
+    }, {
+        "alias": "sunny-waves",
+        "image": "sunny-waves.png",
+        "name": "Sunny waves",
+        "animated": true,
+        "changesFont": true,
+        "licences": ["theme_sunny_waves"]
+    }, {
+        "alias": "gray-pattern",
+        "image": "gray-pattern.png",
+        "name": "Gray pattern",
+        "animated": true,
+        "licences": ["theme_gray_pattern"],
+        "changesFont": true
+    }, {
+        "alias": "blueshapes",
+        "image": "blueshapes.png",
+        "name": "Blue shapes",
+        "animated": true,
+        "changesFont": false,
+        "licences": ["theme_blueshapes"]
+    }, {
+        "alias": "waves-purple",
+        "image": "waves-purple.png",
+        "name": "Waves Purple",
+        "animated": true,
+        "changesFont": false,
+        "licences": ["MONTHLY_THEME_PACK"]
+    }, {
+        "alias": "waves-donut",
+        "image": "waves-donut.png",
+        "name": "Waves Donut",
+        "animated": true,
+        "changesFont": false,
+        "licences": ["MONTHLY_THEME_PACK"]
+    }, {
+        "alias": "waves-pumpkin",
+        "image": "waves-pumpkin.png",
+        "name": "Waves Pumpkin",
+        "animated": true,
+        "changesFont": false,
+        "licences": ["MONTHLY_THEME_PACK"]
+    }, {
+        "alias": "stripes",
+        "image": "stripes.png",
+        "name": "Stripes",
+        "animated": true,
+        "changesFont": false,
+        "licences": ["theme_stripes"],
+        "unreleased": true
+    }, {
+        "alias": "glory",
+        "image": "glory.png",
+        "name": "Gloria",
+        "animated": true,
+        "changesFont": true,
+        "unreleased": true
+    }, {
+        "alias": "test",
+        "image": "test.png",
+        "name": "Test",
+        "animated": true,
+        "changesFont": true,
+        "unreleased": true
+    }
 ]
