@@ -103,7 +103,7 @@
             requestAnimationFrame(animate);
 
             snowParticles.forEach(particle => {
-                particle.position.y -= particle.userData.speed;
+                particle.position.y -= particle.userData.speed / 10;
                 particle.position.x += Math.sin(particle.userData.wiggleOffset) * 0.0003;
                 particle.userData.wiggleOffset += particle.userData.speed;
 				
