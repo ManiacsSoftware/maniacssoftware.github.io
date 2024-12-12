@@ -6,6 +6,13 @@
         "animated": false,
         "changesFont": false
     }, {
+        "alias": "christmas-snow",
+        "image": "christmas-snow.png",
+        "name": "christmas-snow",
+        "animated": true,
+        "changesFont": true,
+        "unreleased": true
+    }, {
         "alias": "large",
         "image": "large.png",
         "name": "Large",
