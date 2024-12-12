@@ -29,6 +29,11 @@ body {
 	padding-top: 0.1em;
 }
 
+#verse .label {
+	color: #ffd700;
+	text-shadow: 0 1px 1px #fff, 0 1px 1px brown;
+}
+
 
 /* background */
 :root {

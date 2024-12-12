@@ -55,7 +55,7 @@
 
         // Snow particle setup
         const snowParticles = [];
-        const particleCount = 200;
+        const particleCount = 120;
         const geometry = new THREE.PlaneGeometry(0.5, 0.5); // Smaller particles
         const textureLoader = new THREE.TextureLoader();
         //const snowflakeTexture = textureLoader.load('https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Snowflake.svg/900px-Snowflake.svg.png');
@@ -90,7 +90,7 @@
             );
             particle.userData = {
                 wiggleOffset: Math.random() * Math.PI * 2,
-                speed: Math.random() * 0.01 + 0.01,
+                speed: Math.random() * 0.01 + 0.02,
 				rotation: (Math.random() * 5 - 2.5) * 0.0005// Random rotation
 				
             };
@@ -103,9 +103,9 @@
             requestAnimationFrame(animate);
 
             snowParticles.forEach(particle => {
-                particle.position.y -= particle.userData.speed / 30;
+                particle.position.y -= particle.userData.speed / 50;
                 particle.position.x += Math.sin(particle.userData.wiggleOffset) * 0.0003;
-                particle.userData.wiggleOffset += particle.userData.speed;
+                particle.userData.wiggleOffset += particle.userData.speed / 2;
 				
 				particle.rotation.z = particle.rotation.z + particle.userData.rotation;
 				 
