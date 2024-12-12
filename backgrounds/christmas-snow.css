@@ -3,12 +3,16 @@
 @import url("text-on-black.css");
 
 @import url(https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Roboto:wght@100&display=swap);
+body {
+	font-size: 1.6em;
+}
+
 #verses:not(.blackground) #verse, #announcement, #song, #timerMessage {
 	font-style: normal;
     font-weight: 300;
 	/* font-family: "Exo", sans-serif !important; */
 	font-family: 'Great Vibes', serif !important;
-	/* font-size: 1.5em; */
+	/* font-size: 1.2em; */
 	color: white;
 	/*font-family: 'Sedgwick Ave Display' !important; */
 }
