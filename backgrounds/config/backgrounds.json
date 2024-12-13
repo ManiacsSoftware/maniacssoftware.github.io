@@ -11,14 +11,7 @@
         "name": "christmas-snow",
         "animated": true,
         "changesFont": true,
-        "unreleased": true
-    }, {
-        "alias": "large",
-        "image": "large.png",
-        "name": "Large",
-        "animated": false,
-        "changesFont": false,
-        "unreleased": true
+		"licences": ["theme_christmas_snow"]
     }, {
         "alias": "sparkles",
         "image": "sparkles.png",
@@ -96,6 +89,12 @@
         "animated": true,
         "changesFont": false,
         "licences": ["MONTHLY_THEME_PACK"]
+    }, {
+        "alias": "large",
+        "image": "large.png",
+        "name": "Large",
+        "animated": false,
+        "changesFont": false
     }, {
         "alias": "stripes",
         "image": "stripes.png",
