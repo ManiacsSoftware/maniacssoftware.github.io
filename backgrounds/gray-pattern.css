@@ -23,6 +23,10 @@
 	/* #font-family: 'Sedgwick Ave Display' !important; */
 }
 
+#song b, #announcement b {
+	font-weight: bold;
+}
+
 .frame {  
   /* #max-width: 90%; */
   background: rgb(69,89,122);
