@@ -28,12 +28,16 @@
 }
 
 #song > div > span {
-	 line-height: 1.5em;
+	line-height: 1.5em;
     color: #fff;
     background: black;
     padding: 0 1em;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+}
+
+#song > b {
+	font-weight: 600;
 }
 
 #verse > div { /*, #song > div { */
