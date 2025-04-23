@@ -37,7 +37,7 @@
 }
 
 #song b {
-	font-weight: 600;
+	font-weight: bold;
 }
 
 #verse > div { /*, #song > div { */
