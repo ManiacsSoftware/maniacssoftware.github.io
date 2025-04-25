@@ -18,5 +18,13 @@
 }
 
 #timer {
-	text-shadow: 0.1em 0.4em 0.4em #3059
+	text-shadow: 0.1em 0.4em 0.4em #3059, 0em 0em 3em #000, 0em 0em 3em #000, 0em 0em 3em #000, 0em 0em 3em #000, 0em 0em 3em #000, 0em 0em 3em #000;
+}
+
+#announcement {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+#countdown {
+	overflow: visible;
 }
