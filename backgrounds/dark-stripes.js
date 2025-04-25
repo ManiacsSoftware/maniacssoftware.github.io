@@ -3,12 +3,23 @@ var ctx = canvas.getContext("2d");
 var bgg = document.getElementById("bg_glow");
 w = ctx.canvas.width = window.innerWidth;
 h = ctx.canvas.height = window.innerHeight;
+var magic = w/1600;
+console.log(w);
+console.log(magic);
 
 window.onresize = function() {
   w = ctx.canvas.width = window.innerWidth;
   h = ctx.canvas.height = window.innerHeight;
-  maxHeight = h*.9
-  minHeight = h*.5;
+	magic = w/1600;
+  
+	maxWidth = 15*magic;
+	minWidth = 2*magic;
+	md = 100;
+	maxHeight = h*.5
+	minHeight = h*.5;
+	maxSpeed = 35*magic;
+	minSpeed = -3*magic;
+	
   dots = [];
   pushDots();
   ctx.globalCompositeOperation = "lighter";
@@ -23,16 +34,16 @@ document.getElementById("overlay").onclick = function(){
 
 dots=[{}];
 mx = 0; my = 0;
+maxWidth = 15*magic;
+minWidth = 2*magic;
 md = 100;
-maxWidth = 15;
-minWidth = 2;
-maxHeight = h*.9
+maxHeight = h*.5
 minHeight = h*.5;
-maxSpeed = 35;
-minSpeed = 6;
+maxSpeed = 35*magic;
+minSpeed = -3*magic;
 hue = 230;
 hueDif = 50; // Hue +/-
-glow = 10; // Set to 0 for better performance
+glow = 5; // Set to 0 for better performance
 ctx.globalCompositeOperation = "lighter";
 
 function pushDots(num){

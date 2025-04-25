@@ -1,0 +1,22 @@
+@import url("text-on-black.css");
+
+#verses:not(.blackground) #verse > div {
+    line-height: 1.5em;
+    color: #fff;
+	padding-right: 1px;	
+	background: black;
+    box-shadow: 1.3em 0px 0px 0px black, -1.3em 0 0 0px black, -2px 0 0 2px black inset, 2px 0 0 2px black inset;
+    -webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+	padding-top: 0.12em;
+	padding-bottom: 0.12em;
+}
+
+#song > div > span {
+    padding-top: 0.12em;
+	padding-bottom: 0.12em;
+}
+
+#timer {
+	text-shadow: 0.1em 0.4em 0.4em #3059
+}
