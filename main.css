@@ -528,3 +528,11 @@ img[src="about:blank"] {
     object-fit: cover;
     transform: translate(-50%, -50%);
 }
+
+#images img {
+	transition: object-fit 0.3s ease;
+}
+
+#images .force-contain {
+	object-fit: contain;
+}
