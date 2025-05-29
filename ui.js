@@ -1,3 +1,19 @@
+const deviancePercent = 30; // Adjust this: percentage deviation allowed
+const devianceThreshold = deviancePercent / 100;
+
+function updateFitBasedOnScreen(imageElement) {
+	const screenRatio = window.innerWidth / window.innerHeight;
+	const imageRatio = imageElement.naturalWidth / imageElement.naturalHeight;
+
+	const relativeDifference = Math.abs(screenRatio - imageRatio) / imageRatio;
+
+	if (relativeDifference > devianceThreshold) {
+		imageElement.classList.add("force-contain");
+	} else {
+		imageElement.classList.remove("force-contain");
+	}
+}
+
 function blackground(on) {
 	if(on == true) {
 		enable("blackground");
@@ -12,7 +28,7 @@ function fadeToGiving() {
 
 function fadeToImage() {
 	//console.log("Fade to Image!");
-	blackground(false);	
+	blackground(true);	
 	disable("background");
 	enable("images");
 	disable("embed");
