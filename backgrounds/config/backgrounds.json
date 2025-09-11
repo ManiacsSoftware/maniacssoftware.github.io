@@ -41,6 +41,13 @@
         "changesFont": true,
         "licences": ["theme_sunny_waves"]
     }, {
+        "alias": "pal",
+        "image": "pal.png",
+        "name": "Squares and hues",
+        "animated": true,
+        "changesFont": true,
+		"licences": ["theme_pal"]
+    }, {
         "alias": "christmas-snow",
         "image": "christmas-snow.png",
         "name": "christmas-snow",

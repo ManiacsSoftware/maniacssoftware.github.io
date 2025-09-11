@@ -1,0 +1,101 @@
+/* font */
+
+@import url("text-on-black.css");
+
+@import url(https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Roboto:wght@100&display=swap);
+#verses:not(.blackground) #source, #verses:not(.blackground) #verse, #announcement, #song, #timerMessage {
+	font-style: normal;
+    font-weight: 300;
+	font-family: "Exo", sans-serif !important;
+	color: white;
+	/*font-family: 'Sedgwick Ave Display' !important; */
+}
+
+/* background */
+:root {
+  --blue: rgba(95, 170, 245, 1);
+  --red: rgba(250, 57, 189, 1);
+  --pink: rgba(245, 104, 61, 1);
+  --angle-multiplier: 1.3;
+  --scale-multiplier: 2.8;
+
+  --shadow: #47185D60;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  abackground-attachment: scroll;
+  abackground-image:
+    radial-gradient(75% 75% at 50% 50%, #F67853FF 3%, #073AFF00 40%, #073AFF00 93%),
+    conic-gradient(from 15deg at 50% 50%, #67ADF5FF 4%, #B96FEFFF 13%, #FE75CEFF 21%, #F26C53FF 33%, #F26C53FF 69%, #FE75CEFF 81%, #B96FEFFF 88%, #67ADF5FF 96%);
+}
+
+/* Prevent Chrome from inheriting transforms into the background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(75% 75% at 50% 50%, #F67853FF 3%, #073AFF00 40%, #073AFF00 93%),
+    conic-gradient(from 15deg at 50% 50%, #67ADF5FF 4%, #B96FEFFF 13%, #FE75CEFF 21%, #F26C53FF 33%, #F26C53FF 69%, #FE75CEFF 81%, #B96FEFFF 88%, #67ADF5FF 96%);
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes boxMove {
+  0% {
+    transform: scale(calc(var(--scale-multiplier) * var(--initialScale)))
+               rotate(calc(var(--angle-multiplier) * var(--initialAngle)));
+  }
+  100% {
+    transform: scale(calc(var(--scale-multiplier) * var(--endScale)))
+               rotate(calc(var(--angle-multiplier) * var(--endAngle)));
+  }
+}
+
+.box {
+  position: absolute;
+  top: calc(50% - 10vmin);
+  left: calc(50% - 10vmin);
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 5vmin;
+  box-shadow: 0 0 6vmin var(--shadow);
+
+  transform-origin: center center;
+  will-change: transform;
+  backface-visibility: hidden;
+
+  animation: boxMove 12s linear infinite;
+}
+
+.box0 { --initialScale: 1.00; --endScale: 1.50; --initialAngle: 10deg; --endAngle: 0deg; }
+.box1 { --initialScale: 1.50; --endScale: 2.00; --initialAngle: 0deg; --endAngle: -10deg; }
+.box2 { --initialScale: 2.00; --endScale: 2.50; --initialAngle: -10deg; --endAngle: -20deg; }
+.box3 { --initialScale: 2.50; --endScale: 3.00; --initialAngle: -20deg; --endAngle: -30deg; }
+.box4 { --initialScale: 3.00; --endScale: 3.50; --initialAngle: -30deg; --endAngle: -40deg; }
+/*
+.box5 { --initialScale: 3.50; --endScale: 4.00; --initialAngle: -40deg; --endAngle: -50deg; }
+.box6 { --initialScale: 4.00; --endScale: 4.50; --initialAngle: -50deg; --endAngle: -60deg; }
+*/
+
+@keyframes show { from { opacity: 0; } to { opacity: 1; } }
+@keyframes hide { from { opacity: 1; } to { opacity: 0; } }
+
+.box0 {
+  animation: boxMove 12s linear infinite, show 12s linear infinite;
+}
+.box4 {
+  animation: boxMove 12s linear infinite, hide 12s linear infinite;
+}
+
+/* end background */
