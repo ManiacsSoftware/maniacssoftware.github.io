@@ -18,35 +18,40 @@
         "name": "Animated Blobs",
         "animated": true,
         "changesFont": true,
-        "licences": ["theme_animated_blobs"]
+        "licences": ["theme_animated_blobs"],
+		"suggestionPriority": 1
     }, {
         "alias": "animated-stars",
         "image": "animated-stars.png",
         "name": "Animated Stars",
         "animated": true,
         "changesFont": true,
-        "licences": ["theme_animated_stars"]
+        "licences": ["theme_animated_stars"],
+		"suggestionPriority": 4
     }, {
         "alias": "animated-gradients",
         "image": "animated-gradients.png",
         "name": "Animated Gradients",
         "animated": true,
         "changesFont": true,
-        "licences": ["theme_animated_gradients"]
+        "licences": ["theme_animated_gradients"],
+		"suggestionPriority": 5
     }, {
         "alias": "sunny-waves",
         "image": "sunny-waves.png",
         "name": "Sunny waves",
         "animated": true,
         "changesFont": true,
-        "licences": ["theme_sunny_waves"]
-    }, {
+        "licences": ["theme_sunny_waves"],
+		"suggestionPriority": 2
+    },{
         "alias": "pal",
         "image": "pal.png",
         "name": "Squares and hues",
         "animated": true,
         "changesFont": true,
-		"licences": ["theme_pal"]
+		"licences": ["theme_pal"],
+		"suggestionPriority": 3
     }, {
         "alias": "christmas-snow",
         "image": "christmas-snow.png",
