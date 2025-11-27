@@ -81,6 +81,11 @@ img[src="about:blank"] {
 	text-transform: uppercase; 
 }
 
+.br-spacer {
+  display: block;
+  height: 0.6em;
+}
+
 .centertext, .ql-align-center {
   /*
   #background-color:rgba(255,255,255,.8);
