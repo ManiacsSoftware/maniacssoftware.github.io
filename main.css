@@ -345,6 +345,11 @@ img[src="about:blank"] {
 	display: none;
 }
 
+/* Bug - Bahasa indonesia TB - Lukas 10:1-2 */
+#verse .chapter .r {
+	display: none;
+}
+
 #verse .q1 .label, #verse .q1 .label, #verse .q1 .label {
 	margin-left: 15px;
 }
