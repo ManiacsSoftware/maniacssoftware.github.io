@@ -29,12 +29,12 @@
     var ctx = canvas.getContext('2d');
     var X = canvas.width = window.innerWidth;
     var Y = canvas.height = window.innerHeight;
-	var coeficient = window.innerHeight * 0.0015;
+	var coeficient = window.innerHeight * 0.0012;
     var mouseX = null;
     var mouseY = null;
-    var shapeNum = 300;
+    var shapeNum = 350;
     var shapes = [];
-    var minSize = 25 * coeficient;
+    var minSize = 15 * coeficient;
     var maxSize = 55 * coeficient;
     var fillStyleColor = 'rgba(255,255,255,1)'; //'white';
     var fadeOutSpeed = 100; // 25
@@ -99,7 +99,7 @@
       ctx.globalCompositeOperation = 'lighter';
       ctx.globalAlpha = this.ga;
       //ctx.fillStyle = 'rgb(123, 252, 100)';
-	  ctx.fillStyle = 'rgba(255, 255, 255,0.8)';
+	  ctx.fillStyle = 'rgba(255, 255, 255, 0.85)';
       //ctx.fillStyle = 'rgb(255,255,255)';
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
