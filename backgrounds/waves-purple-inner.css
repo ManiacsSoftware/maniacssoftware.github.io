@@ -8,6 +8,7 @@ body {
     animation: gradient 45s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
+	font-size: 1.3vw;
 	font-size: 1.3vi;
 }
 
