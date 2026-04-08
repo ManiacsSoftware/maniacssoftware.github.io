@@ -29,7 +29,7 @@ html {
 }
 
 b {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 #keepAlive {
@@ -317,7 +317,7 @@ img[src="about:blank"] {
 }
 
 #verse .heading {
-	  font-weight: bold;
+	  font-weight: 700;
 }
  
 #verse .label {
@@ -378,7 +378,7 @@ img[src="about:blank"] {
 }
 
 #verse .wj, #verse .nd {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 #verseasd .verse .content {
