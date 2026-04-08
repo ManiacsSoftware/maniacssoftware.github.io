@@ -205,7 +205,7 @@ gradient-backdrop {
 
 #verses:not(.blackground) #verse .label {
   top: -0.28em;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .frame {

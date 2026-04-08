@@ -37,7 +37,7 @@
 }
 
 #song b, #announcement b {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 #verse > div { /*, #song > div { */
@@ -59,7 +59,7 @@
 
 #verses:not(.blackground) #verse .label {
   top: -0.28em;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .frame {
