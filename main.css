@@ -28,6 +28,10 @@ html {
   
 }
 
+b {
+	font-weight: bold;
+}
+
 #keepAlive {
 	display: none;
 }
