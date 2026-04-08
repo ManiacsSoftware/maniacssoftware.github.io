@@ -43,7 +43,8 @@ body {
   background-color: black;
   font-family: 'Roboto';
   letter-spacing: 0.05em;
-  
+  /* Fallback */
+  font-size: 1.1vw;
   font-size: 1.1vi; /* 3vh; 1vi; 1.2vi force font sizes relative to viewport */
 
   -webkit-text-size-adjust: 100%;
