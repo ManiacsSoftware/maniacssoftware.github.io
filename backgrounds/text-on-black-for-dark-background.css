@@ -1,7 +1,7 @@
 @import url("text-on-black.css");
 
 #verses:not(.blackground) #verse > div {
-    line-height: 1.5em;
+    line-height: 1.5;
     color: #fff;
 	padding-right: 1px;	
 	background: black;
