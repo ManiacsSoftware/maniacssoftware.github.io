@@ -41,12 +41,12 @@ body {
   letter-spacing: 0.05em;
   
   font-size: 1.1vi; /* 3vh; 1vi; 1.2vi force font sizes relative to viewport */
-
+/*
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-
+*/
 }
 
 img[src="about:blank"] {
