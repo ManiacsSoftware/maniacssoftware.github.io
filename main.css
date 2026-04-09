@@ -164,6 +164,10 @@ img[src="about:blank"] {
 	opacity: 1;
 }
 
+#announcements ul {
+	padding-inline-start: 1.9em;
+}
+
 #announcements img {
   /* object-fit: contain; */
 }
